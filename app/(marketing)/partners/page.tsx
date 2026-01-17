@@ -22,7 +22,7 @@ export default function PartnersPage() {
 
   const openCalendly = () => {
     // TODO: Remplacer par le vrai lien Calendly
-    window.open("https://calendly.com/vyxo/partenaire", "_blank")
+    window.open("https://calendly.com/ClearGo/partenaire", "_blank")
   }
 
   return (
@@ -67,7 +67,7 @@ export default function PartnersPage() {
                 Candidature
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Postule pour devenir <span className="text-partner-accent">Vyxo Partner</span>
+                Postule pour devenir <span className="text-partner-accent">ClearGo Partner</span>
               </h2>
               <p className="text-lg text-gray-400">
                 Remplis ce formulaire, on revient vers toi sous 48h pour un appel de qualification.
@@ -87,3 +87,4 @@ export default function PartnersPage() {
     </main>
   )
 }
+

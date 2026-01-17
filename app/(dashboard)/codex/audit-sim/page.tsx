@@ -153,7 +153,7 @@ export default function AuditSimulatorPage() {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <ClipboardCheck className="h-8 w-8 text-green-500" />
-              <h1 className="text-3xl font-bold tracking-tight text-vyxo-navy dark:text-white">
+              <h1 className="text-3xl font-bold tracking-tight text-ClearGo-navy dark:text-white">
                 Simulateur d'Audit
               </h1>
             </div>
@@ -252,7 +252,7 @@ export default function AuditSimulatorPage() {
             <div>
               <div className="flex items-center gap-3 mb-2">
                 <FileText className="h-8 w-8 text-green-500" />
-                <h1 className="text-3xl font-bold tracking-tight text-vyxo-navy dark:text-white">
+                <h1 className="text-3xl font-bold tracking-tight text-ClearGo-navy dark:text-white">
                   Rapport d'Audit
                 </h1>
               </div>
@@ -411,7 +411,7 @@ export default function AuditSimulatorPage() {
           <div className="flex items-center gap-3 mb-2">
             <div className="text-4xl">{currentAudit?.icon}</div>
             <div>
-              <h1 className="text-2xl font-bold text-vyxo-navy dark:text-white">
+              <h1 className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                 {currentAudit?.title}
               </h1>
               <p className="text-sm text-muted-foreground">
@@ -583,3 +583,4 @@ export default function AuditSimulatorPage() {
     </div>
   );
 }
+

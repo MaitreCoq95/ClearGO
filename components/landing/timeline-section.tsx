@@ -15,7 +15,7 @@ const steps = [
       "Rapport de priorisation",
       "Plan d&apos;action personnalisé"
     ],
-    who: "Consultant VYXO + Plateforme",
+    who: "Consultant ClearGo + Plateforme",
     color: "blue",
     bgClass: "bg-blue-500",
     borderClass: "border-blue-500"
@@ -32,7 +32,7 @@ const steps = [
       "Évaluations individuelles",
       "Attestations de formation"
     ],
-    who: "Vos équipes + LMS Vyxo",
+    who: "Vos équipes + LMS ClearGo",
     color: "green",
     bgClass: "bg-green-500",
     borderClass: "border-green-500"
@@ -66,10 +66,10 @@ const steps = [
       "Support pendant l&apos;audit",
       "Conformité validée ✅"
     ],
-    who: "Vous + VYXO + Auditeur",
-    color: "vyxo-gold",
-    bgClass: "bg-vyxo-gold",
-    borderClass: "border-vyxo-gold"
+    who: "Vous + ClearGo + Auditeur",
+    color: "ClearGo-gold",
+    bgClass: "bg-ClearGo-gold",
+    borderClass: "border-ClearGo-gold"
   }
 ]
 
@@ -79,11 +79,11 @@ export function TimelineSection() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-vyxo-gold text-sm font-semibold tracking-wider uppercase mb-4 block">
+          <span className="text-ClearGo-gold text-sm font-semibold tracking-wider uppercase mb-4 block">
             Comment ça marche
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Votre parcours vers la <span className="text-vyxo-gold">conformité</span>
+            Votre parcours vers la <span className="text-ClearGo-gold">conformité</span>
           </h2>
           <p className="text-lg text-gray-400">
             De l&apos;évaluation initiale jusqu&apos;à l&apos;audit validé, 
@@ -94,7 +94,7 @@ export function TimelineSection() {
         {/* Timeline */}
         <div className="relative max-w-5xl mx-auto">
           {/* Vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-amber-500 to-vyxo-gold transform md:-translate-x-1/2" />
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-amber-500 to-ClearGo-gold transform md:-translate-x-1/2" />
 
           {/* Steps */}
           <div className="space-y-12">
@@ -121,7 +121,7 @@ export function TimelineSection() {
                     <div className={`bg-white/5 border ${step.borderClass}/30 rounded-2xl p-6 hover:border-${step.color}/50 transition-all hover:-translate-y-1`}>
                       {/* Header */}
                       <div className="flex items-center gap-3 mb-4">
-                        <span className={`text-sm font-semibold px-3 py-1 rounded-full ${step.bgClass}/20 text-${step.color === "vyxo-gold" ? "vyxo-gold" : step.color + "-400"}`}>
+                        <span className={`text-sm font-semibold px-3 py-1 rounded-full ${step.bgClass}/20 text-${step.color === "ClearGo-gold" ? "ClearGo-gold" : step.color + "-400"}`}>
                           {step.subtitle}
                         </span>
                         <span className="text-xs text-gray-500">Étape {step.id}/4</span>
@@ -168,10 +168,10 @@ export function TimelineSection() {
 
         {/* Stats banner */}
         <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-vyxo-gold/10 via-green-500/10 to-blue-500/10 border border-white/10 rounded-2xl p-6 md:p-8">
+          <div className="bg-gradient-to-r from-ClearGo-gold/10 via-green-500/10 to-blue-500/10 border border-white/10 rounded-2xl p-6 md:p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
-                <p className="text-3xl md:text-4xl font-bold text-vyxo-gold">12-18</p>
+                <p className="text-3xl md:text-4xl font-bold text-ClearGo-gold">12-18</p>
                 <p className="text-sm text-gray-400">mois en moyenne</p>
               </div>
               <div>
@@ -192,7 +192,7 @@ export function TimelineSection() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <button className="inline-flex items-center gap-2 bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold py-4 px-8 rounded-lg transition-all hover:scale-105">
+          <button className="inline-flex items-center gap-2 bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold py-4 px-8 rounded-lg transition-all hover:scale-105">
             Évaluer ma conformité maintenant
             <ArrowRight className="w-5 h-5" />
           </button>

@@ -156,7 +156,7 @@ export default function AdminUsersPage() {
           </Button>
           <Dialog open={isCreateModalOpen} onOpenChange={setIsCreateModalOpen}>
             <DialogTrigger asChild>
-              <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+              <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                 <Plus className="w-4 h-4 mr-2" />
                 Ajouter utilisateur
               </Button>
@@ -227,7 +227,7 @@ export default function AdminUsersPage() {
                 <Button variant="outline" onClick={() => setIsCreateModalOpen(false)}>
                   Annuler
                 </Button>
-                <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+                <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                   Créer et inviter
                 </Button>
               </DialogFooter>
@@ -333,7 +333,7 @@ export default function AdminUsersPage() {
                     <td className="p-4">
                       <div className="flex items-center gap-3">
                         <Avatar className="w-9 h-9">
-                          <AvatarFallback className="bg-vyxo-navy text-white text-sm">
+                          <AvatarFallback className="bg-ClearGo-navy text-white text-sm">
                             {user.name.split(" ").map(n => n[0]).join("")}
                           </AvatarFallback>
                         </Avatar>
@@ -411,3 +411,4 @@ export default function AdminUsersPage() {
     </div>
   )
 }
+

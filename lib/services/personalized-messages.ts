@@ -96,7 +96,7 @@ export function generatePersonalizedMessages(data: EvaluationFormData): Personal
       type: "opportunity",
       icon: "💡",
       title: "Optimisation possible",
-      message: "Vous externalisez déjà votre qualité. Vyxo Codex peut compléter ou remplacer cette prestation avec un meilleur rapport coût/valeur.",
+      message: "Vous externalisez déjà votre qualité. ClearGo peut compléter ou remplacer cette prestation avec un meilleur rapport coût/valeur.",
       priority: 2
     })
   }

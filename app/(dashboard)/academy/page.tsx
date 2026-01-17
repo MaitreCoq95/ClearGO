@@ -38,12 +38,12 @@ export default function AcademyPage() {
           </p>
         </div>
         <div className="flex items-center gap-2">
-           <Card className="bg-vyxo-gold/10 border-vyxo-gold/20 p-2 flex items-center gap-3">
-              <div className="p-2 bg-vyxo-gold rounded-full text-vyxo-navy">
+           <Card className="bg-ClearGo-gold/10 border-ClearGo-gold/20 p-2 flex items-center gap-3">
+              <div className="p-2 bg-ClearGo-gold rounded-full text-ClearGo-navy">
                 <GraduationCap className="w-5 h-5" />
               </div>
               <div>
-                <div className="text-xl font-bold text-vyxo-gold">5</div>
+                <div className="text-xl font-bold text-ClearGo-gold">5</div>
                 <div className="text-xs text-muted-foreground">Parcours Actifs</div>
               </div>
            </Card>
@@ -78,8 +78,8 @@ export default function AcademyPage() {
                  .filter(m => v.id === "all" || m.vertical === v.id)
                  .map(module => (
                    <Link key={module.id} href={`/academy/${module.id}`} className="group">
-                     <Card className="h-full hover:border-vyxo-gold/50 hover:shadow-lg transition-all duration-300 overflow-hidden relative">
-                       <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-vyxo-navy to-vyxo-gold" />
+                     <Card className="h-full hover:border-ClearGo-gold/50 hover:shadow-lg transition-all duration-300 overflow-hidden relative">
+                       <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-ClearGo-navy to-ClearGo-gold" />
                        <CardHeader>
                          <div className="flex justify-between items-start mb-2">
                            <div className="text-4xl group-hover:scale-110 transition-transform">{module.icon}</div>
@@ -90,7 +90,7 @@ export default function AcademyPage() {
                              </Badge>
                            )}
                          </div>
-                         <CardTitle className="group-hover:text-vyxo-gold transition-colors">{module.title}</CardTitle>
+                         <CardTitle className="group-hover:text-ClearGo-gold transition-colors">{module.title}</CardTitle>
                          <CardDescription className="line-clamp-2">{module.description}</CardDescription>
                        </CardHeader>
                        <CardContent>
@@ -106,7 +106,7 @@ export default function AcademyPage() {
                           </div>
                           <div className="mt-4 pt-4 border-t flex justify-between items-center">
                              <Badge variant="outline">{module.level}</Badge>
-                             <div className="text-vyxo-gold text-sm font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                             <div className="text-ClearGo-gold text-sm font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                                Commencer
                                <PlayCircle className="w-4 h-4" />
                              </div>
@@ -128,3 +128,4 @@ export default function AcademyPage() {
     </div>
   )
 }
+

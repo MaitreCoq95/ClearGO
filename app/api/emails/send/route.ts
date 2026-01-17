@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
           directorEmail,
           parseResult.data.email,
           parseResult.data.company_name,
-          shareLink || `https://vyxo-codex.fr/share/${Date.now().toString(36)}`
+          shareLink || `https://ClearGo-codex.fr/share/${Date.now().toString(36)}`
         )
         return NextResponse.json(result)
       }
@@ -82,3 +82,4 @@ export function GET() {
     configured: !!process.env.EMAIL_API_KEY || !!process.env.RESEND_API_KEY
   })
 }
+

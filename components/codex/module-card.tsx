@@ -51,7 +51,7 @@ const getLevelLabel = (level: KnowledgeModule['level']) => {
 export function ModuleCard({ module }: ModuleCardProps) {
   return (
     <Link href={`/codex/modules/${module.id}`}>
-      <Card className="h-full hover:shadow-lg transition-all hover:border-vyxo-gold/50 cursor-pointer group">
+      <Card className="h-full hover:shadow-lg transition-all hover:border-ClearGo-gold/50 cursor-pointer group">
         <CardHeader>
           <div className="flex items-start justify-between mb-2">
             <div className="flex items-center gap-2">
@@ -66,7 +66,7 @@ export function ModuleCard({ module }: ModuleCardProps) {
               {getLevelLabel(module.level)}
             </Badge>
           </div>
-          <CardTitle className="text-lg group-hover:text-vyxo-gold transition-colors">
+          <CardTitle className="text-lg group-hover:text-ClearGo-gold transition-colors">
             {module.title}
           </CardTitle>
         </CardHeader>

@@ -98,7 +98,7 @@ export default function FunnelDashboardPage() {
   const [period, setPeriod] = useState<'7d' | '30d' | '90d'>('30d')
 
   return (
-    <div className="container-vyxo py-8 space-y-8">
+    <div className="container-ClearGo py-8 space-y-8">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
@@ -152,7 +152,7 @@ export default function FunnelDashboardPage() {
       <Card className="bento-card">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Target className="h-5 w-5 text-vyxo-gold" />
+            <Target className="h-5 w-5 text-ClearGo-gold" />
             Funnel Demo → Lead
           </CardTitle>
           <CardDescription>
@@ -209,7 +209,7 @@ export default function FunnelDashboardPage() {
         <Card className="bento-card lg:col-span-2">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-vyxo-gold" />
+              <Users className="h-5 w-5 text-ClearGo-gold" />
               Leads Récents
             </CardTitle>
             <CardDescription>
@@ -347,3 +347,4 @@ export default function FunnelDashboardPage() {
     </div>
   )
 }
+

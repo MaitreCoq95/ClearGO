@@ -26,7 +26,7 @@ export function SingleChoice({ options, value, onChange, disabled }: SingleChoic
             flex items-center space-x-3 rounded-lg border p-4 cursor-pointer
             transition-all duration-200
             ${value === option.label 
-              ? "border-vyxo-gold bg-vyxo-gold/10" 
+              ? "border-ClearGo-gold bg-ClearGo-gold/10" 
               : "border-slate-700 hover:border-slate-500 bg-slate-800/50"
             }
             ${disabled ? "opacity-50 cursor-not-allowed" : ""}
@@ -36,7 +36,7 @@ export function SingleChoice({ options, value, onChange, disabled }: SingleChoic
           <RadioGroupItem 
             value={option.label} 
             id={option.id}
-            className="border-slate-500 text-vyxo-gold"
+            className="border-slate-500 text-ClearGo-gold"
           />
           <Label 
             htmlFor={option.id} 

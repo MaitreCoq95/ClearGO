@@ -2,14 +2,14 @@ import { Badge } from "@/components/ui/badge"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité - VYXO Codex",
+  title: "Politique de Confidentialité - ClearGo",
   description: "Notre politique de confidentialité et de protection des données personnelles",
 }
 
 export default function PrivacyPage() {
   return (
     <div className="py-16 md:py-24">
-      <div className="container-vyxo max-w-4xl">
+      <div className="container-ClearGo max-w-4xl">
         <div className="mb-12">
           <Badge variant="outline" className="mb-4">Légal</Badge>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -23,8 +23,8 @@ export default function PrivacyPage() {
         <div className="prose prose-slate dark:prose-invert max-w-none">
           <h2>1. Introduction</h2>
           <p>
-            VYXO Consulting SAS ("nous", "notre") s'engage à protéger la vie privée des utilisateurs 
-            de la plateforme VYXO Codex. Cette politique explique comment nous collectons, utilisons 
+            ClearGo Consulting SAS ("nous", "notre") s'engage à protéger la vie privée des utilisateurs 
+            de la plateforme ClearGo. Cette politique explique comment nous collectons, utilisons 
             et protégeons vos données personnelles.
           </p>
 
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
             <li><strong>Opposition :</strong> vous opposer au traitement</li>
           </ul>
           <p>
-            Pour exercer ces droits, contactez-nous à privacy@vyxo.fr
+            Pour exercer ces droits, contactez-nous à privacy@cleargo.fr
           </p>
 
           <h2>9. Cookies</h2>
@@ -128,12 +128,13 @@ export default function PrivacyPage() {
           <p>
             Pour toute question relative à la protection de vos données :
             <br />
-            <strong>Email :</strong> dpo@vyxo.fr
+            <strong>Email :</strong> dpo@cleargo.fr
             <br />
-            <strong>Courrier :</strong> VYXO Consulting - DPO, Paris, France
+            <strong>Courrier :</strong> ClearGo Consulting - DPO, Paris, France
           </p>
         </div>
       </div>
     </div>
   )
 }
+

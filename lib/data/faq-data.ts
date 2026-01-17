@@ -11,7 +11,7 @@ export const faqData: FAQItem[] = [
   {
     id: "difference-logiciel",
     question: "Quelle différence avec un logiciel qualité classique ?",
-    answer: "Un logiciel classique vous donne des outils. Vyxo Codex vous accompagne vers un résultat : la conformité. En plus de la plateforme SaaS, vous bénéficiez de la formation continue de vos équipes et de l'expertise terrain de nos consultants. C'est l'alliance des trois qui garantit votre réussite.",
+    answer: "Un logiciel classique vous donne des outils. ClearGo vous accompagne vers un résultat : la conformité. En plus de la plateforme SaaS, vous bénéficiez de la formation continue de vos équipes et de l'expertise terrain de nos consultants. C'est l'alliance des trois qui garantit votre réussite.",
     category: "general"
   },
   {

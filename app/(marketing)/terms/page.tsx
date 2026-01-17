@@ -2,14 +2,14 @@ import { Badge } from "@/components/ui/badge"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Conditions Générales d'Utilisation - VYXO Codex",
-  description: "Conditions générales d'utilisation de la plateforme VYXO Codex",
+  title: "Conditions Générales d'Utilisation - ClearGo",
+  description: "Conditions générales d'utilisation de la plateforme ClearGo",
 }
 
 export default function TermsPage() {
   return (
     <div className="py-16 md:py-24">
-      <div className="container-vyxo max-w-4xl">
+      <div className="container-ClearGo max-w-4xl">
         <div className="mb-12">
           <Badge variant="outline" className="mb-4">Légal</Badge>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -24,8 +24,8 @@ export default function TermsPage() {
           <h2>1. Objet</h2>
           <p>
             Les présentes Conditions Générales d'Utilisation (ci-après "CGU") ont pour objet de définir 
-            les modalités et conditions d'utilisation de la plateforme VYXO Codex (ci-après "la Plateforme"), 
-            éditée par VYXO Consulting SAS.
+            les modalités et conditions d'utilisation de la plateforme ClearGo (ci-après "la Plateforme"), 
+            éditée par ClearGo Consulting SAS.
           </p>
 
           <h2>2. Acceptation des conditions</h2>
@@ -36,7 +36,7 @@ export default function TermsPage() {
           </p>
 
           <h2>3. Description des services</h2>
-          <p>VYXO Codex propose les services suivants :</p>
+          <p>ClearGo propose les services suivants :</p>
           <ul>
             <li>Assessments de maturité opérationnelle (GDP, ISO, HACCP)</li>
             <li>Modules de formation en ligne adaptatifs</li>
@@ -62,7 +62,7 @@ export default function TermsPage() {
           <h2>6. Propriété intellectuelle</h2>
           <p>
             L'ensemble des contenus de la Plateforme (textes, vidéos, images, modules de formation) 
-            sont la propriété exclusive de VYXO Consulting ou de ses partenaires. Toute reproduction, 
+            sont la propriété exclusive de ClearGo Consulting ou de ses partenaires. Toute reproduction, 
             distribution ou modification sans autorisation préalable est interdite.
           </p>
 
@@ -75,21 +75,21 @@ export default function TermsPage() {
 
           <h2>8. Responsabilité</h2>
           <p>
-            VYXO Consulting s'engage à fournir ses services avec diligence. Toutefois, la Plateforme 
-            est fournie "en l'état" et VYXO Consulting ne garantit pas l'absence d'erreurs ou 
+            ClearGo Consulting s'engage à fournir ses services avec diligence. Toutefois, la Plateforme 
+            est fournie "en l'état" et ClearGo Consulting ne garantit pas l'absence d'erreurs ou 
             d'interruptions de service.
           </p>
 
           <h2>9. Résiliation</h2>
           <p>
             L'utilisateur peut résilier son abonnement à tout moment depuis son espace personnel. 
-            VYXO Consulting se réserve le droit de suspendre ou résilier un compte en cas de 
+            ClearGo Consulting se réserve le droit de suspendre ou résilier un compte en cas de 
             violation des présentes CGU.
           </p>
 
           <h2>10. Modification des CGU</h2>
           <p>
-            VYXO Consulting peut modifier les présentes CGU à tout moment. Les utilisateurs seront 
+            ClearGo Consulting peut modifier les présentes CGU à tout moment. Les utilisateurs seront 
             informés de toute modification significative par email. La continuation de l'utilisation 
             après modification vaut acceptation.
           </p>
@@ -104,12 +104,13 @@ export default function TermsPage() {
           <p>
             Pour toute question relative aux présentes CGU, vous pouvez nous contacter à l'adresse :
             <br />
-            <strong>Email :</strong> legal@vyxo.fr
+            <strong>Email :</strong> legal@cleargo.fr
             <br />
-            <strong>Adresse :</strong> VYXO Consulting SAS, Paris, France
+            <strong>Adresse :</strong> ClearGo Consulting SAS, Paris, France
           </p>
         </div>
       </div>
     </div>
   )
 }
+

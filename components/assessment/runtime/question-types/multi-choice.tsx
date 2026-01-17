@@ -31,7 +31,7 @@ export function MultiChoice({ options, value, onChange, disabled }: MultiChoiceP
               flex items-center space-x-3 rounded-lg border p-4 cursor-pointer
               transition-all duration-200
               ${isSelected 
-                ? "border-vyxo-gold bg-vyxo-gold/10" 
+                ? "border-ClearGo-gold bg-ClearGo-gold/10" 
                 : "border-slate-700 hover:border-slate-500 bg-slate-800/50"
               }
               ${disabled ? "opacity-50 cursor-not-allowed" : ""}
@@ -43,7 +43,7 @@ export function MultiChoice({ options, value, onChange, disabled }: MultiChoiceP
               checked={isSelected}
               onCheckedChange={() => toggleOption(option.label)}
               disabled={disabled}
-              className="border-slate-500 data-[state=checked]:bg-vyxo-gold data-[state=checked]:border-vyxo-gold"
+              className="border-slate-500 data-[state=checked]:bg-ClearGo-gold data-[state=checked]:border-ClearGo-gold"
             />
             <Label 
               htmlFor={option.id} 

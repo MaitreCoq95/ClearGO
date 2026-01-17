@@ -65,7 +65,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
   // Sauvegarde localStorage
   useEffect(() => {
-    const savedData = localStorage.getItem("vyxo_evaluation_form")
+    const savedData = localStorage.getItem("ClearGo_evaluation_form")
     if (savedData) {
       try {
         const parsed = JSON.parse(savedData)
@@ -80,7 +80,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
   useEffect(() => {
     const subscription = watch((data) => {
-      localStorage.setItem("vyxo_evaluation_form", JSON.stringify(data))
+      localStorage.setItem("ClearGo_evaluation_form", JSON.stringify(data))
     })
     return () => subscription.unsubscribe()
   }, [watch])
@@ -115,7 +115,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
     <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-8">
       {/* Section Entreprise */}
       <div className="space-y-4">
-        <div className="flex items-center gap-2 text-vyxo-gold mb-4">
+        <div className="flex items-center gap-2 text-ClearGo-gold mb-4">
           <Building2 className="w-5 h-5" />
           <h3 className="font-semibold">Votre entreprise</h3>
         </div>
@@ -143,7 +143,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
         <div className="space-y-2">
           <Label htmlFor="siret" className="text-white flex items-center gap-2">
             Numéro SIRET
-            <span className="text-xs bg-vyxo-gold/20 text-vyxo-gold px-2 py-0.5 rounded-full">
+            <span className="text-xs bg-ClearGo-gold/20 text-ClearGo-gold px-2 py-0.5 rounded-full">
               🔓 Débloquez l&apos;accès complet
             </span>
           </Label>
@@ -171,7 +171,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
             {/* Indicateur de statut */}
             <div className="absolute right-3 top-1/2 -translate-y-1/2">
               {isSiretValidating && (
-                <Loader2 className="w-5 h-5 text-vyxo-gold animate-spin" />
+                <Loader2 className="w-5 h-5 text-ClearGo-gold animate-spin" />
               )}
               {!isSiretValidating && siretResult?.isValid && (
                 <BadgeCheck className="w-5 h-5 text-green-500" />
@@ -213,8 +213,8 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
           {/* Message d'incitation (quand pas encore de SIRET) */}
           {!siretResult && (
-            <div className="bg-gradient-to-r from-vyxo-gold/10 to-transparent border border-vyxo-gold/20 rounded-lg p-3 mt-2">
-              <p className="text-vyxo-gold text-sm font-medium mb-1">
+            <div className="bg-gradient-to-r from-ClearGo-gold/10 to-transparent border border-ClearGo-gold/20 rounded-lg p-3 mt-2">
+              <p className="text-ClearGo-gold text-sm font-medium mb-1">
                 ✨ Avec le SIRET, vous débloquez :
               </p>
               <ul className="text-gray-400 text-xs space-y-1">
@@ -258,7 +258,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
       {/* Section Profil */}
       <div className="space-y-4">
-        <div className="flex items-center gap-2 text-vyxo-gold mb-4">
+        <div className="flex items-center gap-2 text-ClearGo-gold mb-4">
           <User className="w-5 h-5" />
           <h3 className="font-semibold">Votre profil</h3>
         </div>
@@ -318,7 +318,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
       {/* Section Normes */}
       <div className="space-y-4">
-        <div className="flex items-center gap-2 text-vyxo-gold mb-4">
+        <div className="flex items-center gap-2 text-ClearGo-gold mb-4">
           <CheckCircle2 className="w-5 h-5" />
           <h3 className="font-semibold">Normes & Certifications visées</h3>
         </div>
@@ -334,7 +334,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
               onClick={() => toggleCertification(cert.value)}
               className={`p-4 rounded-xl border transition-all text-left ${
                 selectedCertifications.includes(cert.value)
-                  ? "bg-vyxo-gold/20 border-vyxo-gold text-white"
+                  ? "bg-ClearGo-gold/20 border-ClearGo-gold text-white"
                   : "bg-white/5 border-white/10 text-gray-400 hover:border-white/30"
               }`}
             >
@@ -360,7 +360,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
       {/* Section Contact */}
       <div className="space-y-4">
-        <div className="flex items-center gap-2 text-vyxo-gold mb-4">
+        <div className="flex items-center gap-2 text-ClearGo-gold mb-4">
           <Mail className="w-5 h-5" />
           <h3 className="font-semibold">Vos coordonnées</h3>
         </div>
@@ -405,7 +405,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
 
       {/* LP-V2-04: Section Qualification du projet */}
       <div className="space-y-4 pt-4 border-t border-white/10">
-        <div className="flex items-center gap-2 text-vyxo-gold mb-4">
+        <div className="flex items-center gap-2 text-ClearGo-gold mb-4">
           <span className="text-xl">🎯</span>
           <h3 className="font-semibold">Votre projet de conformité</h3>
         </div>
@@ -423,7 +423,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
                 onClick={() => setValue("project_maturity", opt.value as EvaluationFormData["project_maturity"])}
                 className={`flex items-center gap-3 p-3 rounded-lg border transition-all text-left ${
                   watch("project_maturity") === opt.value
-                    ? "border-vyxo-gold bg-vyxo-gold/10 text-white"
+                    ? "border-ClearGo-gold bg-ClearGo-gold/10 text-white"
                     : "border-white/10 hover:border-white/30 text-gray-300"
                 }`}
               >
@@ -461,7 +461,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
                 onClick={() => setValue("accompaniment_type", opt.value as EvaluationFormData["accompaniment_type"])}
                 className={`flex flex-col items-start p-3 rounded-lg border transition-all text-left ${
                   watch("accompaniment_type") === opt.value
-                    ? "border-vyxo-gold bg-vyxo-gold/10 text-white"
+                    ? "border-ClearGo-gold bg-ClearGo-gold/10 text-white"
                     : "border-white/10 hover:border-white/30 text-gray-300"
                 }`}
               >
@@ -477,7 +477,7 @@ export function EvaluationForm({ selectedRole, onSubmit }: EvaluationFormProps) 
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full h-14 bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold text-lg"
+        className="w-full h-14 bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold text-lg"
       >
         {isSubmitting ? (
           <>

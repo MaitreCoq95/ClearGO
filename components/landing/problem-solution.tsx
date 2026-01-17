@@ -46,16 +46,16 @@ export function ProblemSolution() {
           </Card>
 
           {/* APRES / SOLUTION */}
-          <Card className="border-vyxo-gold/30 bg-vyxo-gold/5 dark:bg-yellow-900/10 relative overflow-hidden">
-            <div className="absolute top-0 right-0 px-3 py-1 bg-vyxo-gold text-vyxo-navy text-xs font-bold rounded-bl-lg">
-              VYXO CODEX
+          <Card className="border-ClearGo-gold/30 bg-ClearGo-gold/5 dark:bg-yellow-900/10 relative overflow-hidden">
+            <div className="absolute top-0 right-0 px-3 py-1 bg-ClearGo-gold text-ClearGo-navy text-xs font-bold rounded-bl-lg">
+              ClearGo
             </div>
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-vyxo-gold flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-ClearGo-gold flex items-center justify-center">
                   <Check className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-vyxo-gold">L'Excellence Opérationnelle</h3>
+                <h3 className="text-xl font-bold text-ClearGo-gold">L'Excellence Opérationnelle</h3>
               </div>
               
               <ul className="space-y-4">
@@ -67,7 +67,7 @@ export function ProblemSolution() {
                   "Automatisation des relances et certifications"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-vyxo-gold mt-0.5 shrink-0" />
+                    <Check className="w-5 h-5 text-ClearGo-gold mt-0.5 shrink-0" />
                     <span className="font-medium">{item}</span>
                   </li>
                 ))}

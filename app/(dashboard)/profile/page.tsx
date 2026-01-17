@@ -54,7 +54,7 @@ const certificates = [
     certificationLevel: "Fondamentaux",
     issuedDate: new Date("2024-06-15"), 
     expiryDate: new Date("2026-06-15"),
-    issuerName: "Vyxo Academy", 
+    issuerName: "ClearGo Academy", 
     score: 92,
     skills: ["Documentation", "Qualité", "Traçabilité"],
     certificateNumber: "CERT-GDP-2024-001"
@@ -65,7 +65,7 @@ const certificates = [
     certificationName: "Sécurité au Travail", 
     issuedDate: new Date("2024-04-20"), 
     expiryDate: new Date("2025-04-20"),
-    issuerName: "Vyxo Academy", 
+    issuerName: "ClearGo Academy", 
     score: 88,
     skills: ["EPI", "Gestes et postures"],
     certificateNumber: "CERT-SEC-2024-015"
@@ -76,7 +76,7 @@ const certificates = [
     certificationName: "ISO 9001 Sensibilisation", 
     issuedDate: new Date("2023-12-01"), 
     expiryDate: new Date("2024-12-01"),
-    issuerName: "Vyxo Academy", 
+    issuerName: "ClearGo Academy", 
     score: 85,
     skills: ["Système qualité", "Audit"],
     certificateNumber: "CERT-ISO-2023-089"
@@ -92,7 +92,7 @@ export default function GamificationPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold flex items-center gap-2">
-            <Trophy className="w-8 h-8 text-vyxo-gold" />
+            <Trophy className="w-8 h-8 text-ClearGo-gold" />
             Mon Profil
           </h1>
           <p className="text-muted-foreground">
@@ -152,7 +152,7 @@ export default function GamificationPage() {
               </CardHeader>
               <CardContent className="grid grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-slate-800/50 text-center">
-                  <p className="text-3xl font-bold text-vyxo-gold">{userProfile.totalXP.toLocaleString()}</p>
+                  <p className="text-3xl font-bold text-ClearGo-gold">{userProfile.totalXP.toLocaleString()}</p>
                   <p className="text-sm text-muted-foreground">XP Total</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800/50 text-center">
@@ -214,3 +214,4 @@ export default function GamificationPage() {
     </div>
   )
 }
+

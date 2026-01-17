@@ -5,7 +5,7 @@ import { webhookService } from "@/lib/services/integrations"
 const mockSubscriptions = [
   {
     id: "wh_001",
-    url: "https://example.com/webhooks/vyxo",
+    url: "https://example.com/webhooks/ClearGo",
     events: ["assessment.completed", "certification.obtained"],
     active: true,
     createdAt: "2024-12-01T10:00:00Z",
@@ -89,3 +89,4 @@ export async function DELETE(request: Request) {
     )
   }
 }
+

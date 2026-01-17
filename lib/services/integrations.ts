@@ -183,14 +183,14 @@ export class SlackIntegration {
   
   async handleSlashCommand(command: string, args: string[], userId: string): Promise<string> {
     switch (command) {
-      case "/vyxo-status":
-        return `📊 *Votre statut VYXO*\n• Niveau: 12\n• XP: 2,450\n• Streak: 7 jours`
-      case "/vyxo-team":
+      case "/ClearGo-status":
+        return `📊 *Votre statut ClearGo*\n• Niveau: 12\n• XP: 2,450\n• Streak: 7 jours`
+      case "/ClearGo-team":
         return `👥 *Équipe Qualité*\n• 8 membres actifs\n• Score moyen: 78%\n• 2 alertes en cours`
-      case "/vyxo-alerts":
+      case "/ClearGo-alerts":
         return `⚠️ *Alertes actives*\n• Marie D. - Inactivité 5 jours\n• Module GDP expire dans 30j`
       default:
-        return `Commande non reconnue. Essayez: /vyxo-status, /vyxo-team, /vyxo-alerts`
+        return `Commande non reconnue. Essayez: /ClearGo-status, /ClearGo-team, /ClearGo-alerts`
     }
   }
   
@@ -283,12 +283,12 @@ export class EmailService {
   async sendWelcomeEmail(user: { email: string; name: string }) {
     return this.sendEmail(
       user.email,
-      "Bienvenue sur VYXO Codex! 🎉",
+      "Bienvenue sur ClearGo! 🎉",
       `
         <h1>Bienvenue ${user.name}!</h1>
-        <p>Votre compte VYXO Codex est prêt.</p>
+        <p>Votre compte ClearGo est prêt.</p>
         <p>Commencez votre parcours vers la certification GDP dès maintenant.</p>
-        <a href="https://codex.vyxo.fr/learning" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
+        <a href="https://codex.cleargo.fr/learning" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
           Commencer mon parcours
         </a>
       `
@@ -308,7 +308,7 @@ export class EmailService {
           ? "<p style='color:green'>Félicitations! Vous avez réussi l'assessment.</p>"
           : "<p>Consultez vos recommandations pour améliorer votre score.</p>"
         }
-        <a href="https://codex.vyxo.fr/assessments" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
+        <a href="https://codex.cleargo.fr/assessments" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
           Voir mes résultats
         </a>
       `
@@ -323,7 +323,7 @@ export class EmailService {
         <h1>Félicitations ${user.name}!</h1>
         <p>Vous avez obtenu la certification <strong>${certName}</strong>.</p>
         <p>Numéro de certificat: ${certNumber}</p>
-        <a href="https://codex.vyxo.fr/learning/certifications" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
+        <a href="https://codex.cleargo.fr/learning/certifications" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
           Télécharger mon certificat
         </a>
       `
@@ -336,9 +336,9 @@ export class EmailService {
       `Vous nous manquez! 😢`,
       `
         <h1>Bonjour ${user.name},</h1>
-        <p>Cela fait ${daysSinceActivity} jours que vous ne vous êtes pas connecté à VYXO Codex.</p>
+        <p>Cela fait ${daysSinceActivity} jours que vous ne vous êtes pas connecté à ClearGo.</p>
         <p>Votre streak vous attend! Reprenez votre progression dès maintenant.</p>
-        <a href="https://codex.vyxo.fr/learning" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
+        <a href="https://codex.cleargo.fr/learning" style="background:#DAA520;color:#1A2744;padding:12px 24px;text-decoration:none;border-radius:8px;">
           Reprendre ma formation
         </a>
       `
@@ -366,5 +366,5 @@ export const webhookService = new WebhookService()
 
 export const emailService = new EmailService({
   apiKey: process.env.RESEND_API_KEY || "",
-  fromEmail: "noreply@codex.vyxo.fr",
+  fromEmail: "noreply@codex.cleargo.fr",
 })

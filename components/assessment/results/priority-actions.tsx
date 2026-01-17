@@ -81,7 +81,7 @@ export function PriorityActions({ actions }: PriorityActionsProps) {
       {otherActions.length > 0 && (
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <Target className="w-5 h-5 text-vyxo-gold" />
+            <Target className="w-5 h-5 text-ClearGo-gold" />
             <h4 className="font-medium">Actions structurantes</h4>
           </div>
 
@@ -91,8 +91,8 @@ export function PriorityActions({ actions }: PriorityActionsProps) {
                 key={action.rank}
                 className="flex items-start gap-4 p-4 rounded-lg bg-slate-800/50 border border-slate-700"
               >
-                <div className="w-8 h-8 rounded-full bg-vyxo-gold/20 flex items-center justify-center shrink-0">
-                  <span className="text-vyxo-gold font-bold text-sm">{action.rank}</span>
+                <div className="w-8 h-8 rounded-full bg-ClearGo-gold/20 flex items-center justify-center shrink-0">
+                  <span className="text-ClearGo-gold font-bold text-sm">{action.rank}</span>
                 </div>
                 
                 <div className="flex-1 min-w-0">
@@ -121,7 +121,7 @@ export function PriorityActions({ actions }: PriorityActionsProps) {
         </div>
         <div className="grid grid-cols-3 gap-4 text-center">
           <div>
-            <p className="text-2xl font-bold text-vyxo-gold">{quickWins.length}</p>
+            <p className="text-2xl font-bold text-ClearGo-gold">{quickWins.length}</p>
             <p className="text-xs text-slate-500">Quick Wins</p>
             <p className="text-xs text-slate-400 mt-1">Semaine 1</p>
           </div>

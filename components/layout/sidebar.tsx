@@ -32,7 +32,7 @@ export function Sidebar({ className }: SidebarProps) {
       label: "Dashboard",
       icon: LayoutDashboard,
       href: "/dashboard",
-      color: "text-vyxo-gold",
+      color: "text-ClearGo-gold",
     },
     {
       label: "CODEX",
@@ -79,21 +79,21 @@ export function Sidebar({ className }: SidebarProps) {
   ]
 
   return (
-    <div className={cn("pb-12 min-h-screen bg-vyxo-navy", className)}>
+    <div className={cn("pb-12 min-h-screen bg-ClearGo-navy", className)}>
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <Link href="/dashboard" className="flex items-center pl-3 mb-14">
             <div className="relative w-10 h-10 mr-3">
               <Image 
-                src="/vyxo-logo.png" 
-                alt="Vyxo Logo" 
+                src="/ClearGo-logo.png" 
+                alt="ClearGo Logo" 
                 width={40} 
                 height={40}
                 className="object-contain"
               />
             </div>
             <h1 className="text-xl font-bold text-white tracking-wide">
-              Vyxo <span className="text-vyxo-gold">CODEX</span>
+              ClearGo <span className="text-ClearGo-gold">CODEX</span>
             </h1>
           </Link>
           <div className="space-y-1">
@@ -104,7 +104,7 @@ export function Sidebar({ className }: SidebarProps) {
                 className={cn(
                   "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition",
                   pathname === route.href 
-                    ? "text-white bg-white/10 border-r-4 border-vyxo-gold" 
+                    ? "text-white bg-white/10 border-r-4 border-ClearGo-gold" 
                     : "text-zinc-400"
                 )}
               >
@@ -147,7 +147,7 @@ export function MobileSidebar() {
                     <Menu />
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="p-0 bg-vyxo-navy border-r-vyxo-gold/20 w-72 text-white">
+            <SheetContent side="left" className="p-0 bg-ClearGo-navy border-r-ClearGo-gold/20 w-72 text-white">
                 <Sidebar />
             </SheetContent>
         </Sheet>

@@ -214,7 +214,7 @@ export default function TeamMembersPage() {
             {members.length} membres • {members.filter(m => m.status === "active").length} actifs
           </p>
         </div>
-        <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+        <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
           <Plus className="w-4 h-4 mr-2" />
           Inviter un membre
         </Button>
@@ -277,13 +277,13 @@ export default function TeamMembersPage() {
       {/* Members Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredMembers.map(member => (
-          <Card key={member.id} className="bento-card hover:border-vyxo-gold/50 transition-colors">
+          <Card key={member.id} className="bento-card hover:border-ClearGo-gold/50 transition-colors">
             <CardContent className="p-6">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
                   <Avatar className="w-12 h-12">
                     <AvatarImage src={member.avatar} />
-                    <AvatarFallback className="bg-vyxo-navy text-white">
+                    <AvatarFallback className="bg-ClearGo-navy text-white">
                       {member.name.split(" ").map(n => n[0]).join("")}
                     </AvatarFallback>
                   </Avatar>
@@ -385,3 +385,4 @@ export default function TeamMembersPage() {
     </div>
   )
 }
+

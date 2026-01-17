@@ -51,9 +51,9 @@ function getStatusIcon(status: string) {
     case "completed":
       return <CheckCircle2 className="w-5 h-5 text-emerald-500" />
     case "in_progress":
-      return <Play className="w-5 h-5 text-vyxo-gold" />
+      return <Play className="w-5 h-5 text-ClearGo-gold" />
     case "available":
-      return <div className="w-5 h-5 rounded-full border-2 border-vyxo-gold" />
+      return <div className="w-5 h-5 rounded-full border-2 border-ClearGo-gold" />
     default:
       return <Lock className="w-5 h-5 text-muted-foreground" />
   }
@@ -62,7 +62,7 @@ function getStatusIcon(status: string) {
 function getStatusBadge(status: string) {
   const styles: Record<string, string> = {
     completed: "bg-emerald-500/10 text-emerald-500",
-    in_progress: "bg-vyxo-gold/10 text-vyxo-gold",
+    in_progress: "bg-ClearGo-gold/10 text-ClearGo-gold",
     available: "bg-blue-500/10 text-blue-500",
     locked: "bg-gray-500/10 text-gray-500",
   }
@@ -92,11 +92,11 @@ export default function LearningPathPage() {
       </div>
 
       {/* Progress Overview */}
-      <Card className="bento-card bg-gradient-to-r from-vyxo-navy to-vyxo-navy/80 text-white">
+      <Card className="bento-card bg-gradient-to-r from-ClearGo-navy to-ClearGo-navy/80 text-white">
         <CardContent className="p-6">
           <div className="grid md:grid-cols-4 gap-6">
             <div className="md:col-span-2">
-              <Badge className="bg-vyxo-gold text-vyxo-navy mb-2">{learningPath.certification}</Badge>
+              <Badge className="bg-ClearGo-gold text-ClearGo-navy mb-2">{learningPath.certification}</Badge>
               <h2 className="text-2xl font-bold mb-4">{learningPath.goal}</h2>
               <div className="flex items-center gap-2 mb-2">
                 <Progress value={learningPath.progress.overallProgress} className="h-3 flex-1" />
@@ -176,7 +176,7 @@ export default function LearningPathPage() {
                   {/* Timeline dot */}
                   <div className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${
                     module.status === "completed" ? "bg-emerald-500/10" :
-                    module.status === "in_progress" ? "bg-vyxo-gold/10 ring-2 ring-vyxo-gold" :
+                    module.status === "in_progress" ? "bg-ClearGo-gold/10 ring-2 ring-ClearGo-gold" :
                     module.status === "available" ? "bg-blue-500/10" :
                     "bg-secondary"
                   }`}>
@@ -185,9 +185,9 @@ export default function LearningPathPage() {
                   
                   {/* Module card */}
                   <div className={`flex-1 p-4 rounded-xl border transition-colors ${
-                    module.status === "in_progress" ? "border-vyxo-gold bg-vyxo-gold/5" :
+                    module.status === "in_progress" ? "border-ClearGo-gold bg-ClearGo-gold/5" :
                     module.status === "locked" ? "opacity-50" :
-                    "hover:border-vyxo-gold/50"
+                    "hover:border-ClearGo-gold/50"
                   }`}>
                     <div className="flex items-start justify-between gap-4">
                       <div>
@@ -208,7 +208,7 @@ export default function LearningPathPage() {
                           <Button 
                             size="sm"
                             variant={module.status === "in_progress" ? "default" : "outline"}
-                            className={module.status === "in_progress" ? "bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy" : ""}
+                            className={module.status === "in_progress" ? "bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy" : ""}
                           >
                             {module.status === "completed" ? "Revoir" :
                              module.status === "in_progress" ? "Continuer" : "Commencer"}
@@ -226,3 +226,4 @@ export default function LearningPathPage() {
     </div>
   )
 }
+

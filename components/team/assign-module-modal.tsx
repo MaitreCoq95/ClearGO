@@ -141,7 +141,7 @@ export function AssignModuleModal({
       <DialogContent className="max-w-2xl max-h-[85vh] overflow-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <BookOpen className="w-5 h-5 text-vyxo-gold" />
+            <BookOpen className="w-5 h-5 text-ClearGo-gold" />
             Assigner un module
           </DialogTitle>
           <DialogDescription>
@@ -158,7 +158,7 @@ export function AssignModuleModal({
               <div
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
                   step === s
-                    ? "bg-vyxo-gold text-vyxo-navy"
+                    ? "bg-ClearGo-gold text-ClearGo-navy"
                     : ["module", "members", "options"].indexOf(step) > i
                     ? "bg-emerald-500 text-white"
                     : "bg-slate-700 text-slate-400"
@@ -199,7 +199,7 @@ export function AssignModuleModal({
                   onClick={() => setSelectedModule(module.id)}
                   className={`p-4 rounded-lg border cursor-pointer transition-colors ${
                     selectedModule === module.id
-                      ? "border-vyxo-gold bg-vyxo-gold/10"
+                      ? "border-ClearGo-gold bg-ClearGo-gold/10"
                       : "border-slate-700 hover:border-slate-500"
                   }`}
                 >
@@ -220,8 +220,8 @@ export function AssignModuleModal({
                       )}
                     </div>
                     {selectedModule === module.id && (
-                      <div className="w-5 h-5 rounded-full bg-vyxo-gold flex items-center justify-center">
-                        <span className="text-vyxo-navy text-xs">✓</span>
+                      <div className="w-5 h-5 rounded-full bg-ClearGo-gold flex items-center justify-center">
+                        <span className="text-ClearGo-navy text-xs">✓</span>
                       </div>
                     )}
                   </div>
@@ -270,7 +270,7 @@ export function AssignModuleModal({
                   onClick={() => toggleMember(member.id)}
                   className={`flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition-colors ${
                     selectedMembers.includes(member.id)
-                      ? "border-vyxo-gold bg-vyxo-gold/10"
+                      ? "border-ClearGo-gold bg-ClearGo-gold/10"
                       : "border-slate-700 hover:border-slate-500"
                   }`}
                 >
@@ -280,7 +280,7 @@ export function AssignModuleModal({
                   />
                   <Avatar className="w-8 h-8">
                     <AvatarImage src={member.avatar} />
-                    <AvatarFallback className="bg-vyxo-navy text-white text-xs">
+                    <AvatarFallback className="bg-ClearGo-navy text-white text-xs">
                       {member.name.split(" ").map(n => n[0]).join("")}
                     </AvatarFallback>
                   </Avatar>
@@ -302,7 +302,7 @@ export function AssignModuleModal({
               <h4 className="text-sm font-medium text-slate-400 mb-2">Récapitulatif</h4>
               {selectedModuleData && (
                 <div className="flex items-center gap-2 mb-2">
-                  <BookOpen className="w-4 h-4 text-vyxo-gold" />
+                  <BookOpen className="w-4 h-4 text-ClearGo-gold" />
                   <span className="font-medium">{selectedModuleData.title}</span>
                 </div>
               )}
@@ -395,7 +395,7 @@ export function AssignModuleModal({
                 setStep(step === "module" ? "members" : "options")
               }}
               disabled={step === "module" ? !selectedModule : selectedMembers.length === 0}
-              className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+              className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
             >
               Continuer
             </Button>
@@ -403,7 +403,7 @@ export function AssignModuleModal({
             <Button
               onClick={handleAssign}
               disabled={isSubmitting}
-              className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+              className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
             >
               {isSubmitting ? "Assignation..." : "Assigner le module"}
             </Button>

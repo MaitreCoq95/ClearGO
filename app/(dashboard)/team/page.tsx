@@ -206,7 +206,7 @@ export default function TeamDashboardPage() {
               Assignments
             </Button>
           </Link>
-          <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+          <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
             <Plus className="w-4 h-4 mr-2" />
             Assigner module
           </Button>
@@ -232,8 +232,8 @@ export default function TeamDashboardPage() {
         <Card className="bento-card">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-vyxo-gold/10 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-vyxo-gold" />
+              <div className="w-12 h-12 rounded-xl bg-ClearGo-gold/10 flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-ClearGo-gold" />
               </div>
               <div>
                 <div className="flex items-baseline gap-2">
@@ -301,11 +301,11 @@ export default function TeamDashboardPage() {
                   href={`/team/members/${member.id}`}
                   className="block"
                 >
-                  <div className="flex items-center justify-between p-4 rounded-xl border hover:border-vyxo-gold/50 hover:bg-secondary/50 transition-all cursor-pointer">
+                  <div className="flex items-center justify-between p-4 rounded-xl border hover:border-ClearGo-gold/50 hover:bg-secondary/50 transition-all cursor-pointer">
                     <div className="flex items-center gap-4">
                       <Avatar className="w-10 h-10">
                         <AvatarImage src={member.avatar} />
-                        <AvatarFallback className="bg-vyxo-navy text-white">
+                        <AvatarFallback className="bg-ClearGo-navy text-white">
                           {member.name.split(" ").map(n => n[0]).join("")}
                         </AvatarFallback>
                       </Avatar>
@@ -454,3 +454,4 @@ export default function TeamDashboardPage() {
     </div>
   )
 }
+

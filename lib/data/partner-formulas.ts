@@ -1,4 +1,4 @@
-// Données des formules de partenariat Vyxo
+// Données des formules de partenariat ClearGo
 
 export interface PartnerFormula {
   id: string
@@ -52,7 +52,7 @@ export const partnerFormulas: PartnerFormula[] = [
     ],
     limits: [
       "Pas de white-label",
-      "Billing géré par Vyxo",
+      "Billing géré par ClearGo",
       "Support standard (48h)"
     ],
     idealFor: [
@@ -89,7 +89,7 @@ export const partnerFormulas: PartnerFormula[] = [
     ],
     limits: [
       "10 clients max",
-      "Billing partagé (Vyxo facture)"
+      "Billing partagé (ClearGo facture)"
     ],
     idealFor: [
       "Consultant avec 3-10 clients",
@@ -121,7 +121,7 @@ export const partnerFormulas: PartnerFormula[] = [
       { name: "White-label complet (ta marque)", included: true, highlight: true },
       { name: "Tu gères 100% du billing", included: true },
       { name: "Roadmap produit prioritaire", included: true },
-      { name: "Co-marketing Vyxo", included: true }
+      { name: "Co-marketing ClearGo", included: true }
     ],
     limits: [
       "Engagement 12 mois",
@@ -143,7 +143,7 @@ export const formulaComparisonTable = [
   { criteria: "Clients max", revshare: "5", pro: "10", allin: "Illimité" },
   { criteria: "Commission", revshare: "30% MRR", pro: "100-200€/client", allin: "Total MRR" },
   { criteria: "White-label", revshare: "❌", pro: "Co-branding", allin: "✅ Complet" },
-  { criteria: "Billing", revshare: "Vyxo", pro: "Partagé", allin: "Toi" },
+  { criteria: "Billing", revshare: "ClearGo", pro: "Partagé", allin: "Toi" },
   { criteria: "Support", revshare: "Standard", pro: "Prioritaire", allin: "Premium" },
   { criteria: "Engagement", revshare: "Aucun", pro: "Aucun", allin: "12 mois" }
 ]

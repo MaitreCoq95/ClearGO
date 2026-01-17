@@ -62,7 +62,7 @@ export function PartnerHeroSection({ variant = "A", onScrollToForm, onBookDemo }
             <div className="inline-flex items-center gap-2 bg-partner-accent/10 border border-partner-accent/30 rounded-full px-4 py-2 mb-6">
               <TrendingUp className="w-4 h-4 text-partner-accent" />
               <span className="text-partner-accent text-sm font-medium">
-                Programme Partenaires Vyxo 2025
+                Programme Partenaires ClearGo 2025
               </span>
             </div>
 
@@ -73,7 +73,7 @@ export function PartnerHeroSection({ variant = "A", onScrollToForm, onBookDemo }
 
             {/* Sub-headline */}
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              Vyxo Codex est la seule plateforme SaaS conçue <strong className="text-white">PAR des consultants QHSE</strong>{" "}
+              ClearGo est la seule plateforme SaaS conçue <strong className="text-white">PAR des consultants QHSE</strong>{" "}
               <strong className="text-white">POUR des consultants QHSE</strong>. 
               Utilisez-la pour vos missions, augmentez votre panier moyen de <span className="text-partner-accent font-bold">50%</span>, 
               et générez du <span className="text-partner-accent font-bold">MRR à vie</span>.
@@ -123,7 +123,7 @@ export function PartnerHeroSection({ variant = "A", onScrollToForm, onBookDemo }
                 {/* Before */}
                 <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-red-400 text-sm font-medium">SANS VYXO</span>
+                    <span className="text-red-400 text-sm font-medium">SANS ClearGo</span>
                     <span className="text-red-400 text-xs">Aujourd&apos;hui</span>
                   </div>
                   <div className="space-y-2">
@@ -149,7 +149,7 @@ export function PartnerHeroSection({ variant = "A", onScrollToForm, onBookDemo }
                 {/* After */}
                 <div className="bg-partner-accent/10 border border-partner-accent/30 rounded-xl p-5">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-partner-accent text-sm font-medium">AVEC VYXO</span>
+                    <span className="text-partner-accent text-sm font-medium">AVEC ClearGo</span>
                     <span className="text-partner-accent text-xs">Partenaire</span>
                   </div>
                   <div className="space-y-2">

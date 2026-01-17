@@ -45,21 +45,21 @@ const formulas = [
       { name: "Formation offerte (1h)", included: true, highlight: true }
     ],
     cta: "Nous contacter",
-    ctaStyle: "bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+    ctaStyle: "bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
   }
 ]
 
 export function PricingSection() {
   return (
-    <section id="pricing-section" className="py-20 bg-vyxo-navy">
+    <section id="pricing-section" className="py-20 bg-ClearGo-navy">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-vyxo-gold text-sm font-semibold tracking-wider uppercase mb-4 block">
+          <span className="text-ClearGo-gold text-sm font-semibold tracking-wider uppercase mb-4 block">
             Formules & Accompagnement
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Choisissez le niveau d&apos;accompagnement <span className="text-vyxo-gold">adapté à votre projet</span>
+            Choisissez le niveau d&apos;accompagnement <span className="text-ClearGo-gold">adapté à votre projet</span>
           </h2>
           <p className="text-lg text-gray-400">
             Toutes nos formules incluent la plateforme SaaS et la formation. 
@@ -74,14 +74,14 @@ export function PricingSection() {
               key={formula.id}
               className={`relative rounded-2xl p-6 transition-all duration-300 ${
                 formula.recommended
-                  ? "bg-gradient-to-b from-vyxo-gold/20 to-transparent border-2 border-vyxo-gold scale-105 shadow-lg shadow-vyxo-gold/10"
+                  ? "bg-gradient-to-b from-ClearGo-gold/20 to-transparent border-2 border-ClearGo-gold scale-105 shadow-lg shadow-ClearGo-gold/10"
                   : "bg-white/5 border border-white/10 hover:border-white/30"
               }`}
             >
               {/* Recommended badge */}
               {formula.recommended && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-vyxo-gold text-vyxo-navy text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
+                  <span className="bg-ClearGo-gold text-ClearGo-navy text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
                     <Star className="w-3 h-3" />
                     RECOMMANDÉ
                   </span>
@@ -90,7 +90,7 @@ export function PricingSection() {
 
               {/* Header */}
               <div className="text-center mb-6">
-                <h3 className={`text-xl font-bold mb-1 ${formula.recommended ? "text-vyxo-gold" : "text-white"}`}>
+                <h3 className={`text-xl font-bold mb-1 ${formula.recommended ? "text-ClearGo-gold" : "text-white"}`}>
                   {formula.name}
                 </h3>
                 <p className="text-sm text-gray-400">{formula.subtitle}</p>
@@ -114,11 +114,11 @@ export function PricingSection() {
                     }`}
                   >
                     {feature.included ? (
-                      <Check className={`w-4 h-4 flex-shrink-0 ${feature.highlight ? "text-vyxo-gold" : "text-green-400"}`} />
+                      <Check className={`w-4 h-4 flex-shrink-0 ${feature.highlight ? "text-ClearGo-gold" : "text-green-400"}`} />
                     ) : (
                       <X className="w-4 h-4 text-gray-600 flex-shrink-0" />
                     )}
-                    <span className={feature.highlight ? "text-vyxo-gold font-medium" : ""}>
+                    <span className={feature.highlight ? "text-ClearGo-gold font-medium" : ""}>
                       {feature.name}
                     </span>
                   </li>

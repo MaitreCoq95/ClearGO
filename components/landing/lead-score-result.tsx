@@ -27,7 +27,7 @@ export function LeadScoreResult({ qualifiedLead }: LeadScoreResultProps) {
   return (
     <div className="space-y-6 animate-slide-in-up">
       {/* Header avec score principal */}
-      <div className="bg-gradient-to-r from-vyxo-gold/20 to-transparent border border-vyxo-gold/30 rounded-2xl p-6">
+      <div className="bg-gradient-to-r from-ClearGo-gold/20 to-transparent border border-ClearGo-gold/30 rounded-2xl p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
             <p className="text-gray-400 text-sm">Score de qualification</p>
@@ -41,7 +41,7 @@ export function LeadScoreResult({ qualifiedLead }: LeadScoreResultProps) {
           <div className="text-right">
             <span className="text-2xl">{leadScore.badge.split(" ")[0]}</span>
             <p className="text-white font-medium">{leadScore.badge.split(" ").slice(1).join(" ")}</p>
-            <p className="text-vyxo-gold text-sm flex items-center justify-end gap-1">
+            <p className="text-ClearGo-gold text-sm flex items-center justify-end gap-1">
               <Clock className="w-4 h-4" />
               Contact sous {leadScore.priority}
             </p>
@@ -62,7 +62,7 @@ export function LeadScoreResult({ qualifiedLead }: LeadScoreResultProps) {
         {/* Score de maturité */}
         <div className="bg-white/5 border border-white/10 rounded-xl p-4">
           <div className="flex items-center gap-2 mb-3">
-            <TrendingUp className="w-5 h-5 text-vyxo-gold" />
+            <TrendingUp className="w-5 h-5 text-ClearGo-gold" />
             <h4 className="text-white font-medium">Maturité Organisationnelle</h4>
           </div>
           <div className="flex items-baseline gap-2 mb-2">
@@ -83,7 +83,7 @@ export function LeadScoreResult({ qualifiedLead }: LeadScoreResultProps) {
         {/* Détail du scoring */}
         <div className="bg-white/5 border border-white/10 rounded-xl p-4">
           <div className="flex items-center gap-2 mb-3">
-            <Target className="w-5 h-5 text-vyxo-gold" />
+            <Target className="w-5 h-5 text-ClearGo-gold" />
             <h4 className="text-white font-medium">Détail du score</h4>
           </div>
           <div className="space-y-2 text-sm">
@@ -117,7 +117,7 @@ export function LeadScoreResult({ qualifiedLead }: LeadScoreResultProps) {
       {insights.messages.length > 0 && (
         <div className="bg-white/5 border border-white/10 rounded-xl p-4">
           <div className="flex items-center gap-2 mb-3">
-            <Building2 className="w-5 h-5 text-vyxo-gold" />
+            <Building2 className="w-5 h-5 text-ClearGo-gold" />
             <h4 className="text-white font-medium">Points d&apos;attention identifiés</h4>
           </div>
           <div className="space-y-2">

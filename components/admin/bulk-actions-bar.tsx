@@ -94,10 +94,10 @@ export function BulkActionsBar({
   return (
     <>
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-        <div className="flex items-center gap-3 px-4 py-3 bg-vyxo-navy border border-slate-700 rounded-xl shadow-xl">
+        <div className="flex items-center gap-3 px-4 py-3 bg-ClearGo-navy border border-slate-700 rounded-xl shadow-xl">
           {/* Selection info */}
           <div className="flex items-center gap-2">
-            <Badge className="bg-vyxo-gold/20 text-vyxo-gold">
+            <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold">
               {selectedCount} sélectionné{selectedCount > 1 ? "s" : ""}
             </Badge>
             <button
@@ -190,7 +190,7 @@ export function BulkActionsBar({
               className={
                 confirmAction?.variant === "destructive"
                   ? "bg-red-600 hover:bg-red-700"
-                  : "bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                  : "bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
               }
             >
               {confirmAction?.label}

@@ -8,7 +8,7 @@ export default function DashboardLayout({
 }) {
   return (
     <div className="h-full relative">
-      <div className="hidden h-full md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 z-[80] bg-vyxo-navy">
+      <div className="hidden h-full md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 z-[80] bg-ClearGo-navy">
         <Sidebar />
       </div>
       <main className="md:pl-72 pb-10">
@@ -20,3 +20,4 @@ export default function DashboardLayout({
     </div>
   )
 }
+

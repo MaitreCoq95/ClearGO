@@ -128,7 +128,7 @@ export function SmartClassificationForm({ onComplete, initialVertical }: SmartCl
           transition={{ duration: 0.3 }}
         >
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-vyxo-navy mb-2">{currentStepData.title}</h2>
+            <h2 className="text-2xl font-bold text-ClearGo-navy mb-2">{currentStepData.title}</h2>
             <p className="text-gray-500">{currentStepData.description}</p>
           </div>
 
@@ -140,9 +140,9 @@ export function SmartClassificationForm({ onComplete, initialVertical }: SmartCl
                 whileTap={{ scale: 0.98 }}
               >
                 <Card 
-                  className={`cursor-pointer hover:border-vyxo-gold hover:shadow-md transition-all h-full ${
+                  className={`cursor-pointer hover:border-ClearGo-gold hover:shadow-md transition-all h-full ${
                     // @ts-ignore
-                    data[currentStepData.key] === option.value ? 'border-2 border-vyxo-gold bg-vyxo-gold/5' : 'border-slate-200'
+                    data[currentStepData.key] === option.value ? 'border-2 border-ClearGo-gold bg-ClearGo-gold/5' : 'border-slate-200'
                   }`}
                   onClick={() => handleSelection(currentStepData.key as keyof ClassificationData, option.value)}
                 >
@@ -150,9 +150,9 @@ export function SmartClassificationForm({ onComplete, initialVertical }: SmartCl
                     {/* @ts-ignore */}
                     {option.icon && (
                       // @ts-ignore
-                      <option.icon className="w-8 h-8 text-vyxo-navy mb-4" />
+                      <option.icon className="w-8 h-8 text-ClearGo-navy mb-4" />
                     )}
-                    <h3 className="font-semibold text-lg text-vyxo-navy mb-1">{option.label}</h3>
+                    <h3 className="font-semibold text-lg text-ClearGo-navy mb-1">{option.label}</h3>
                     {/* @ts-ignore */}
                     {option.description && (
                       // @ts-ignore

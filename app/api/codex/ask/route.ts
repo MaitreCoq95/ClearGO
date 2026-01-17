@@ -202,3 +202,4 @@ function generateAnswerSummary(query: string, searchResults: any): string {
 
   return summary;
 }
+

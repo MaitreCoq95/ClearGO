@@ -66,7 +66,7 @@ export function PersonalizedPath({
     switch (status) {
       case "completed": return <CheckCircle2 className="w-5 h-5 text-emerald-500" />
       case "in_progress": return <Play className="w-5 h-5 text-blue-500" />
-      case "available": return <div className="w-5 h-5 rounded-full border-2 border-vyxo-gold" />
+      case "available": return <div className="w-5 h-5 rounded-full border-2 border-ClearGo-gold" />
       case "locked": return <Lock className="w-5 h-5 text-slate-500" />
     }
   }
@@ -118,7 +118,7 @@ export function PersonalizedPath({
                   {path.estimatedDuration}
                 </Badge>
                 {path.certification && (
-                  <Badge className="bg-vyxo-gold/10 text-vyxo-gold">
+                  <Badge className="bg-ClearGo-gold/10 text-ClearGo-gold">
                     <Award className="w-3 h-3 mr-1" />
                     {path.certification}
                   </Badge>
@@ -130,7 +130,7 @@ export function PersonalizedPath({
           {progress === 0 && onStartPath && (
             <Button 
               onClick={onStartPath}
-              className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+              className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
             >
               <Play className="w-4 h-4 mr-2" />
               Commencer
@@ -154,7 +154,7 @@ export function PersonalizedPath({
         {/* XP Counter */}
         <div className="flex items-center gap-4 mt-4 text-sm">
           <div className="flex items-center gap-1">
-            <Zap className="w-4 h-4 text-vyxo-gold" />
+            <Zap className="w-4 h-4 text-ClearGo-gold" />
             <span className="font-medium">{earnedXP}</span>
             <span className="text-muted-foreground">/ {totalXP} XP</span>
           </div>
@@ -177,7 +177,7 @@ export function PersonalizedPath({
                   onClick={() => isClickable && onModuleClick?.(module)}
                   className={`
                     relative flex items-start gap-4 p-4 rounded-xl border transition-all
-                    ${isClickable ? "cursor-pointer hover:border-vyxo-gold/50" : "opacity-60"}
+                    ${isClickable ? "cursor-pointer hover:border-ClearGo-gold/50" : "opacity-60"}
                     ${module.status === "in_progress" 
                       ? "border-blue-500/50 bg-blue-500/5" 
                       : module.status === "completed"
@@ -187,7 +187,7 @@ export function PersonalizedPath({
                   `}
                 >
                   {/* Status icon */}
-                  <div className="relative z-10 bg-vyxo-navy rounded-full p-1">
+                  <div className="relative z-10 bg-ClearGo-navy rounded-full p-1">
                     {getStatusIcon(module.status)}
                   </div>
 
@@ -232,17 +232,17 @@ export function PersonalizedPath({
 
         {/* Current module CTA */}
         {currentModule && (
-          <div className="mt-6 p-4 rounded-xl bg-vyxo-gold/10 border border-vyxo-gold/30">
+          <div className="mt-6 p-4 rounded-xl bg-ClearGo-gold/10 border border-ClearGo-gold/30">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-vyxo-gold font-medium">
+                <p className="text-sm text-ClearGo-gold font-medium">
                   {currentModule.status === "in_progress" ? "Reprendre" : "Prochaine étape"}
                 </p>
                 <p className="font-medium">{currentModule.title}</p>
               </div>
               <Button 
                 onClick={() => onModuleClick?.(currentModule)}
-                className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
               >
                 <Play className="w-4 h-4 mr-2" />
                 {currentModule.status === "in_progress" ? "Continuer" : "Commencer"}

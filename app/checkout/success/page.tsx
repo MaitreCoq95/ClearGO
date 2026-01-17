@@ -24,7 +24,7 @@ function SuccessContent() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 flex items-center justify-center p-4">
       {showConfetti && <Confetti width={windowSize.width} height={windowSize.height} recycle={false} numberOfPieces={200} />}
 
       <motion.div
@@ -48,10 +48,10 @@ function SuccessContent() {
             <div>
               <h1 className="text-3xl font-bold text-white mb-2 flex items-center justify-center gap-2">
                 Paiement réussi !
-                <PartyPopper className="w-8 h-8 text-vyxo-gold" />
+                <PartyPopper className="w-8 h-8 text-ClearGo-gold" />
               </h1>
               <p className="text-gray-400">
-                Bienvenue dans Vyxo Codex Premium
+                Bienvenue dans ClearGo Premium
               </p>
             </div>
 
@@ -60,15 +60,15 @@ function SuccessContent() {
               <p className="text-white font-medium">Prochaines étapes :</p>
               <ul className="space-y-2 text-sm text-gray-300">
                 <li className="flex gap-2">
-                  <span className="text-vyxo-gold">1.</span>
+                  <span className="text-ClearGo-gold">1.</span>
                   Accédez à votre dashboard personnalisé
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-vyxo-gold">2.</span>
+                  <span className="text-ClearGo-gold">2.</span>
                   Complétez votre diagnostic si pas déjà fait
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-vyxo-gold">3.</span>
+                  <span className="text-ClearGo-gold">3.</span>
                   Utilisez le générateur IA pour vos documents
                 </li>
               </ul>
@@ -77,7 +77,7 @@ function SuccessContent() {
             {/* CTA */}
             <div className="space-y-3 pt-4">
               <Button
-                className="w-full bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90 h-12"
+                className="w-full bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90 h-12"
                 asChild
               >
                 <Link href="/dashboard?standard=ISO_9001">
@@ -99,8 +99,9 @@ function SuccessContent() {
 
 export default function CheckoutSuccessPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-vyxo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" /></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-ClearGo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" /></div>}>
       <SuccessContent />
     </Suspense>
   )
 }
+

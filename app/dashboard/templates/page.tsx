@@ -50,8 +50,8 @@ function CategoryButton({
       onClick={onClick}
       className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-all ${
         isActive
-          ? "bg-vyxo-gold text-vyxo-navy border-vyxo-gold"
-          : "bg-white/5 text-white border-white/20 hover:border-vyxo-gold/50"
+          ? "bg-ClearGo-gold text-ClearGo-navy border-ClearGo-gold"
+          : "bg-white/5 text-white border-white/20 hover:border-ClearGo-gold/50"
       }`}
     >
       {icon}
@@ -91,7 +91,7 @@ function TemplateCard({
       exit={{ opacity: 0, y: -10 }}
       layout
     >
-      <Card className="bg-white/5 backdrop-blur-xl border-white/10 hover:border-vyxo-gold/30 transition-all group h-full">
+      <Card className="bg-white/5 backdrop-blur-xl border-white/10 hover:border-ClearGo-gold/30 transition-all group h-full">
         <CardHeader className="pb-2">
           <div className="flex items-start justify-between">
             <div className="flex items-center gap-2">
@@ -104,7 +104,7 @@ function TemplateCard({
               {FORMAT_ICONS[template.format]} {template.format.toUpperCase()}
             </Badge>
           </div>
-          <CardTitle className="text-white text-lg mt-2 group-hover:text-vyxo-gold transition-colors">
+          <CardTitle className="text-white text-lg mt-2 group-hover:text-ClearGo-gold transition-colors">
             {template.name}
           </CardTitle>
         </CardHeader>
@@ -133,7 +133,7 @@ function TemplateCard({
             <Button
               size="sm"
               onClick={onDownload}
-              className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+              className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
             >
               <Download className="w-4 h-4 mr-1" />
               Télécharger
@@ -212,7 +212,7 @@ function TemplatesContent() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4 py-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -383,8 +383,8 @@ export default function TemplatesPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
         </div>
       }
     >
@@ -392,3 +392,4 @@ export default function TemplatesPage() {
     </Suspense>
   )
 }
+

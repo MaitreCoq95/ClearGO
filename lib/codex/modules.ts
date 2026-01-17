@@ -1,7 +1,7 @@
 import { KnowledgeModule } from "@/types/codex";
 
 /**
- * Liste complète des modules de connaissance Vyxo Codex
+ * Liste complète des modules de connaissance ClearGo
  */
 export const knowledgeModules: KnowledgeModule[] = [
   {

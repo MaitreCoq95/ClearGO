@@ -96,8 +96,8 @@ export default function AchievementsPage() {
         <Card className="bento-card">
           <CardContent className="p-4">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-vyxo-gold to-amber-400 flex items-center justify-center">
-                <span className="text-xl font-bold text-vyxo-navy">{profile.level}</span>
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-ClearGo-gold to-amber-400 flex items-center justify-center">
+                <span className="text-xl font-bold text-ClearGo-navy">{profile.level}</span>
               </div>
               <div className="flex-1">
                 <p className="text-sm text-muted-foreground">Niveau</p>
@@ -110,7 +110,7 @@ export default function AchievementsPage() {
 
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <Zap className="w-6 h-6 mx-auto text-vyxo-gold mb-1" />
+            <Zap className="w-6 h-6 mx-auto text-ClearGo-gold mb-1" />
             <p className="text-2xl font-bold">{profile.xp.toLocaleString()}</p>
             <p className="text-sm text-muted-foreground">XP Total</p>
           </CardContent>
@@ -218,7 +218,7 @@ export default function AchievementsPage() {
                 </div>
                 
                 <div className="text-right shrink-0">
-                  <Badge variant="outline" className="text-vyxo-gold border-vyxo-gold/30">
+                  <Badge variant="outline" className="text-ClearGo-gold border-ClearGo-gold/30">
                     +{ach.xp} XP
                   </Badge>
                 </div>
@@ -230,3 +230,4 @@ export default function AchievementsPage() {
     </div>
   )
 }
+

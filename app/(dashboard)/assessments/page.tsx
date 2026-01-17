@@ -133,7 +133,7 @@ export default function AssessmentsPage() {
         </Card>
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <BarChart3 className="w-6 h-6 mx-auto text-vyxo-gold mb-2" />
+            <BarChart3 className="w-6 h-6 mx-auto text-ClearGo-gold mb-2" />
             <p className="text-2xl font-bold">{stats.avgScore}%</p>
             <p className="text-sm text-muted-foreground">Score moyen</p>
           </CardContent>
@@ -152,7 +152,7 @@ export default function AssessmentsPage() {
         <h2 className="text-xl font-semibold">Tous les assessments</h2>
         
         {assessments.map((assessment) => (
-          <Card key={assessment.id} className="bento-card hover:border-vyxo-gold/50 transition-colors">
+          <Card key={assessment.id} className="bento-card hover:border-ClearGo-gold/50 transition-colors">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="flex-1 min-w-0">
@@ -210,7 +210,7 @@ export default function AssessmentsPage() {
                         ? "bg-yellow-500 hover:bg-yellow-600 text-white" 
                         : assessment.status === "completed"
                           ? "bg-secondary hover:bg-secondary/80"
-                          : "bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                          : "bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
                       }
                     >
                       {assessment.status === "in_progress" ? (
@@ -240,3 +240,4 @@ export default function AssessmentsPage() {
     </div>
   )
 }
+

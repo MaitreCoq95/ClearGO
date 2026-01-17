@@ -29,10 +29,10 @@ const colorMap = {
     title: "text-blue-400"
   },
   opportunity: {
-    bg: "bg-vyxo-gold/10",
-    border: "border-vyxo-gold/30",
-    icon: "text-vyxo-gold",
-    title: "text-vyxo-gold"
+    bg: "bg-ClearGo-gold/10",
+    border: "border-ClearGo-gold/30",
+    icon: "text-ClearGo-gold",
+    title: "text-ClearGo-gold"
   },
   recommendation: {
     bg: "bg-purple-500/10",

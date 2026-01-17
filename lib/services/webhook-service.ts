@@ -117,10 +117,10 @@ function formatForHubSpot(crmPayload: ReturnType<typeof generateCRMPayload>) {
       certifications: lead.organization.certifications?.join(", "),
       company_size: lead.organization.size,
       has_quality_manager: lead.organization.has_quality_manager,
-      vyxo_tags: lead.tags.join(", "),
-      vyxo_priority: lead.scoring.lead_priority,
-      vyxo_insights: lead.insights.join("\n"),
-      vyxo_recommendations: lead.recommendations.join("\n")
+      ClearGo_tags: lead.tags.join(", "),
+      ClearGo_priority: lead.scoring.lead_priority,
+      ClearGo_insights: lead.insights.join("\n"),
+      ClearGo_recommendations: lead.recommendations.join("\n")
     }
   }
 }
@@ -161,7 +161,7 @@ function formatForCustomCRM(crmPayload: ReturnType<typeof generateCRMPayload>) {
   return {
     ...crmPayload,
     metadata: {
-      source: "vyxo-codex-landing",
+      source: "ClearGo-codex-landing",
       timestamp: new Date().toISOString(),
       version: "1.0"
     }

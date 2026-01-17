@@ -63,9 +63,9 @@ const RARITY_CONFIG = {
     glow: "shadow-purple-500/30"
   },
   legendary: { 
-    color: "from-vyxo-gold to-yellow-500", 
-    border: "border-vyxo-gold/50",
-    text: "text-vyxo-gold",
+    color: "from-ClearGo-gold to-yellow-500", 
+    border: "border-ClearGo-gold/50",
+    text: "text-ClearGo-gold",
     label: "Légendaire",
     glow: "shadow-yellow-500/40"
   },
@@ -156,7 +156,7 @@ export function BadgeGrid({
         {unlockedBadges.length > 0 && (
           <div>
             <h3 className="font-semibold mb-4 flex items-center gap-2">
-              <Award className="w-5 h-5 text-vyxo-gold" />
+              <Award className="w-5 h-5 text-ClearGo-gold" />
               Badges obtenus ({unlockedBadges.length})
             </h3>
             <div className={`grid gap-4 ${compact ? "grid-cols-4 md:grid-cols-6" : "grid-cols-3 md:grid-cols-5"}`}>
@@ -259,8 +259,8 @@ export function BadgeUnlockModal({ badge, onClose }: BadgeUnlockModalProps) {
     <Dialog open={!!badge} onOpenChange={onClose}>
       <DialogContent className="max-w-sm text-center">
         <div className="py-6">
-          <Sparkles className="w-8 h-8 mx-auto text-vyxo-gold mb-4 animate-pulse" />
-          <p className="text-sm text-vyxo-gold font-medium mb-6">NOUVEAU BADGE DÉBLOQUÉ !</p>
+          <Sparkles className="w-8 h-8 mx-auto text-ClearGo-gold mb-4 animate-pulse" />
+          <p className="text-sm text-ClearGo-gold font-medium mb-6">NOUVEAU BADGE DÉBLOQUÉ !</p>
           
           <div className={`
             mx-auto w-24 h-24 rounded-2xl bg-gradient-to-br ${rarity.color}
@@ -278,7 +278,7 @@ export function BadgeUnlockModal({ badge, onClose }: BadgeUnlockModalProps) {
 
           <Button 
             onClick={onClose}
-            className="mt-6 bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+            className="mt-6 bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
           >
             Super !
           </Button>

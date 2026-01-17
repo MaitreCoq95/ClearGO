@@ -18,7 +18,7 @@ const certifications = [
   {
     id: "cert-gdp-1",
     name: "GDP Niveau 1",
-    issuer: "VYXO Academy",
+    issuer: "ClearGo Academy",
     certificateNumber: "GDP-2024-003847",
     obtainedAt: "2024-12-15",
     expiresAt: "2025-12-15",
@@ -27,7 +27,7 @@ const certifications = [
     pdfUrl: "/certificates/gdp-level1.pdf",
     badgeUrl: "/badges/gdp-level1.png",
     modules: ["Introduction GDP", "Système Qualité", "Documentation", "Chaîne du Froid"],
-    verificationUrl: "https://verify.vyxo.fr/GDP-2024-003847",
+    verificationUrl: "https://verify.cleargo.fr/GDP-2024-003847",
   },
 ]
 
@@ -83,7 +83,7 @@ export default function CertificationsPage() {
           </p>
         </div>
         <Link href="/assessments">
-          <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+          <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
             <Award className="w-4 h-4 mr-2" />
             Passer une certification
           </Button>
@@ -108,7 +108,7 @@ export default function CertificationsPage() {
         </Card>
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <Award className="w-6 h-6 mx-auto text-vyxo-gold mb-2" />
+            <Award className="w-6 h-6 mx-auto text-ClearGo-gold mb-2" />
             <p className="text-2xl font-bold">{availableCertifications.filter(c => c.progress > 0).length}</p>
             <p className="text-sm text-muted-foreground">En cours</p>
           </CardContent>
@@ -133,13 +133,13 @@ export default function CertificationsPage() {
               {certifications.map((cert) => (
                 <div 
                   key={cert.id}
-                  className="p-6 rounded-xl border bg-gradient-to-r from-vyxo-gold/5 to-transparent border-vyxo-gold/30"
+                  className="p-6 rounded-xl border bg-gradient-to-r from-ClearGo-gold/5 to-transparent border-ClearGo-gold/30"
                 >
                   <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                     <div className="flex items-start gap-4">
                       {/* Certificate Icon */}
-                      <div className="w-16 h-16 rounded-xl bg-vyxo-gold/10 flex items-center justify-center shrink-0">
-                        <Award className="w-8 h-8 text-vyxo-gold" />
+                      <div className="w-16 h-16 rounded-xl bg-ClearGo-gold/10 flex items-center justify-center shrink-0">
+                        <Award className="w-8 h-8 text-ClearGo-gold" />
                       </div>
                       
                       <div>
@@ -239,7 +239,7 @@ export default function CertificationsPage() {
                     </div>
                     <div className="h-2 bg-secondary rounded-full overflow-hidden">
                       <div 
-                        className="h-full bg-vyxo-gold"
+                        className="h-full bg-ClearGo-gold"
                         style={{ width: `${cert.progress}%` }}
                       />
                     </div>
@@ -263,3 +263,4 @@ export default function CertificationsPage() {
     </div>
   )
 }
+

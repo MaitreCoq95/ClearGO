@@ -87,7 +87,7 @@ export default function SecurityPage() {
                 <Button variant="outline" onClick={() => setShowPasswordChange(false)}>
                   Annuler
                 </Button>
-                <Button className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90">
+                <Button className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90">
                   Enregistrer
                 </Button>
               </div>
@@ -140,7 +140,7 @@ export default function SecurityPage() {
                   Annuler
                 </Button>
                 <Button 
-                  className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+                  className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
                   onClick={() => {
                     setMfa({...mfa, enabled: true})
                     setShowMfaSetup(false)
@@ -255,3 +255,4 @@ export default function SecurityPage() {
     </div>
   )
 }
+

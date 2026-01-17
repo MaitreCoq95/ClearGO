@@ -214,14 +214,14 @@ function ResultsContent() {
 
   if (!template || !results) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-        <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+        <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4 py-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
@@ -302,7 +302,7 @@ function ResultsContent() {
             <Card className="bg-white/5 backdrop-blur-xl border-white/10 h-full">
               <CardHeader>
                 <CardTitle className="text-white flex items-center gap-2">
-                  <Target className="w-5 h-5 text-vyxo-gold" />
+                  <Target className="w-5 h-5 text-ClearGo-gold" />
                   Profil de Maturité
                 </CardTitle>
               </CardHeader>
@@ -321,7 +321,7 @@ function ResultsContent() {
             <Card className="bg-white/5 backdrop-blur-xl border-white/10 h-full">
               <CardHeader>
                 <CardTitle className="text-white flex items-center gap-2">
-                  <TrendingUp className="w-5 h-5 text-vyxo-gold" />
+                  <TrendingUp className="w-5 h-5 text-ClearGo-gold" />
                   Scores par Section
                 </CardTitle>
               </CardHeader>
@@ -429,7 +429,7 @@ function ResultsContent() {
           transition={{ delay: 0.7 }}
           className="text-center"
         >
-          <Card className="bg-vyxo-gold/10 border-vyxo-gold/20">
+          <Card className="bg-ClearGo-gold/10 border-ClearGo-gold/20">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-white mb-2">
                 Prêt à améliorer votre score ?
@@ -439,7 +439,7 @@ function ResultsContent() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button 
-                  className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+                  className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
                   onClick={() => router.push('/dashboard/roadmap')}
                 >
                   Voir ma Roadmap
@@ -467,8 +467,8 @@ export default function ResultsPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
         </div>
       }
     >
@@ -476,3 +476,4 @@ export default function ResultsPage() {
     </Suspense>
   )
 }
+

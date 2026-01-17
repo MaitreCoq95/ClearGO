@@ -25,7 +25,7 @@ export function TextQuestion({
         placeholder={placeholder}
         disabled={disabled}
         maxLength={maxLength}
-        className="min-h-[150px] bg-slate-800 border-slate-700 focus:border-vyxo-gold resize-y"
+        className="min-h-[150px] bg-slate-800 border-slate-700 focus:border-ClearGo-gold resize-y"
       />
       <div className="flex justify-between text-xs text-slate-500">
         <span>Réponse libre</span>

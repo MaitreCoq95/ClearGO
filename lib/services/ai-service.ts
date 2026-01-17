@@ -402,8 +402,8 @@ Retourne UNIQUEMENT le JSON.`
   ): Promise<string> {
     const openai = getOpenAIClient()
     
-    const systemPrompt = `Tu es VYXO Assistant, un assistant IA spécialisé en conformité réglementaire, GDP, ISO, et formation professionnelle.
-Tu aides les utilisateurs avec leurs questions sur la plateforme VYXO Codex et les bonnes pratiques de distribution pharmaceutique.
+    const systemPrompt = `Tu es ClearGo Assistant, un assistant IA spécialisé en conformité réglementaire, GDP, ISO, et formation professionnelle.
+Tu aides les utilisateurs avec leurs questions sur la plateforme ClearGo et les bonnes pratiques de distribution pharmaceutique.
 Sois concis, précis et professionnel. Réponds en français.
 ${context ? `\nContexte supplémentaire:\n${context}` : ""}`
 

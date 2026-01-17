@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
           price_data: {
             currency: plan.currency.toLowerCase(),
             product_data: {
-              name: `Vyxo Codex - ${plan.name}`,
+              name: `ClearGo - ${plan.name}`,
               description: plan.description,
               metadata: {
                 standard: standard || "ISO_9001",
@@ -55,3 +55,4 @@ export async function POST(request: NextRequest) {
     )
   }
 }
+

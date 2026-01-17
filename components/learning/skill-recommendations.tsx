@@ -86,7 +86,7 @@ export function SkillRecommendations({
             </div>
             <div>
               <h3 className="font-bold flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-vyxo-gold" />
+                <Sparkles className="w-4 h-4 text-ClearGo-gold" />
                 Recommandations personnalisées
               </h3>
               <p className="text-sm text-muted-foreground">
@@ -130,8 +130,8 @@ export function SkillRecommendations({
         {recommendations.map((rec, index) => (
           <Card 
             key={rec.id}
-            className={`bento-card overflow-hidden transition-all hover:border-vyxo-gold/50 cursor-pointer ${
-              index === 0 ? "ring-2 ring-vyxo-gold/20" : ""
+            className={`bento-card overflow-hidden transition-all hover:border-ClearGo-gold/50 cursor-pointer ${
+              index === 0 ? "ring-2 ring-ClearGo-gold/20" : ""
             }`}
             onClick={() => onRecommendationClick?.(rec)}
           >
@@ -164,9 +164,9 @@ export function SkillRecommendations({
 
                       {/* Reason */}
                       <div className="flex items-start gap-2 p-3 rounded-lg bg-slate-800/50">
-                        <Target className="w-4 h-4 text-vyxo-gold mt-0.5" />
+                        <Target className="w-4 h-4 text-ClearGo-gold mt-0.5" />
                         <p className="text-xs">
-                          <span className="text-vyxo-gold font-medium">Pourquoi : </span>
+                          <span className="text-ClearGo-gold font-medium">Pourquoi : </span>
                           {rec.reason}
                         </p>
                       </div>
@@ -178,8 +178,8 @@ export function SkillRecommendations({
                           {rec.estimatedTime}
                         </span>
                         <span className="text-xs flex items-center gap-1">
-                          <Zap className="w-3 h-3 text-vyxo-gold" />
-                          <span className="text-vyxo-gold font-medium">+{rec.xpReward} XP</span>
+                          <Zap className="w-3 h-3 text-ClearGo-gold" />
+                          <span className="text-ClearGo-gold font-medium">+{rec.xpReward} XP</span>
                         </span>
                         {rec.competency && (
                           <Badge variant="outline" className="text-xs">
@@ -191,7 +191,7 @@ export function SkillRecommendations({
 
                     <Button 
                       size="sm"
-                      className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy shrink-0"
+                      className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy shrink-0"
                     >
                       Commencer
                       <ChevronRight className="w-4 h-4 ml-1" />

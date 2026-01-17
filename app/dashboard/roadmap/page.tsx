@@ -108,7 +108,7 @@ function ActionCard({
           {/* Expandable details */}
           <button
             onClick={() => setExpanded(!expanded)}
-            className="flex items-center gap-1 text-vyxo-gold text-sm mt-2 hover:underline"
+            className="flex items-center gap-1 text-ClearGo-gold text-sm mt-2 hover:underline"
           >
             {expanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
             {expanded ? "Masquer" : "Voir les livrables"}
@@ -118,13 +118,13 @@ function ActionCard({
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
-              className="mt-3 pl-4 border-l-2 border-vyxo-gold/30"
+              className="mt-3 pl-4 border-l-2 border-ClearGo-gold/30"
             >
               <p className="text-sm text-gray-300 mb-2">Livrables attendus :</p>
               <ul className="text-sm text-gray-400 space-y-1">
                 {action.deliverables.map((d, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-vyxo-gold rounded-full" />
+                    <span className="w-1.5 h-1.5 bg-ClearGo-gold rounded-full" />
                     {d}
                   </li>
                 ))}
@@ -186,7 +186,7 @@ function SprintTimeline({
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   {isExpanded ? (
-                    <ChevronDown className="w-5 h-5 text-vyxo-gold" />
+                    <ChevronDown className="w-5 h-5 text-ClearGo-gold" />
                   ) : (
                     <ChevronRight className="w-5 h-5 text-gray-500" />
                   )}
@@ -312,8 +312,8 @@ function RoadmapContent() {
 
   if (loading || !roadmap) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-        <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+        <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
       </div>
     )
   }
@@ -321,7 +321,7 @@ function RoadmapContent() {
   const completedPercent = (completedActions.length / roadmap.totalActions) * 100
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4 py-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
@@ -341,7 +341,7 @@ function RoadmapContent() {
         >
           <Card className="bg-white/5 border-white/10">
             <CardContent className="p-4 text-center">
-              <Target className="w-8 h-8 text-vyxo-gold mx-auto mb-2" />
+              <Target className="w-8 h-8 text-ClearGo-gold mx-auto mb-2" />
               <p className="text-2xl font-bold text-white">{roadmap.totalActions}</p>
               <p className="text-gray-400 text-sm">Actions</p>
             </CardContent>
@@ -349,7 +349,7 @@ function RoadmapContent() {
 
           <Card className="bg-white/5 border-white/10">
             <CardContent className="p-4 text-center">
-              <Calendar className="w-8 h-8 text-vyxo-gold mx-auto mb-2" />
+              <Calendar className="w-8 h-8 text-ClearGo-gold mx-auto mb-2" />
               <p className="text-2xl font-bold text-white">{roadmap.sprints.length}</p>
               <p className="text-gray-400 text-sm">Sprints</p>
             </CardContent>
@@ -357,7 +357,7 @@ function RoadmapContent() {
 
           <Card className="bg-white/5 border-white/10">
             <CardContent className="p-4 text-center">
-              <Clock className="w-8 h-8 text-vyxo-gold mx-auto mb-2" />
+              <Clock className="w-8 h-8 text-ClearGo-gold mx-auto mb-2" />
               <p className="text-2xl font-bold text-white">{roadmap.totalHours}h</p>
               <p className="text-gray-400 text-sm">Estimées</p>
             </CardContent>
@@ -365,7 +365,7 @@ function RoadmapContent() {
 
           <Card className="bg-white/5 border-white/10">
             <CardContent className="p-4 text-center">
-              <Zap className="w-8 h-8 text-vyxo-gold mx-auto mb-2" />
+              <Zap className="w-8 h-8 text-ClearGo-gold mx-auto mb-2" />
               <p className="text-2xl font-bold text-white">{roadmap.estimatedWeeks}</p>
               <p className="text-gray-400 text-sm">Semaines</p>
             </CardContent>
@@ -379,15 +379,15 @@ function RoadmapContent() {
           transition={{ delay: 0.1 }}
           className="mb-8"
         >
-          <Card className="bg-vyxo-gold/10 border-vyxo-gold/20">
+          <Card className="bg-ClearGo-gold/10 border-ClearGo-gold/20">
             <CardContent className="p-4">
               <div className="flex justify-between mb-2">
                 <span className="text-white font-medium">Progression globale</span>
-                <span className="text-vyxo-gold font-bold">
+                <span className="text-ClearGo-gold font-bold">
                   {completedActions.length}/{roadmap.totalActions} ({Math.round(completedPercent)}%)
                 </span>
               </div>
-              <Progress value={completedPercent} className="h-3 [&>div]:bg-vyxo-gold" />
+              <Progress value={completedPercent} className="h-3 [&>div]:bg-ClearGo-gold" />
             </CardContent>
           </Card>
         </motion.div>
@@ -451,8 +451,8 @@ export default function RoadmapPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
         </div>
       }
     >
@@ -460,3 +460,4 @@ export default function RoadmapPage() {
     </Suspense>
   )
 }
+

@@ -42,8 +42,8 @@ export function CertificateCard({ certificate, onDownload, compact = false }: Ce
 
   if (compact) {
     return (
-      <div className="flex items-center gap-4 p-4 rounded-xl border border-slate-700 hover:border-vyxo-gold/50 transition-all">
-        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-vyxo-gold to-yellow-600 flex items-center justify-center">
+      <div className="flex items-center gap-4 p-4 rounded-xl border border-slate-700 hover:border-ClearGo-gold/50 transition-all">
+        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-ClearGo-gold to-yellow-600 flex items-center justify-center">
           <Award className="w-6 h-6 text-white" />
         </div>
         <div className="flex-1 min-w-0">
@@ -71,7 +71,7 @@ export function CertificateCard({ certificate, onDownload, compact = false }: Ce
   return (
     <Card className="bento-card overflow-hidden">
       {/* Certificate Header - Gold gradient */}
-      <div className="h-32 bg-gradient-to-br from-vyxo-gold via-yellow-500 to-orange-500 relative">
+      <div className="h-32 bg-gradient-to-br from-ClearGo-gold via-yellow-500 to-orange-500 relative">
         <div className="absolute inset-0 bg-[url('/patterns/certificate-pattern.svg')] opacity-10" />
         <div className="absolute inset-0 flex items-center justify-center">
           <Award className="w-16 h-16 text-white/90" />
@@ -110,8 +110,8 @@ export function CertificateCard({ certificate, onDownload, compact = false }: Ce
 
         {/* Score */}
         {certificate.score && (
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-vyxo-gold/10 mb-4">
-            <span className="text-vyxo-gold font-bold text-lg">{certificate.score}%</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ClearGo-gold/10 mb-4">
+            <span className="text-ClearGo-gold font-bold text-lg">{certificate.score}%</span>
             <span className="text-sm text-muted-foreground">Score obtenu</span>
           </div>
         )}
@@ -157,7 +157,7 @@ export function CertificateCard({ certificate, onDownload, compact = false }: Ce
         {/* Download Button */}
         <Button 
           onClick={() => onDownload?.(certificate)}
-          className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy w-full"
+          className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy w-full"
         >
           <Download className="w-4 h-4 mr-2" />
           Télécharger le certificat PDF

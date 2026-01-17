@@ -214,7 +214,7 @@ export function CSVImportModal({
       <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <FileSpreadsheet className="w-5 h-5 text-vyxo-gold" />
+            <FileSpreadsheet className="w-5 h-5 text-ClearGo-gold" />
             Import CSV - {entityName}
           </DialogTitle>
           <DialogDescription>
@@ -236,7 +236,7 @@ export function CSVImportModal({
               className={`
                 border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-colors
                 ${isDragging 
-                  ? "border-vyxo-gold bg-vyxo-gold/10" 
+                  ? "border-ClearGo-gold bg-ClearGo-gold/10" 
                   : "border-slate-700 hover:border-slate-500"
                 }
               `}
@@ -273,7 +273,7 @@ export function CSVImportModal({
             {/* File info */}
             <div className="flex items-center justify-between p-3 rounded-lg bg-slate-800/50">
               <div className="flex items-center gap-2">
-                <FileSpreadsheet className="w-5 h-5 text-vyxo-gold" />
+                <FileSpreadsheet className="w-5 h-5 text-ClearGo-gold" />
                 <span className="font-medium">{file?.name}</span>
               </div>
               <Button variant="ghost" size="sm" onClick={resetState}>
@@ -385,7 +385,7 @@ export function CSVImportModal({
               <Button
                 onClick={handleImport}
                 disabled={validationErrors.length > 0}
-                className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
               >
                 Importer {parsedData.length} {entityName}
               </Button>

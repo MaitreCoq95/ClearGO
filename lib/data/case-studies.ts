@@ -34,7 +34,7 @@ export const caseStudies: CaseStudy[] = [
     norms: ["GDP", "ISO 9001"],
     context: "Distributeur de produits thermosensibles en pleine croissance, souhaitant structurer sa démarche qualité avant l'audit ANSM.",
     challenge: "Équipes terrain non formées aux exigences GDP, documentation qualité dispersée, 3 non-conformités critiques lors du pré-audit interne.",
-    solution: "Déploiement de la plateforme Vyxo Codex + accompagnement consultant dédié pendant 14 mois. Formation de 45 collaborateurs via les modules e-learning.",
+    solution: "Déploiement de la plateforme ClearGo + accompagnement consultant dédié pendant 14 mois. Formation de 45 collaborateurs via les modules e-learning.",
     results: [
       { label: "Conformité GDP", value: "94%", improvement: "+47%" },
       { label: "Non-conformités", value: "0", improvement: "-3" },
@@ -43,7 +43,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     duration: "14 mois",
     testimonial: {
-      quote: "Sans Vyxo, on serait passés à côté de points critiques. Le consultant nous a challengés, et la plateforme a structuré notre approche. Audit réussi du premier coup.",
+      quote: "Sans ClearGo, on serait passés à côté de points critiques. Le consultant nous a challengés, et la plateforme a structuré notre approche. Audit réussi du premier coup.",
       author: "Sophie M.",
       role: "Responsable Qualité"
     }
@@ -87,7 +87,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     duration: "18 mois",
     testimonial: {
-      quote: "Le niveau d'exigence de l'aéronautique est tel qu'on ne pouvait pas se permettre d'improviser. Vyxo nous a donné la structure et la rigueur nécessaires. 98% au premier passage.",
+      quote: "Le niveau d'exigence de l'aéronautique est tel qu'on ne pouvait pas se permettre d'improviser. ClearGo nous a donné la structure et la rigueur nécessaires. 98% au premier passage.",
       author: "Antoine B.",
       role: "Directeur Qualité"
     }

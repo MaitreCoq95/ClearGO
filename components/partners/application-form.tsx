@@ -93,7 +93,7 @@ export function ApplicationForm({ onSubmitSuccess }: ApplicationFormProps) {
           Pense à vérifier tes spams si tu ne vois rien.
         </p>
         <p className="text-partner-accent font-medium">
-          À très vite, futur partenaire Vyxo ! 🐓
+          À très vite, futur partenaire ClearGo ! 🐓
         </p>
       </div>
     )
@@ -299,7 +299,7 @@ export function ApplicationForm({ onSubmitSuccess }: ApplicationFormProps) {
         </div>
 
         <div>
-          <label className="block text-sm text-gray-400 mb-2">Pourquoi veux-tu devenir partenaire Vyxo? * (min 50 caractères)</label>
+          <label className="block text-sm text-gray-400 mb-2">Pourquoi veux-tu devenir partenaire ClearGo? * (min 50 caractères)</label>
           <textarea
             {...register("motivation")}
             rows={4}
@@ -341,7 +341,7 @@ export function ApplicationForm({ onSubmitSuccess }: ApplicationFormProps) {
             className="w-5 h-5 mt-0.5 text-partner-accent focus:ring-partner-accent rounded"
           />
           <span className="text-sm text-gray-400">
-            J&apos;ai lu et j&apos;accepte les conditions du programme partenaire Vyxo *
+            J&apos;ai lu et j&apos;accepte les conditions du programme partenaire ClearGo *
           </span>
         </label>
         {errors.accept_terms && <p className="text-red-400 text-xs">{errors.accept_terms.message}</p>}

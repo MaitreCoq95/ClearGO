@@ -1,5 +1,5 @@
 /**
- * Helper IA pour le module Vyxo Codex
+ * Helper IA pour le module ClearGo
  * Intégration avec l'API ChatGPT pour générer des questions, enrichir les connaissances, etc.
  * Utilise la même clé API OPENAI_API_KEY configurée sur Vercel pour les autres modules.
  */

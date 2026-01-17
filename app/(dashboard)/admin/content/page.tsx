@@ -103,7 +103,7 @@ export default function AdminContentPage() {
             </Button>
           </Link>
           <Link href="/admin/content/assessments/new">
-            <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+            <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
               <FileText className="w-4 h-4 mr-2" />
               Nouvel assessment
             </Button>
@@ -136,7 +136,7 @@ export default function AdminContentPage() {
         </Card>
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <TrendingUp className="w-6 h-6 mx-auto text-vyxo-gold mb-2" />
+            <TrendingUp className="w-6 h-6 mx-auto text-ClearGo-gold mb-2" />
             <p className="text-2xl font-bold">{stats.avgEngagement}%</p>
             <p className="text-sm text-muted-foreground">Taux d'engagement</p>
           </CardContent>
@@ -163,7 +163,7 @@ export default function AdminContentPage() {
             {recentModules.map((module) => (
               <div 
                 key={module.id}
-                className="flex items-center justify-between p-4 rounded-xl border hover:border-vyxo-gold/50 transition-colors"
+                className="flex items-center justify-between p-4 rounded-xl border hover:border-ClearGo-gold/50 transition-colors"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
@@ -219,7 +219,7 @@ export default function AdminContentPage() {
             {recentAssessments.map((assessment) => (
               <div 
                 key={assessment.id}
-                className="flex items-center justify-between p-4 rounded-xl border hover:border-vyxo-gold/50 transition-colors"
+                className="flex items-center justify-between p-4 rounded-xl border hover:border-ClearGo-gold/50 transition-colors"
               >
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
@@ -262,26 +262,26 @@ export default function AdminContentPage() {
         <CardContent>
           <div className="grid md:grid-cols-4 gap-4">
             <Link href="/admin/content/modules/new">
-              <div className="p-4 rounded-xl border hover:border-vyxo-gold/50 transition-colors cursor-pointer text-center">
+              <div className="p-4 rounded-xl border hover:border-ClearGo-gold/50 transition-colors cursor-pointer text-center">
                 <BookOpen className="w-8 h-8 mx-auto text-blue-500 mb-2" />
                 <p className="font-medium">Créer un module</p>
                 <p className="text-xs text-muted-foreground mt-1">Formation interactive</p>
               </div>
             </Link>
             <Link href="/admin/content/assessments/new">
-              <div className="p-4 rounded-xl border hover:border-vyxo-gold/50 transition-colors cursor-pointer text-center">
+              <div className="p-4 rounded-xl border hover:border-ClearGo-gold/50 transition-colors cursor-pointer text-center">
                 <FileText className="w-8 h-8 mx-auto text-purple-500 mb-2" />
                 <p className="font-medium">Créer un assessment</p>
                 <p className="text-xs text-muted-foreground mt-1">Évaluation de maturité</p>
               </div>
             </Link>
-            <div className="p-4 rounded-xl border hover:border-vyxo-gold/50 transition-colors cursor-pointer text-center">
+            <div className="p-4 rounded-xl border hover:border-ClearGo-gold/50 transition-colors cursor-pointer text-center">
               <Plus className="w-8 h-8 mx-auto text-emerald-500 mb-2" />
               <p className="font-medium">Importer contenu</p>
               <p className="text-xs text-muted-foreground mt-1">SCORM, PDF, Vidéo</p>
             </div>
-            <div className="p-4 rounded-xl border hover:border-vyxo-gold/50 transition-colors cursor-pointer text-center">
-              <TrendingUp className="w-8 h-8 mx-auto text-vyxo-gold mb-2" />
+            <div className="p-4 rounded-xl border hover:border-ClearGo-gold/50 transition-colors cursor-pointer text-center">
+              <TrendingUp className="w-8 h-8 mx-auto text-ClearGo-gold mb-2" />
               <p className="font-medium">Voir analytics</p>
               <p className="text-xs text-muted-foreground mt-1">Performance contenu</p>
             </div>
@@ -291,3 +291,4 @@ export default function AdminContentPage() {
     </div>
   )
 }
+

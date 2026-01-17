@@ -23,7 +23,7 @@ export function CertificationReadiness({ readiness }: CertificationReadinessProp
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold">Prêt pour la certification ?</h3>
-        <Badge className="bg-vyxo-gold/20 text-vyxo-gold">
+        <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold">
           {readiness.certification}
         </Badge>
       </div>
@@ -60,7 +60,7 @@ export function CertificationReadiness({ readiness }: CertificationReadinessProp
 
       {/* Time estimate */}
       <div className="flex items-center gap-3 p-4 rounded-lg bg-slate-800/50">
-        <Clock className="w-5 h-5 text-vyxo-gold" />
+        <Clock className="w-5 h-5 text-ClearGo-gold" />
         <div>
           <p className="text-sm text-slate-400">Temps estimé avant certification</p>
           <p className="text-lg font-semibold">{readiness.estimatedTimeToReady}</p>

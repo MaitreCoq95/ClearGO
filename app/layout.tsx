@@ -10,7 +10,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vyxo CentralHub",
+  title: "ClearGo CentralHub",
   description: "Premium Consulting Management Platform",
 }
 
@@ -39,3 +39,4 @@ export default function RootLayout({
     </html>
   )
 }
+

@@ -20,7 +20,7 @@ export function CTAFinalSection({ onScrollToForm, onBookDemo }: CTAFinalProps) {
             </h2>
             <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
               Rejoins les consultants QHSE qui ont choisi d&apos;augmenter leur panier moyen 
-              de 50% et de générer du MRR récurrent avec Vyxo.
+              de 50% et de générer du MRR récurrent avec ClearGo.
             </p>
 
             {/* Stats Grid */}
@@ -72,7 +72,7 @@ export function CTAFinalSection({ onScrollToForm, onBookDemo }: CTAFinalProps) {
               <div className="flex items-start gap-4">
                 <Shield className="w-6 h-6 text-partner-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="text-white font-medium mb-2">Certifications Vyxo</h4>
+                  <h4 className="text-white font-medium mb-2">Certifications ClearGo</h4>
                   <ul className="text-sm text-gray-400 space-y-1">
                     <li>• Fondateur certifié Lead Auditor ISO 9001/45001</li>
                     <li>• 15 ans d&apos;expertise terrain QHSE</li>

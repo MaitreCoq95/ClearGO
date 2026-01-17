@@ -79,7 +79,7 @@ export default function LearningPage() {
             </Button>
           </Link>
           <Link href="/learning/competencies">
-            <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+            <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
               <TrendingUp className="w-4 h-4 mr-2" />
               Mes Compétences
             </Button>
@@ -92,8 +92,8 @@ export default function LearningPage() {
         <Card className="bento-card">
           <CardContent className="p-4">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-vyxo-gold to-amber-400 flex items-center justify-center">
-                <span className="text-lg font-bold text-vyxo-navy">{userProfile.level}</span>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-ClearGo-gold to-amber-400 flex items-center justify-center">
+                <span className="text-lg font-bold text-ClearGo-navy">{userProfile.level}</span>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Niveau</p>
@@ -121,7 +121,7 @@ export default function LearningPage() {
 
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <Star className="w-6 h-6 mx-auto text-vyxo-gold mb-1" />
+            <Star className="w-6 h-6 mx-auto text-ClearGo-gold mb-1" />
             <p className="text-2xl font-bold">{userProfile.avgScore}%</p>
             <p className="text-sm text-muted-foreground">score moyen</p>
           </CardContent>
@@ -133,11 +133,11 @@ export default function LearningPage() {
         {/* Continue Learning */}
         <div className="lg:col-span-2 space-y-6">
           {/* Current Path */}
-          <Card className="bento-card bg-gradient-to-r from-vyxo-navy to-vyxo-navy/80 text-white">
+          <Card className="bento-card bg-gradient-to-r from-ClearGo-navy to-ClearGo-navy/80 text-white">
             <CardContent className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <Badge className="bg-vyxo-gold text-vyxo-navy mb-2">Objectif actuel</Badge>
+                  <Badge className="bg-ClearGo-gold text-ClearGo-navy mb-2">Objectif actuel</Badge>
                   <h3 className="text-xl font-bold">{learningPath.goal}</h3>
                 </div>
                 <div className="text-right">
@@ -164,7 +164,7 @@ export default function LearningPage() {
           </Card>
 
           {/* Next Module */}
-          <Card className="bento-card border-vyxo-gold/50">
+          <Card className="bento-card border-ClearGo-gold/50">
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-muted-foreground">
                 Reprendre où vous en étiez
@@ -181,7 +181,7 @@ export default function LearningPage() {
                   </p>
                 </div>
                 <Link href={`/learning/modules/${learningPath.nextModule.id}`}>
-                  <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+                  <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                     <Play className="w-4 h-4 mr-2" />
                     Continuer
                   </Button>
@@ -202,7 +202,7 @@ export default function LearningPage() {
               {recentModules.map((module) => (
                 <div 
                   key={module.id}
-                  className="flex items-center justify-between p-3 rounded-xl border hover:border-vyxo-gold/50 transition-colors"
+                  className="flex items-center justify-between p-3 rounded-xl border hover:border-ClearGo-gold/50 transition-colors"
                 >
                   <div className="flex-1 min-w-0">
                     <h4 className="font-medium truncate">{module.title}</h4>
@@ -303,3 +303,4 @@ export default function LearningPage() {
     </div>
   )
 }
+

@@ -78,7 +78,7 @@ export function CompetencyMatrix({
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Card className="bento-card">
             <CardContent className="p-4 text-center">
-              <TrendingUp className="w-6 h-6 mx-auto text-vyxo-gold mb-2" />
+              <TrendingUp className="w-6 h-6 mx-auto text-ClearGo-gold mb-2" />
               <p className="text-2xl font-bold">{avgLevel}%</p>
               <p className="text-xs text-muted-foreground">Niveau moyen</p>
             </CardContent>
@@ -117,7 +117,7 @@ export function CompetencyMatrix({
           variant={selectedCategory === null ? "default" : "outline"}
           size="sm"
           onClick={() => setSelectedCategory(null)}
-          className={selectedCategory === null ? "bg-vyxo-gold text-vyxo-navy" : ""}
+          className={selectedCategory === null ? "bg-ClearGo-gold text-ClearGo-navy" : ""}
         >
           Toutes
         </Button>
@@ -127,7 +127,7 @@ export function CompetencyMatrix({
             variant={selectedCategory === category.id ? "default" : "outline"}
             size="sm"
             onClick={() => setSelectedCategory(category.id)}
-            className={selectedCategory === category.id ? "bg-vyxo-gold text-vyxo-navy" : ""}
+            className={selectedCategory === category.id ? "bg-ClearGo-gold text-ClearGo-navy" : ""}
           >
             {category.name}
           </Button>
@@ -154,7 +154,7 @@ export function CompetencyMatrix({
                             onClick={() => onCompetencyClick?.(competency)}
                             className={`
                               p-4 rounded-xl border cursor-pointer transition-all
-                              hover:border-vyxo-gold/50 hover:scale-[1.02]
+                              hover:border-ClearGo-gold/50 hover:scale-[1.02]
                               ${competency.status === "mastered" 
                                 ? "border-emerald-500/30 bg-emerald-500/5" 
                                 : "border-slate-700"

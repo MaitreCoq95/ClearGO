@@ -57,7 +57,7 @@ export function MaturityQuestions({ selectedNorms, onComplete, onSkip }: Maturit
       {/* Header avec progression */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <HelpCircle className="w-5 h-5 text-vyxo-gold" />
+          <HelpCircle className="w-5 h-5 text-ClearGo-gold" />
           <span className="text-white font-medium">
             Évaluation de maturité ({currentIndex + 1}/{questions.length})
           </span>
@@ -75,7 +75,7 @@ export function MaturityQuestions({ selectedNorms, onComplete, onSkip }: Maturit
       {/* Barre de progression */}
       <div className="h-2 bg-white/10 rounded-full overflow-hidden mb-8">
         <div 
-          className="h-full bg-vyxo-gold transition-all duration-300"
+          className="h-full bg-ClearGo-gold transition-all duration-300"
           style={{ width: `${progress}%` }}
         />
       </div>
@@ -84,7 +84,7 @@ export function MaturityQuestions({ selectedNorms, onComplete, onSkip }: Maturit
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 animate-slide-in-up">
         {/* Catégorie */}
         <div className="mb-4">
-          <span className="text-xs text-vyxo-gold bg-vyxo-gold/20 px-3 py-1 rounded-full">
+          <span className="text-xs text-ClearGo-gold bg-ClearGo-gold/20 px-3 py-1 rounded-full">
             {currentQuestion.category}
           </span>
         </div>
@@ -102,14 +102,14 @@ export function MaturityQuestions({ selectedNorms, onComplete, onSkip }: Maturit
               onClick={() => handleAnswer(option.value, option.tag)}
               className={`w-full p-4 rounded-xl border text-left transition-all ${
                 answers[currentQuestion.id] === option.value
-                  ? "bg-vyxo-gold/20 border-vyxo-gold text-white"
+                  ? "bg-ClearGo-gold/20 border-ClearGo-gold text-white"
                   : "bg-white/5 border-white/10 text-gray-300 hover:border-white/30"
               }`}
             >
               <div className="flex items-center justify-between">
                 <span>{option.label}</span>
                 {answers[currentQuestion.id] === option.value && (
-                  <CheckCircle2 className="w-5 h-5 text-vyxo-gold" />
+                  <CheckCircle2 className="w-5 h-5 text-ClearGo-gold" />
                 )}
               </div>
             </button>
@@ -136,7 +136,7 @@ export function MaturityQuestions({ selectedNorms, onComplete, onSkip }: Maturit
         <Button
           onClick={handleNext}
           disabled={!answered}
-          className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-medium"
+          className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-medium"
         >
           {currentIndex === questions.length - 1 ? (
             <>

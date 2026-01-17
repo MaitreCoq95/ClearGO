@@ -22,7 +22,7 @@ const LEVEL_COLORS: Record<number, { bg: string; text: string; glow: string }> =
   2: { bg: "from-emerald-600 to-emerald-700", text: "text-emerald-400", glow: "shadow-emerald-500/20" },
   3: { bg: "from-blue-600 to-blue-700", text: "text-blue-400", glow: "shadow-blue-500/20" },
   4: { bg: "from-purple-600 to-purple-700", text: "text-purple-400", glow: "shadow-purple-500/20" },
-  5: { bg: "from-vyxo-gold to-yellow-600", text: "text-vyxo-gold", glow: "shadow-yellow-500/30" },
+  5: { bg: "from-ClearGo-gold to-yellow-600", text: "text-ClearGo-gold", glow: "shadow-yellow-500/30" },
 }
 
 export function XPBar({
@@ -100,7 +100,7 @@ export function XPBar({
           `}>
             <span className="text-2xl font-bold text-white">{level}</span>
             {level >= 5 && (
-              <Crown className="absolute -top-2 -right-2 w-5 h-5 text-vyxo-gold" />
+              <Crown className="absolute -top-2 -right-2 w-5 h-5 text-ClearGo-gold" />
             )}
           </div>
 
@@ -121,7 +121,7 @@ export function XPBar({
 
           {/* XP Count */}
           <div className="text-right">
-            <div className="flex items-center gap-1 text-vyxo-gold">
+            <div className="flex items-center gap-1 text-ClearGo-gold">
               <Zap className="w-5 h-5" />
               <span className="text-2xl font-bold">{displayedXP.toLocaleString()}</span>
             </div>
@@ -174,12 +174,12 @@ export function XPGainToast({ amount, reason, onComplete }: XPGainToastProps) {
 
   return (
     <div className="fixed bottom-24 right-6 z-50 animate-in slide-in-from-right fade-in duration-300">
-      <div className="flex items-center gap-3 px-4 py-3 bg-vyxo-navy border border-vyxo-gold/30 rounded-xl shadow-xl">
-        <div className="w-10 h-10 rounded-xl bg-vyxo-gold/20 flex items-center justify-center">
-          <Zap className="w-5 h-5 text-vyxo-gold" />
+      <div className="flex items-center gap-3 px-4 py-3 bg-ClearGo-navy border border-ClearGo-gold/30 rounded-xl shadow-xl">
+        <div className="w-10 h-10 rounded-xl bg-ClearGo-gold/20 flex items-center justify-center">
+          <Zap className="w-5 h-5 text-ClearGo-gold" />
         </div>
         <div>
-          <p className="font-bold text-vyxo-gold">+{amount} XP</p>
+          <p className="font-bold text-ClearGo-gold">+{amount} XP</p>
           <p className="text-xs text-muted-foreground">{reason}</p>
         </div>
       </div>

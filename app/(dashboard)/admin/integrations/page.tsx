@@ -69,7 +69,7 @@ const integrations = [
 const webhooks = [
   {
     id: "wh_001",
-    url: "https://example.com/webhooks/vyxo",
+    url: "https://example.com/webhooks/ClearGo",
     events: ["assessment.completed", "certification.obtained"],
     active: true,
     lastTriggered: "15 déc 2024",
@@ -80,7 +80,7 @@ const apiKeys = [
   {
     id: "key_001",
     name: "Production API",
-    prefix: "vyxo_live_",
+    prefix: "ClearGo_live_",
     createdAt: "1 déc 2024",
     lastUsed: "Aujourd'hui",
   },
@@ -115,7 +115,7 @@ export default function IntegrationsPage() {
             variant={activeTab === tab ? "default" : "ghost"}
             size="sm"
             onClick={() => setActiveTab(tab)}
-            className={activeTab === tab ? "bg-vyxo-gold text-vyxo-navy" : ""}
+            className={activeTab === tab ? "bg-ClearGo-gold text-ClearGo-navy" : ""}
           >
             {tab === "oauth" ? "Connexions" : tab === "webhooks" ? "Webhooks" : "Clés API"}
           </Button>
@@ -154,7 +154,7 @@ export default function IntegrationsPage() {
                   
                   <Button 
                     variant={integration.connected ? "outline" : "default"}
-                    className={!integration.connected ? "bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90" : ""}
+                    className={!integration.connected ? "bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90" : ""}
                   >
                     {integration.connected ? (
                       <>
@@ -198,7 +198,7 @@ export default function IntegrationsPage() {
             <CardHeader>
               <div className="flex items-center justify-between">
                 <CardTitle>Webhooks configurés</CardTitle>
-                <Button className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90">
+                <Button className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90">
                   <Plus className="w-4 h-4 mr-2" />
                   Ajouter
                 </Button>
@@ -272,13 +272,13 @@ export default function IntegrationsPage() {
             <CardHeader>
               <div className="flex items-center justify-between">
                 <CardTitle>Clés API</CardTitle>
-                <Button className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90">
+                <Button className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90">
                   <Plus className="w-4 h-4 mr-2" />
                   Créer une clé
                 </Button>
               </div>
               <CardDescription>
-                Gérez vos clés d'accès à l'API VYXO
+                Gérez vos clés d'accès à l'API ClearGo
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -343,3 +343,4 @@ export default function IntegrationsPage() {
     </div>
   )
 }
+

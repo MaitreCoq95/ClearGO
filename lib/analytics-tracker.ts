@@ -1,5 +1,5 @@
 /**
- * Analytics Tracker for Vyxo CODEX
+ * Analytics Tracker for ClearGo
  * Tracks user events and sends them to the analytics API
  */
 
@@ -51,11 +51,11 @@ class AnalyticsTracker {
       return 'server-side';
     }
 
-    let sessionId = sessionStorage.getItem('vyxo_session_id');
+    let sessionId = sessionStorage.getItem('ClearGo_session_id');
     
     if (!sessionId) {
       sessionId = `sess_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      sessionStorage.setItem('vyxo_session_id', sessionId);
+      sessionStorage.setItem('ClearGo_session_id', sessionId);
     }
     
     return sessionId;

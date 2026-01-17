@@ -237,16 +237,16 @@ export default function DemoNormsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy/95 to-vyxo-navy">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy/95 to-ClearGo-navy">
       {/* Header */}
       <header className="border-b border-white/10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-vyxo-gold flex items-center justify-center">
-               <span className="text-vyxo-navy font-bold">V</span>
+            <div className="w-8 h-8 rounded-lg bg-ClearGo-gold flex items-center justify-center">
+               <span className="text-ClearGo-navy font-bold">V</span>
             </div>
             <span className="text-xl font-bold text-white">
-              VYXO <span className="text-vyxo-gold">Codex</span>
+              ClearGo <span className="text-ClearGo-gold">Codex</span>
             </span>
           </Link>
           <div className="flex items-center gap-4">
@@ -265,11 +265,11 @@ export default function DemoNormsPage() {
       <main className="container mx-auto px-4 py-8 md:py-12">
         {/* Hero */}
         <div className="text-center mb-8 md:mb-12 animate-slide-in-up">
-          <Badge className="bg-vyxo-gold/20 text-vyxo-gold mb-4 text-sm px-3 py-1">
+          <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold mb-4 text-sm px-3 py-1">
             Certification Hub
           </Badge>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">
-            Quel <span className="text-vyxo-gold">assessment</span> voulez-vous lancer&nbsp;?
+            Quel <span className="text-ClearGo-gold">assessment</span> voulez-vous lancer&nbsp;?
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
             Accédez à plus de 20 questionnaires normatifs conçus par des experts.
@@ -286,7 +286,7 @@ export default function DemoNormsPage() {
                 <TabsTrigger
                   key={key}
                   value={key}
-                  className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm data-[state=active]:bg-vyxo-gold data-[state=active]:text-vyxo-navy transition-all"
+                  className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm data-[state=active]:bg-ClearGo-gold data-[state=active]:text-ClearGo-navy transition-all"
                 >
                   <span className="flex items-center gap-1.5 sm:gap-2">
                     <vertical.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
@@ -302,7 +302,7 @@ export default function DemoNormsPage() {
             <TabsContent key={key} value={key} className="mt-4 md:mt-6">
               <div className="text-center mb-6 md:mb-10 animate-fade-in">
                 <h2 className="text-xl md:text-2xl font-bold text-white mb-2">{vertical.name}</h2>
-                <div className="h-1 w-20 bg-gradient-to-r from-transparent via-vyxo-gold to-transparent mx-auto rounded-full" />
+                <div className="h-1 w-20 bg-gradient-to-r from-transparent via-ClearGo-gold to-transparent mx-auto rounded-full" />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -315,7 +315,7 @@ export default function DemoNormsPage() {
                     onClick={() => handleCertificationClick(cert.id, cert.name)}
                   >
                     <Card
-                      className={`h-full relative overflow-hidden cursor-pointer transition-all duration-300 bg-white/5 border-white/10 hover:bg-white/10 hover:-translate-y-1 hover:border-vyxo-gold/30 group`}
+                      className={`h-full relative overflow-hidden cursor-pointer transition-all duration-300 bg-white/5 border-white/10 hover:bg-white/10 hover:-translate-y-1 hover:border-ClearGo-gold/30 group`}
                     >
                       <div className={`absolute inset-0 bg-gradient-to-br ${vertical.color} opacity-0 group-hover:opacity-5 transition-opacity`} />
                       <CardContent className="p-6 relative flex flex-col h-full">
@@ -323,22 +323,22 @@ export default function DemoNormsPage() {
                           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
                             {cert.icon}
                           </div>
-                          <Badge variant="secondary" className="bg-white/10 text-white group-hover:bg-vyxo-gold group-hover:text-vyxo-navy transition-colors">
+                          <Badge variant="secondary" className="bg-white/10 text-white group-hover:bg-ClearGo-gold group-hover:text-ClearGo-navy transition-colors">
                             Start
                           </Badge>
                         </div>
                         
-                        <h3 className="text-lg font-bold text-white mb-1 group-hover:text-vyxo-gold transition-colors">{cert.name}</h3>
+                        <h3 className="text-lg font-bold text-white mb-1 group-hover:text-ClearGo-gold transition-colors">{cert.name}</h3>
                         <p className="text-sm font-medium text-white/80 mb-2">{cert.fullName}</p>
                         <p className="text-sm text-gray-400 mb-6 flex-grow">{cert.description}</p>
                         
                         <div className="flex items-center gap-4 text-xs text-gray-400 border-t border-white/10 pt-4 mt-auto">
                           <span className="flex items-center gap-1.5">
-                            <FileText className="w-4 h-4 text-vyxo-gold" />
+                            <FileText className="w-4 h-4 text-ClearGo-gold" />
                             {cert.questions} questions
                           </span>
                           <span className="flex items-center gap-1.5">
-                            <Clock className="w-4 h-4 text-vyxo-gold" />
+                            <Clock className="w-4 h-4 text-ClearGo-gold" />
                             {cert.duration}
                           </span>
                         </div>
@@ -360,7 +360,7 @@ export default function DemoNormsPage() {
             { value: "100%", label: "Gratuit & Sans CB" },
           ].map((stat, i) => (
             <div key={i} className="text-center group hover:bg-white/5 p-4 rounded-xl transition-colors">
-              <span className="block text-3xl font-bold text-vyxo-gold mb-1 group-hover:scale-110 transition-transform inline-block">{stat.value}</span>
+              <span className="block text-3xl font-bold text-ClearGo-gold mb-1 group-hover:scale-110 transition-transform inline-block">{stat.value}</span>
               <p className="text-sm text-gray-400">{stat.label}</p>
             </div>
           ))}
@@ -369,3 +369,4 @@ export default function DemoNormsPage() {
     </div>
   )
 }
+

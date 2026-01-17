@@ -1,4 +1,4 @@
-// Données témoignages partenaires Vyxo
+// Données témoignages partenaires ClearGo
 // Cas fictifs mais réalistes basés sur le brief
 
 export interface PartnerTestimonial {
@@ -48,10 +48,10 @@ export const partnerTestimonials: PartnerTestimonial[] = [
       growth: "+83%"
     },
     timeline: "18 mois",
-    quote: "Vyxo m'a donné la crédibilité des gros cabinets avec l'agilité du consultant indé. Mes clients adorent le dashboard temps réel. Et surtout, je touche enfin du MRR même après la mission. Game changer.",
+    quote: "ClearGo m'a donné la crédibilité des gros cabinets avec l'agilité du consultant indé. Mes clients adorent le dashboard temps réel. Et surtout, je touche enfin du MRR même après la mission. Game changer.",
     highlights: [
       "Mission pharma: 32K€ consulting + 21,6K€ marge SaaS = 53,6K€",
-      "4 clients équipés Vyxo",
+      "4 clients équipés ClearGo",
       "MRR passif: 400€/mois (net après licence)"
     ]
   },

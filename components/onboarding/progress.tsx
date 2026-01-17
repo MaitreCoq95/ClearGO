@@ -34,17 +34,17 @@ export function OnboardingProgress({ steps, currentStep, className = "" }: Onboa
                 className={`
                   relative flex items-center justify-center w-10 h-10 rounded-full border-2 transition-all
                   ${isCompleted 
-                    ? "bg-vyxo-gold border-vyxo-gold" 
+                    ? "bg-ClearGo-gold border-ClearGo-gold" 
                     : isCurrent 
-                    ? "bg-vyxo-gold/20 border-vyxo-gold" 
+                    ? "bg-ClearGo-gold/20 border-ClearGo-gold" 
                     : "bg-white/5 border-white/20"
                   }
                 `}
               >
                 {isCompleted ? (
-                  <Check className="w-5 h-5 text-vyxo-navy" />
+                  <Check className="w-5 h-5 text-ClearGo-navy" />
                 ) : (
-                  <span className={`text-sm font-bold ${isCurrent ? "text-vyxo-gold" : "text-gray-500"}`}>
+                  <span className={`text-sm font-bold ${isCurrent ? "text-ClearGo-gold" : "text-gray-500"}`}>
                     {index + 1}
                   </span>
                 )}
@@ -57,9 +57,9 @@ export function OnboardingProgress({ steps, currentStep, className = "" }: Onboa
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: isCompleted ? 1 : 0 }}
                     transition={{ delay: index * 0.1 + 0.2, duration: 0.3 }}
-                    className="h-full bg-vyxo-gold origin-left"
+                    className="h-full bg-ClearGo-gold origin-left"
                   />
-                  <div className={`h-full -mt-0.5 ${isCompleted ? "bg-vyxo-gold" : "bg-white/10"}`} />
+                  <div className={`h-full -mt-0.5 ${isCompleted ? "bg-ClearGo-gold" : "bg-white/10"}`} />
                 </div>
               )}
             </div>

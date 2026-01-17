@@ -1,112 +1,111 @@
 @tailwind base;
-
-@plugin "tailwindcss-animate";
-
-@custom-variant dark (&:is(.dark *));
 @tailwind components;
 @tailwind utilities;
 
-
 /* =====================================================
-   VYXO CONSULT CENTRALHUB - DESIGN SYSTEM
-   Brand: Navy (#0F2339) & Gold (#C69C6D)
-   Aesthetic: Premium, Modern, Bento Grid
+   CLEARGO - DESIGN SYSTEM
+   Brand: Blue (#2E86C1) & Green (#27AE60)
+   Aesthetic: Professional, Clean, Transport & Compliance
    ===================================================== */
 
 @layer base {
   :root {
-    /* ===== VYXO BRAND COLORS (HSL) ===== */
-    --vyxo-navy: 214 58% 13%; /* #0F2339 */
-    --vyxo-gold: 32 43% 60%; /* #C69C6D */
+    /* ===== CLEARGO BRAND COLORS (HSL) ===== */
+    --cleargo-blue-dark: 200 65% 28%; /* #1A5276 */
+    --cleargo-blue: 204 62% 47%; /* #2E86C1 */
+    --cleargo-blue-light: 199 68% 63%; /* #5DADE2 */
+    --cleargo-green: 145 63% 42%; /* #27AE60 */
+    --cleargo-green-light: 145 57% 60%; /* #58D68D */
 
     /* ===== LIGHT MODE ===== */
     --background: 0 0% 100%; /* White */
-    --foreground: 214 58% 13%; /* Vyxo Navy for text */
+    --foreground: 210 29% 24%; /* Slate Dark #2C3E50 */
 
     --card: 0 0% 100%;
-    --card-foreground: 214 58% 13%;
+    --card-foreground: 210 29% 24%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 214 58% 13%;
+    --popover-foreground: 210 29% 24%;
 
-    --primary: 214 58% 13%; /* Vyxo Navy */
-    --primary-foreground: 0 0% 100%; /* White text on navy */
+    --primary: 204 62% 47%; /* ClearGo Blue */
+    --primary-foreground: 0 0% 100%; /* White text on blue */
 
     --secondary: 210 40% 96.1%; /* Slate-50 */
-    --secondary-foreground: 214 58% 13%;
+    --secondary-foreground: 210 29% 24%;
 
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 210 16% 43%;
 
-    --accent: 32 43% 60%; /* Vyxo Gold */
-    --accent-foreground: 214 58% 13%;
+    --accent: 145 63% 42%; /* ClearGo Green */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 214 58% 13%; /* Vyxo Navy */
+    --border: 210 31% 91%;
+    --input: 210 31% 91%;
+    --ring: 204 62% 47%; /* ClearGo Blue */
 
-    --radius: 1rem; /* Large rounded corners */
+    --radius: 0.75rem; /* 12px rounded corners */
 
-    /* ===== CUSTOM VYXO TOKENS ===== */
-    --vyxo-gradient-navy: linear-gradient(
+    /* ===== CLEARGO GRADIENTS ===== */
+    --cleargo-gradient-blue: linear-gradient(
       135deg,
-      hsl(214, 58%, 13%) 0%,
-      hsl(214, 58%, 23%) 100%
+      hsl(200, 65%, 28%) 0%,
+      hsl(204, 62%, 47%) 100%
     );
-    --vyxo-gradient-gold: linear-gradient(
+    --cleargo-gradient-green: linear-gradient(
       135deg,
-      hsl(32, 43%, 60%) 0%,
-      hsl(32, 43%, 70%) 100%
+      hsl(145, 63%, 42%) 0%,
+      hsl(145, 57%, 60%) 100%
     );
-    --vyxo-gradient-premium: linear-gradient(
+    --cleargo-gradient-hero: linear-gradient(
       135deg,
-      hsl(214, 58%, 13%) 0%,
-      hsl(32, 43%, 60%) 100%
+      hsl(200, 65%, 28%) 0%,
+      hsl(204, 62%, 47%) 50%,
+      hsl(145, 63%, 42%) 100%
     );
 
     /* Glassmorphism */
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.18);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: 0 8px 32px 0 rgba(26, 82, 118, 0.1);
   }
 
   .dark {
     /* ===== DARK MODE ===== */
-    --background: 0 0% 3.9%; /* Deep Charcoal #0A0A0A */
+    --background: 207 50% 8%; /* Deep Blue #0D1B2A */
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 7%; /* Slightly lighter #121212 */
+    --card: 207 40% 12%; /* Slightly lighter #1B2838 */
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 7%;
+    --popover: 207 40% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 32 43% 60%; /* Vyxo Gold in dark mode */
-    --primary-foreground: 214 58% 13%;
+    --primary: 145 63% 42%; /* ClearGo Green in dark mode */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 207 32% 20%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 207 32% 20%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 32 43% 60%; /* Vyxo Gold */
-    --accent-foreground: 0 0% 98%;
+    --accent: 145 63% 42%; /* ClearGo Green */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 32 43% 60%; /* Vyxo Gold */
+    --border: 207 32% 20%;
+    --input: 207 32% 20%;
+    --ring: 145 63% 42%; /* ClearGo Green */
 
     /* ===== DARK MODE CUSTOM TOKENS ===== */
-    --glass-bg: rgba(18, 18, 18, 0.7);
+    --glass-bg: rgba(13, 27, 42, 0.8);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -147,42 +146,100 @@
 }
 
 @layer utilities {
-  /* ===== VYXO BRAND UTILITIES ===== */
+  /* ===== CLEARGO BRAND UTILITIES ===== */
+  .bg-cleargo-blue-dark {
+    background-color: hsl(var(--cleargo-blue-dark));
+  }
+
+  .bg-cleargo-blue {
+    background-color: hsl(var(--cleargo-blue));
+  }
+
+  .bg-cleargo-blue-light {
+    background-color: hsl(var(--cleargo-blue-light));
+  }
+
+  .bg-cleargo-green {
+    background-color: hsl(var(--cleargo-green));
+  }
+
+  .bg-cleargo-green-light {
+    background-color: hsl(var(--cleargo-green-light));
+  }
+
+  .text-cleargo-blue-dark {
+    color: hsl(var(--cleargo-blue-dark));
+  }
+
+  .text-cleargo-blue {
+    color: hsl(var(--cleargo-blue));
+  }
+
+  .text-cleargo-green {
+    color: hsl(var(--cleargo-green));
+  }
+
+  .text-cleargo-green-light {
+    color: hsl(var(--cleargo-green-light));
+  }
+
+  .border-cleargo-blue {
+    border-color: hsl(var(--cleargo-blue));
+  }
+
+  .border-cleargo-green {
+    border-color: hsl(var(--cleargo-green));
+  }
+
+  /* ===== LEGACY ALIASES (for backward compatibility) ===== */
   .bg-vyxo-navy {
-    background-color: hsl(var(--vyxo-navy));
+    background-color: hsl(var(--cleargo-blue-dark));
   }
 
   .bg-vyxo-gold {
-    background-color: hsl(var(--vyxo-gold));
+    background-color: hsl(var(--cleargo-green));
   }
 
   .text-vyxo-navy {
-    color: hsl(var(--vyxo-navy));
+    color: hsl(var(--cleargo-blue-dark));
   }
 
   .text-vyxo-gold {
-    color: hsl(var(--vyxo-gold));
+    color: hsl(var(--cleargo-green));
   }
 
   .border-vyxo-gold {
-    border-color: hsl(var(--vyxo-gold));
+    border-color: hsl(var(--cleargo-green));
   }
 
   .border-vyxo-navy {
-    border-color: hsl(var(--vyxo-navy));
+    border-color: hsl(var(--cleargo-blue-dark));
   }
 
   /* ===== GRADIENTS ===== */
+  .gradient-blue {
+    background: var(--cleargo-gradient-blue);
+  }
+
+  .gradient-green {
+    background: var(--cleargo-gradient-green);
+  }
+
+  .gradient-hero {
+    background: var(--cleargo-gradient-hero);
+  }
+
+  /* Legacy gradient aliases */
   .gradient-navy {
-    background: var(--vyxo-gradient-navy);
+    background: var(--cleargo-gradient-blue);
   }
 
   .gradient-gold {
-    background: var(--vyxo-gradient-gold);
+    background: var(--cleargo-gradient-green);
   }
 
   .gradient-premium {
-    background: var(--vyxo-gradient-premium);
+    background: var(--cleargo-gradient-hero);
   }
 
   /* ===== GLASSMORPHISM ===== */
@@ -204,17 +261,40 @@
 
   /* ===== BENTO GRID CARDS ===== */
   .bento-card {
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     @apply bg-card border border-border p-6 transition-all duration-300;
     @apply hover:shadow-lg hover:border-accent/50;
   }
 
+  .bento-card-blue {
+    @apply bento-card;
+    background-color: hsl(var(--cleargo-blue-dark));
+    color: white;
+  }
+
+  .bento-card-green {
+    @apply bento-card;
+    border-color: hsl(var(--cleargo-green) / 0.3);
+  }
+
+  .bento-card-green:hover {
+    border-color: hsl(var(--cleargo-green));
+  }
+
+  /* Legacy aliases */
   .bento-card-navy {
-    @apply bento-card bg-vyxo-navy text-white;
+    @apply bento-card;
+    background-color: hsl(var(--cleargo-blue-dark));
+    color: white;
   }
 
   .bento-card-gold {
-    @apply bento-card border-vyxo-gold/30 hover:border-vyxo-gold;
+    @apply bento-card;
+    border-color: hsl(var(--cleargo-green) / 0.3);
+  }
+
+  .bento-card-gold:hover {
+    border-color: hsl(var(--cleargo-green));
   }
 
   /* ===== ANIMATIONS ===== */
@@ -262,15 +342,20 @@
   }
 
   /* ===== PREMIUM EFFECTS ===== */
-  .glow-gold {
-    box-shadow: 0 0 20px rgba(198, 156, 109, 0.3);
+  .glow-green {
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.3);
   }
 
-  .glow-navy {
-    box-shadow: 0 0 20px rgba(15, 35, 57, 0.3);
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(46, 134, 193, 0.3);
   }
 
   /* ===== RESPONSIVE UTILITIES ===== */
+  .container-cleargo {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Legacy alias */
   .container-vyxo {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
   }
@@ -294,16 +379,15 @@
   }
 
   .stat-change-positive {
-    @apply text-green-600 dark:text-green-400 text-sm font-medium;
+    @apply text-sm font-medium;
+    color: hsl(var(--cleargo-green));
   }
 
   .stat-change-negative {
     @apply text-red-600 dark:text-red-400 text-sm font-medium;
   }
 
-  /* ===== PREMIUM ANIMATIONS ===== */
-
-  /* Slide animations */
+  /* ===== SLIDE ANIMATIONS ===== */
   .animate-slide-in-left {
     animation: slideInLeft 0.5s ease-out;
   }
@@ -354,24 +438,12 @@
   }
 
   /* Stagger animation helper classes */
-  .stagger-1 {
-    animation-delay: 0.1s;
-  }
-  .stagger-2 {
-    animation-delay: 0.2s;
-  }
-  .stagger-3 {
-    animation-delay: 0.3s;
-  }
-  .stagger-4 {
-    animation-delay: 0.4s;
-  }
-  .stagger-5 {
-    animation-delay: 0.5s;
-  }
-  .stagger-6 {
-    animation-delay: 0.6s;
-  }
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
 
   /* Bounce animation */
   .animate-bounce-in {
@@ -395,34 +467,17 @@
     }
   }
 
-  /* Pulse glow animation for interactive elements */
+  /* Pulse glow animation */
   .animate-pulse-glow {
     animation: pulseGlow 2s ease-in-out infinite;
   }
 
   @keyframes pulseGlow {
-    0%,
-    100% {
-      box-shadow: 0 0 5px rgba(198, 156, 109, 0.3);
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(39, 174, 96, 0.3);
     }
     50% {
-      box-shadow: 0 0 20px rgba(198, 156, 109, 0.6),
-        0 0 30px rgba(198, 156, 109, 0.4);
-    }
-  }
-
-  .dark .animate-pulse-glow {
-    animation: pulseGlowDark 2s ease-in-out infinite;
-  }
-
-  @keyframes pulseGlowDark {
-    0%,
-    100% {
-      box-shadow: 0 0 5px rgba(198, 156, 109, 0.4);
-    }
-    50% {
-      box-shadow: 0 0 25px rgba(198, 156, 109, 0.7),
-        0 0 40px rgba(198, 156, 109, 0.5);
+      box-shadow: 0 0 20px rgba(39, 174, 96, 0.6), 0 0 30px rgba(39, 174, 96, 0.4);
     }
   }
 
@@ -439,12 +494,8 @@
   }
 
   @keyframes shimmer {
-    0% {
-      background-position: 200% 0;
-    }
-    100% {
-      background-position: -200% 0;
-    }
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
   }
 
   /* Float animation */
@@ -453,13 +504,8 @@
   }
 
   @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
   }
 
   /* Spin slow for icons */
@@ -473,25 +519,7 @@
   }
 
   @keyframes progressFill {
-    from {
-      width: 0%;
-    }
-  }
-
-  /* Number count up animation helper */
-  .animate-count-appear {
-    animation: countAppear 0.8s ease-out;
-  }
-
-  @keyframes countAppear {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { width: 0%; }
   }
 
   /* Hover effects */
@@ -501,7 +529,7 @@
 
   .hover-lift:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(26, 82, 118, 0.15);
   }
 
   .dark .hover-lift:hover {
@@ -513,7 +541,7 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(198, 156, 109, 0.4);
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.4);
   }
 
   /* Card animation on scroll */
@@ -536,7 +564,7 @@
   }
 }
 
-/* ===== FRAMER MOTION TRANSITIONS ===== */
+/* ===== PAGE TRANSITIONS ===== */
 .page-transition {
   animation: pageTransition 0.3s ease-in-out;
 }
@@ -552,15 +580,6 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
 /* ==========================================
    LANDING PAGE - ANIMATIONS & POLISH
    ========================================== */
@@ -570,65 +589,13 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
 @keyframes bounceSlow {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.animate-slide-in-up {
-  animation: slideInUp 0.5s ease-out forwards;
-}
-
-.animate-slide-in-down {
-  animation: slideInDown 0.5s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-out forwards;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.3s ease-out forwards;
-}
-
 .animate-bounce-slow {
   animation: bounceSlow 2s ease-in-out infinite;
-}
-
-.hover-lift {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 40px -10px rgba(245, 158, 11, 0.3);
-}
-
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skeleton {

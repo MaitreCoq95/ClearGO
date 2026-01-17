@@ -183,7 +183,7 @@ export function ManagerNotes({
               <Button
                 onClick={handleSaveNew}
                 disabled={!newNoteContent.trim() || isSaving}
-                className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
               >
                 <Save className="w-4 h-4 mr-1" />
                 {isSaving ? "Sauvegarde..." : "Sauvegarder"}
@@ -199,7 +199,7 @@ export function ManagerNotes({
             <p>Aucune note pour ce membre</p>
             <Button
               variant="link"
-              className="text-vyxo-gold"
+              className="text-ClearGo-gold"
               onClick={() => setIsAddingNote(true)}
             >
               Ajouter une première note
@@ -248,7 +248,7 @@ export function ManagerNotes({
                         size="sm"
                         onClick={handleUpdate}
                         disabled={isSaving}
-                        className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                        className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
                       >
                         {isSaving ? "..." : "Mettre à jour"}
                       </Button>

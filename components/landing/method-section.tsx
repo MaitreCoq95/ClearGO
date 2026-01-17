@@ -55,24 +55,24 @@ const pillars = [
       "Accompagnement jusqu'à l'audit"
     ],
     color: "gold",
-    bgClass: "bg-vyxo-gold/10 border-vyxo-gold/20",
-    iconBgClass: "bg-vyxo-gold/20",
-    iconClass: "text-vyxo-gold",
-    hoverClass: "hover:border-vyxo-gold/50"
+    bgClass: "bg-ClearGo-gold/10 border-ClearGo-gold/20",
+    iconBgClass: "bg-ClearGo-gold/20",
+    iconClass: "text-ClearGo-gold",
+    hoverClass: "hover:border-ClearGo-gold/50"
   }
 ]
 
 export function MethodSection() {
   return (
-    <section id="method-section" className="py-20 bg-gradient-to-b from-vyxo-navy to-slate-900">
+    <section id="method-section" className="py-20 bg-gradient-to-b from-ClearGo-navy to-slate-900">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-vyxo-gold text-sm font-semibold tracking-wider uppercase mb-4 block">
+          <span className="text-ClearGo-gold text-sm font-semibold tracking-wider uppercase mb-4 block">
             Notre approche hybride
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Vyxo Codex n&apos;est <span className="text-vyxo-gold">pas un logiciel</span>.
+            ClearGo n&apos;est <span className="text-ClearGo-gold">pas un logiciel</span>.
             <br />
             C&apos;est un programme de transformation.
           </h2>
@@ -141,20 +141,20 @@ export function MethodSection() {
                 <GraduationCap className="w-5 h-5 text-green-400" />
               </div>
               <div className="text-2xl text-white">+</div>
-              <div className="w-10 h-10 rounded-full bg-vyxo-gold/20 flex items-center justify-center">
-                <Users className="w-5 h-5 text-vyxo-gold" />
+              <div className="w-10 h-10 rounded-full bg-ClearGo-gold/20 flex items-center justify-center">
+                <Users className="w-5 h-5 text-ClearGo-gold" />
               </div>
             </div>
             
             <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
-              C&apos;est l&apos;alliance des <span className="text-vyxo-gold">trois</span> qui fait la différence.
+              C&apos;est l&apos;alliance des <span className="text-ClearGo-gold">trois</span> qui fait la différence.
             </h3>
             <p className="text-gray-400 mb-6">
               Pas de formation sans suivi terrain. Pas d&apos;outil sans expertise. 
               Pas d&apos;accompagnement sans mesure.
             </p>
             
-            <button className="inline-flex items-center gap-2 bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold py-3 px-6 rounded-lg transition-all hover:scale-105">
+            <button className="inline-flex items-center gap-2 bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold py-3 px-6 rounded-lg transition-all hover:scale-105">
               Découvrir comment ça marche
               <ArrowRight className="w-4 h-4" />
             </button>

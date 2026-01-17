@@ -180,7 +180,7 @@ export default function TemplatesPage() {
       <motion.div variants={item} className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white flex items-center gap-3">
-            <FileText className="h-8 w-8 text-vyxo-gold" />
+            <FileText className="h-8 w-8 text-ClearGo-gold" />
             Bibliothèque de Templates
           </h1>
           <p className="text-muted-foreground mt-1">
@@ -251,7 +251,7 @@ export default function TemplatesPage() {
       {/* Loading state */}
       {loading && (
         <div className="flex items-center justify-center py-20">
-          <Loader2 className="h-8 w-8 animate-spin text-vyxo-navy" />
+          <Loader2 className="h-8 w-8 animate-spin text-ClearGo-navy" />
         </div>
       )}
 
@@ -301,7 +301,7 @@ export default function TemplatesPage() {
 
             return (
               <motion.div key={template.id} variants={item}>
-                <Card className="h-full hover:shadow-lg transition-all border-l-4 border-l-transparent hover:border-l-vyxo-gold group">
+                <Card className="h-full hover:shadow-lg transition-all border-l-4 border-l-transparent hover:border-l-ClearGo-gold group">
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex items-center gap-3">
@@ -309,7 +309,7 @@ export default function TemplatesPage() {
                           <FormatIcon className={`h-5 w-5 ${formatConfig.color}`} />
                         </div>
                         <div>
-                          <CardTitle className="text-base line-clamp-2 group-hover:text-vyxo-navy dark:group-hover:text-vyxo-gold transition-colors">
+                          <CardTitle className="text-base line-clamp-2 group-hover:text-ClearGo-navy dark:group-hover:text-ClearGo-gold transition-colors">
                             {template.title}
                           </CardTitle>
                           <Badge variant="outline" className="mt-1 text-xs">
@@ -396,3 +396,4 @@ export default function TemplatesPage() {
     </motion.div>
   );
 }
+

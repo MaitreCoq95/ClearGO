@@ -140,7 +140,7 @@ export default function AdminAssessmentsPage() {
           </p>
         </div>
         <Link href="/admin/assessments/new/edit">
-          <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+          <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
             <Plus className="w-4 h-4 mr-2" />
             Nouvel assessment
           </Button>
@@ -151,7 +151,7 @@ export default function AdminAssessmentsPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <FileText className="w-6 h-6 mx-auto text-vyxo-gold mb-2" />
+            <FileText className="w-6 h-6 mx-auto text-ClearGo-gold mb-2" />
             <p className="text-2xl font-bold">{stats.total}</p>
             <p className="text-sm text-muted-foreground">Total</p>
           </CardContent>
@@ -198,11 +198,11 @@ export default function AdminAssessmentsPage() {
       {/* Assessments List */}
       <div className="space-y-3">
         {filteredAssessments.map(assessment => (
-          <Card key={assessment.id} className="bento-card hover:border-vyxo-gold/50 transition-colors">
+          <Card key={assessment.id} className="bento-card hover:border-ClearGo-gold/50 transition-colors">
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
                 <div className="p-3 rounded-lg bg-slate-800">
-                  <FileText className="w-6 h-6 text-vyxo-gold" />
+                  <FileText className="w-6 h-6 text-ClearGo-gold" />
                 </div>
 
                 <div className="flex-1 min-w-0">
@@ -270,3 +270,4 @@ export default function AdminAssessmentsPage() {
     </div>
   )
 }
+

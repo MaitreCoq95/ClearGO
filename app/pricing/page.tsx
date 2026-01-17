@@ -49,7 +49,7 @@ function PricingContent() {
   const standard = searchParams.get("standard") || "ISO_9001"
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 py-16 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
@@ -57,7 +57,7 @@ function PricingContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <Badge className="bg-vyxo-gold/20 text-vyxo-gold mb-4">
+          <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold mb-4">
             <Sparkles className="w-3 h-3 mr-1" />
             Premium
           </Badge>
@@ -81,13 +81,13 @@ function PricingContent() {
               <Card
                 className={`relative h-full ${
                   plan.popular
-                    ? "bg-gradient-to-br from-vyxo-gold/20 to-vyxo-gold/5 border-vyxo-gold/40"
+                    ? "bg-gradient-to-br from-ClearGo-gold/20 to-ClearGo-gold/5 border-ClearGo-gold/40"
                     : "bg-white/5 border-white/10"
                 }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-vyxo-gold text-vyxo-navy">
+                    <Badge className="bg-ClearGo-gold text-ClearGo-navy">
                       <Star className="w-3 h-3 mr-1" />
                       Plus populaire
                     </Badge>
@@ -97,7 +97,7 @@ function PricingContent() {
                 <CardHeader className="text-center pb-4 pt-8">
                   <CardTitle className="text-white text-xl mb-2">{plan.name}</CardTitle>
                   <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-3xl font-bold text-vyxo-gold">{plan.priceLabel}</span>
+                    <span className="text-3xl font-bold text-ClearGo-gold">{plan.priceLabel}</span>
                   </div>
                   <p className="text-gray-400 text-sm mt-2">{plan.description}</p>
                 </CardHeader>
@@ -106,7 +106,7 @@ function PricingContent() {
                   <ul className="space-y-3">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-3 text-gray-300">
-                        <Check className="w-5 h-5 text-vyxo-gold shrink-0" />
+                        <Check className="w-5 h-5 text-ClearGo-gold shrink-0" />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
@@ -115,7 +115,7 @@ function PricingContent() {
                   <Button
                     className={`w-full ${
                       plan.popular
-                        ? "bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+                        ? "bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
                         : "bg-white/10 text-white hover:bg-white/20"
                     }`}
                     size="lg"
@@ -148,7 +148,7 @@ function PricingContent() {
             Accès immédiat
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-vyxo-gold" />
+            <Check className="w-4 h-4 text-ClearGo-gold" />
             Satisfait ou remboursé 14j
           </div>
         </motion.div>
@@ -159,8 +159,9 @@ function PricingContent() {
 
 export default function PricingPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-vyxo-navy" />}>
+    <Suspense fallback={<div className="min-h-screen bg-ClearGo-navy" />}>
       <PricingContent />
     </Suspense>
   )
 }
+

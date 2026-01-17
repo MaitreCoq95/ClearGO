@@ -33,7 +33,7 @@ export function XPBar() {
 
   if (loading) {
     return (
-      <Card className="p-4 bg-gradient-to-r from-vyxo-gold/20 to-amber-100 dark:from-vyxo-gold/10 dark:to-amber-900/20 border-vyxo-gold/30">
+      <Card className="p-4 bg-gradient-to-r from-ClearGo-gold/20 to-amber-100 dark:from-ClearGo-gold/10 dark:to-amber-900/20 border-ClearGo-gold/30">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 bg-slate-200 dark:bg-slate-700 rounded-full animate-pulse" />
           <div className="flex-1 space-y-2">
@@ -52,14 +52,14 @@ export function XPBar() {
   const nextLevelXP = xpNeededForNextLevel(userXP.level);
 
   return (
-    <Card className="p-4 bg-gradient-to-r from-vyxo-gold/20 to-amber-100 dark:from-vyxo-gold/10 dark:to-amber-900/20 border-vyxo-gold/30">
+    <Card className="p-4 bg-gradient-to-r from-ClearGo-gold/20 to-amber-100 dark:from-ClearGo-gold/10 dark:to-amber-900/20 border-ClearGo-gold/30">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
         {/* Level Badge */}
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
               <div className="relative flex-shrink-0">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-br from-vyxo-gold to-amber-600 flex items-center justify-center shadow-lg">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-br from-ClearGo-gold to-amber-600 flex items-center justify-center shadow-lg">
                   <div className="text-center">
                     <Star className="h-5 w-5 text-white mx-auto mb-0.5" />
                     <p className="text-white font-bold text-sm">{userXP.level}</p>
@@ -85,7 +85,7 @@ export function XPBar() {
         <div className="flex-1 w-full sm:w-auto">
           <div className="flex items-center justify-between mb-2">
             <div>
-              <p className="text-sm font-semibold text-vyxo-navy dark:text-white">
+              <p className="text-sm font-semibold text-ClearGo-navy dark:text-white">
                 Niveau {userXP.level}
               </p>
               <p className="text-xs text-muted-foreground">
@@ -101,7 +101,7 @@ export function XPBar() {
           {/* Progress Bar */}
           <Progress value={progress} className="h-3 bg-amber-200 dark:bg-amber-900/30">
             <div
-              className="h-full bg-gradient-to-r from-vyxo-gold to-amber-500 transition-all duration-500 rounded-full"
+              className="h-full bg-gradient-to-r from-ClearGo-gold to-amber-500 transition-all duration-500 rounded-full"
               style={{ width: `${progress}%` }}
             />
           </Progress>

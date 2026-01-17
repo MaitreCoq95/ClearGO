@@ -13,7 +13,7 @@ function ConfirmationDirigeantContent() {
   const priority = searchParams.get("priority") || "48h"
 
   return (
-    <main className="min-h-screen bg-vyxo-navy">
+    <main className="min-h-screen bg-ClearGo-navy">
       {/* Header */}
       <div className="bg-gradient-to-b from-green-500/10 to-transparent py-20">
         <div className="container mx-auto px-4 text-center">
@@ -27,8 +27,8 @@ function ConfirmationDirigeantContent() {
           </h1>
           
           <p className="text-xl text-gray-400 max-w-xl mx-auto">
-            <span className="text-vyxo-gold font-semibold">{companyName}</span> est maintenant 
-            enregistrée pour l&apos;évaluation Vyxo Codex
+            <span className="text-ClearGo-gold font-semibold">{companyName}</span> est maintenant 
+            enregistrée pour l&apos;évaluation ClearGo
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ function ConfirmationDirigeantContent() {
             {/* Score */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
               <p className="text-gray-400 text-sm mb-2">Votre score</p>
-              <p className="text-5xl font-bold text-vyxo-gold">{score}</p>
+              <p className="text-5xl font-bold text-ClearGo-gold">{score}</p>
               <p className="text-gray-500 text-sm">/100 points</p>
             </div>
             
@@ -55,11 +55,11 @@ function ConfirmationDirigeantContent() {
             </div>
             
             {/* Accès */}
-            <div className="bg-vyxo-gold/10 border border-vyxo-gold/30 rounded-2xl p-6 text-center">
+            <div className="bg-ClearGo-gold/10 border border-ClearGo-gold/30 rounded-2xl p-6 text-center">
               <p className="text-gray-400 text-sm mb-2">Votre statut</p>
               <div className="flex items-center justify-center gap-2">
-                <Shield className="w-6 h-6 text-vyxo-gold" />
-                <p className="text-xl font-bold text-vyxo-gold">Accès Complet</p>
+                <Shield className="w-6 h-6 text-ClearGo-gold" />
+                <p className="text-xl font-bold text-ClearGo-gold">Accès Complet</p>
               </div>
               <p className="text-gray-500 text-sm">Tous modules débloqués</p>
             </div>
@@ -78,12 +78,12 @@ function ConfirmationDirigeantContent() {
             <div className="space-y-4">
               {/* Étape 1 */}
               <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-vyxo-gold flex items-center justify-center text-vyxo-navy font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-ClearGo-gold flex items-center justify-center text-ClearGo-navy font-bold">
                   1
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1 flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-vyxo-gold" />
+                    <Mail className="w-4 h-4 text-ClearGo-gold" />
                     Vérifiez votre email
                   </h3>
                   <p className="text-gray-400 text-sm">
@@ -95,16 +95,16 @@ function ConfirmationDirigeantContent() {
               
               {/* Étape 2 */}
               <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-vyxo-gold flex items-center justify-center text-vyxo-navy font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-ClearGo-gold flex items-center justify-center text-ClearGo-navy font-bold">
                   2
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1 flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-vyxo-gold" />
+                    <Phone className="w-4 h-4 text-ClearGo-gold" />
                     Appel découverte ({priority})
                   </h3>
                   <p className="text-gray-400 text-sm">
-                    Un expert Vyxo vous contactera sous {priority} pour un appel 
+                    Un expert ClearGo vous contactera sous {priority} pour un appel 
                     découverte de 30 minutes afin de personnaliser votre parcours.
                   </p>
                 </div>
@@ -112,12 +112,12 @@ function ConfirmationDirigeantContent() {
               
               {/* Étape 3 */}
               <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-vyxo-gold flex items-center justify-center text-vyxo-navy font-bold">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-ClearGo-gold flex items-center justify-center text-ClearGo-navy font-bold">
                   3
                 </div>
                 <div>
                   <h3 className="text-white font-semibold mb-1 flex items-center gap-2">
-                    <Download className="w-4 h-4 text-vyxo-gold" />
+                    <Download className="w-4 h-4 text-ClearGo-gold" />
                     Recevez votre rapport
                   </h3>
                   <p className="text-gray-400 text-sm">
@@ -137,7 +137,7 @@ function ConfirmationDirigeantContent() {
           <div className="max-w-xl mx-auto space-y-4">
             {/* CTA Principal */}
             <Button
-              className="w-full bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold py-6 text-lg"
+              className="w-full bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold py-6 text-lg"
               asChild
             >
               <Link href="/codex">
@@ -152,7 +152,7 @@ function ConfirmationDirigeantContent() {
               className="w-full border-white/20 text-white hover:bg-white/10 py-6"
               asChild
             >
-              <Link href="https://calendly.com/vyxo-codex" target="_blank">
+              <Link href="https://calendly.com/ClearGo-codex" target="_blank">
                 <Calendar className="w-5 h-5 mr-2" />
                 Réserver un créneau d&apos;appel maintenant
               </Link>
@@ -160,8 +160,8 @@ function ConfirmationDirigeantContent() {
             
             <p className="text-center text-gray-500 text-sm">
               Besoin d&apos;aide ? Contactez-nous à{" "}
-              <a href="mailto:support@vyxo-codex.fr" className="text-vyxo-gold hover:underline">
-                support@vyxo-codex.fr
+              <a href="mailto:support@ClearGo-codex.fr" className="text-ClearGo-gold hover:underline">
+                support@ClearGo-codex.fr
               </a>
             </p>
           </div>
@@ -191,8 +191,9 @@ function ConfirmationDirigeantContent() {
 
 export default function ConfirmationDirigeantPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-vyxo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" /></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-ClearGo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" /></div>}>
       <ConfirmationDirigeantContent />
     </Suspense>
   )
 }
+

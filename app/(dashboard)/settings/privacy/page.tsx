@@ -313,8 +313,9 @@ export default function PrivacyPage() {
         <Link href="/privacy" className="hover:underline">Politique de confidentialité</Link>
         <Link href="/terms" className="hover:underline">Conditions d'utilisation</Link>
         <Link href="/gdpr" className="hover:underline">Mentions RGPD</Link>
-        <a href="mailto:dpo@vyxo.fr" className="hover:underline">Contacter le DPO</a>
+        <a href="mailto:dpo@cleargo.fr" className="hover:underline">Contacter le DPO</a>
       </div>
     </div>
   )
 }
+

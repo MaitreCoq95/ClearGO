@@ -1,5 +1,5 @@
 /**
- * Index pour le module Vyxo Codex
+ * Index pour le module ClearGo
  * Centralise tous les exports pour faciliter les imports
  */
 

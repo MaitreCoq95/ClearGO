@@ -16,7 +16,7 @@ export function RoleSelector({ onRoleSelect }: RoleSelectorProps) {
   }
 
   return (
-    <section id="differentiation" className="py-20 bg-gradient-to-b from-vyxo-navy to-slate-900">
+    <section id="differentiation" className="py-20 bg-gradient-to-b from-ClearGo-navy to-slate-900">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

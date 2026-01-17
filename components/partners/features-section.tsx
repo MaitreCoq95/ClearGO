@@ -63,7 +63,7 @@ const supportFeatures = [
     points: [
       "Jour 1: Maîtrise plateforme",
       "Jour 2: Méthodologie vente",
-      "Certification Vyxo Partner",
+      "Certification ClearGo Partner",
       "Support post-formation 30j"
     ]
   },
@@ -123,7 +123,7 @@ export function FeaturesSection() {
                 <BarChart3 className="w-6 h-6 text-partner-accent" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">LA PLATEFORME VYXO</h3>
+                <h3 className="text-xl font-bold text-white">LA PLATEFORME ClearGo</h3>
                 <p className="text-gray-400 text-sm">Technologie clé-en-main</p>
               </div>
             </div>
@@ -197,7 +197,7 @@ export function FeaturesSection() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <span className="bg-slate-800/50 text-gray-300 text-sm px-3 py-1 rounded-full">
-                  Co-marketing Vyxo
+                  Co-marketing ClearGo
                 </span>
                 <span className="bg-slate-800/50 text-gray-300 text-sm px-3 py-1 rounded-full">
                   Leads partagés (zone géo)

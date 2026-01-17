@@ -54,8 +54,8 @@ export default function CodexDashboardPage() {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <BookOpen className="h-8 w-8 text-cyan-500" />
-            <h1 className="text-3xl font-bold tracking-tight text-vyxo-navy dark:text-white">
-              Vyxo Codex
+            <h1 className="text-3xl font-bold tracking-tight text-ClearGo-navy dark:text-white">
+              ClearGo
             </h1>
           </div>
           <p className="text-muted-foreground mt-1">
@@ -82,7 +82,7 @@ export default function CodexDashboardPage() {
             </Button>
           </Link>
           <Link href="/codex/quiz">
-            <Button className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90 font-medium">
+            <Button className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90 font-medium">
               <Dices className="mr-2 h-4 w-4" />
               Quiz
             </Button>
@@ -100,7 +100,7 @@ export default function CodexDashboardPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Modules</p>
-                <p className="text-2xl font-bold text-vyxo-navy dark:text-white">
+                <p className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                   {stats.totalModules}
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function CodexDashboardPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Catégories</p>
-                <p className="text-2xl font-bold text-vyxo-navy dark:text-white">
+                <p className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                   {stats.categories}
                 </p>
               </div>
@@ -195,3 +195,4 @@ export default function CodexDashboardPage() {
     </div>
   );
 }
+

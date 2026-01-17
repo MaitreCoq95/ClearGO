@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearGo - Diagrammes Process (Export PNG)</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .diagram-container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .diagram-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .mermaid {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .export-buttons {
+            margin-top: 20px;
+            text-align: right;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .info-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .legend {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .legend h3 {
+            margin-top: 0;
+        }
+        .legend ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 ClearGo - Diagrammes Process</h1>
+    <p><strong>Version :</strong> 3.0 — Validée | <strong>Date :</strong> 16 janvier 2026</p>
+    
+    <div class="info-box">
+        <strong>📥 Instructions d'export PNG :</strong>
+        <ol>
+            <li>Faites un clic droit sur le diagramme souhaité</li>
+            <li>Sélectionnez "Enregistrer l'image sous..."</li>
+            <li>Choisissez le format PNG</li>
+            <li>Alternative : Utilisez le bouton "Télécharger PNG" sous chaque diagramme</li>
+        </ol>
+    </div>
+
+    <!-- Diagramme 1 -->
+    <div class="diagram-container">
+        <div class="diagram-title">Diagramme 1 : Architecture modulaire ClearGo</div>
+        <div class="mermaid">
+flowchart TD
+    subgraph Core[CŒUR OBLIGATOIRE - Conformité RSE Transport]
+        direction TB
+        INSPECTION[🚨 SÉCURISATION CONTRÔLES<br/>Inspection Travail + URSSAF]
+        RH[📋 SUIVI CHAUFFEURS<br/>Formations, habilitations, AT]
+        TACHY[Tachygraphe Gen2<br/>Temps conduite & repos]
+        FACTURE[Facturation électronique]
+        CARTES[Cartes conducteurs]
+        AUTORISATION[Autorisation exercer]
+        ENV[Normes environnementales]
+    end
+    
+    subgraph Options[MODULES OPTIONNELS]
+        GDP[GDP<br/>Transport pharma]
+        HACCP[HACCP<br/>Transport alimentaire]
+        ADR[ADR<br/>Matières dangereuses]
+        CO2[Empreinte Carbone<br/>ISO 14083 + EVE<br/>Intégration API possible]
+    end
+    
+    Transporteur[Transporteur] --> Core
+    Core --> Options
+    
+    style INSPECTION fill:#dc3545,color:#fff,stroke:#a71d2a,stroke-width:3px
+    style RH fill:#ffc107,stroke:#d39e00,stroke-width:2px
+    style Core fill:#cfe2ff
+    style Options fill:#fff3cd
+    style CO2 fill:#e2e3e5,stroke:#6c757d,stroke-dasharray: 5 5
+        </div>
+    </div>
+
+    <!-- Diagramme 2 -->
+    <div class="diagram-container">
+        <div class="diagram-title">Diagramme 2 : Parcours complet transporteur</div>
+        <div class="mermaid">
+flowchart TD
+    Start([Transporteur arrive sur ClearGo]) --> Freemium[Freemium : 12 questions<br/>Focus sécurisation contrôles RSE]
+    Freemium --> Score1[Score de conformité<br/>+ Alertes risques immédiats]
+    Score1 --> Decision1{Veut diagnostic complet ?}
+    
+    Decision1 -->|Non| Exit1[Exit plateforme]
+    Decision1 -->|Oui| PayDiag[Paiement diagnostic complet RSE]
+    
+    PayDiag --> Upload[Upload documents obligatoires:<br/>- Autorisation exercer<br/>- Nb chauffeurs/véhicules<br/>- Cartes conducteurs si PL]
+    
+    Upload --> AnalyseIA[Analyse IA conformité RSE<br/>Focus Inspection + URSSAF + AT]
+    AnalyseIA --> PlanAction[Plan d'action RSE détaillé<br/>Priorisation risques]
+    
+    PlanAction --> DecisionModule{Activité spécialisée ?}
+    
+    DecisionModule -->|Non| Decision2{Choix transporteur}
+    DecisionModule -->|Oui| ModuleChoice[Module GDP / HACCP / ADR / CO2]
+    ModuleChoice --> PlanActionModule[Plan d'action module spécialisé]
+    PlanActionModule --> Decision2
+    
+    Decision2 -->|Option A| AutoGestion[Applique lui-même]
+    AutoGestion --> Exit2[Exit ou consultation ponctuelle]
+    
+    Decision2 -->|Option B| Abonnement[Souscription accompagnement]
+    Abonnement --> Suivi[Suivi mensuel + E-learning<br/>Création documents + Rappels]
+    Suivi --> Validation[Validation jalons RSE]
+    Validation --> Dossier[Dossier de conformité<br/>Prêt pour inspection]
+    
+    Decision2 -->|Option C| Consultant[Partage consultant externe]
+    Consultant --> ConsultantPlatform[Consultant gère via interface B2B2C]
+    
+    style Freemium fill:#e1f5e1
+    style Score1 fill:#ffc107
+    style PayDiag fill:#fff3cd
+    style ModuleChoice fill:#e2e3e5,stroke-dasharray: 5 5
+    style Abonnement fill:#cfe2ff
+    style Dossier fill:#d4edda
+        </div>
+    </div>
+
+    <!-- Diagramme 3 -->
+    <div class="diagram-container">
+        <div class="diagram-title">Diagramme 3 : Priorités conformité RSE (Focus MVP)</div>
+        <div class="mermaid">
+flowchart LR
+    subgraph Priorite1[🚨 PRIORITÉ 1 - Risques immédiats]
+        INSPECTION[Inspection du Travail<br/>Enregistrements chauffeurs]
+        URSSAF[URSSAF<br/>Déclarations sociales]
+        AT[Accidents du Travail<br/>Déclarations + prévention]
+    end
+    
+    subgraph Priorite2[⚠️ PRIORITÉ 2 - Obligations 2026]
+        TACHY[Tachygraphe Gen2<br/>1er juillet 2026]
+        FACTURE[Facturation électronique<br/>Septembre 2026]
+    end
+    
+    subgraph Priorite3[✅ PRIORITÉ 3 - Amélioration continue]
+        FORMATION[Formations chauffeurs]
+        DOCUMENTS[Création documents]
+        VEILLE[Veille réglementaire]
+    end
+    
+    Transporteur[Transporteur] --> Priorite1
+    Priorite1 --> Priorite2
+    Priorite2 --> Priorite3
+    
+    style Priorite1 fill:#dc3545,color:#fff
+    style Priorite2 fill:#ffc107
+    style Priorite3 fill:#28a745,color:#fff
+        </div>
+    </div>
+
+    <!-- Diagramme 4 -->
+    <div class="diagram-container">
+        <div class="diagram-title">Diagramme 4 : Architecture des profils utilisateurs</div>
+        <div class="mermaid">
+flowchart LR
+    subgraph Transporteur
+        Dirigeant[Dirigeant<br/>Full accès]
+        Manager[Manager/Responsable<br/>Accès partiel]
+        RQ[Responsable Qualité<br/>Accès étendu]
+    end
+    
+    subgraph Consultant
+        ConsultExt[Consultant Externe<br/>Interface B2B2C]
+    end
+    
+    subgraph Plateforme
+        Dashboard[Tableau de bord]
+        Docs[Gestion documentaire]
+        Actions[Actions correctives]
+        Elearning[E-learning]
+    end
+    
+    Dirigeant -->|Gère| Manager
+    Dirigeant -->|Gère| RQ
+    Dirigeant -->|Full accès| Dashboard
+    Dirigeant -->|Full accès| Docs
+    
+    Manager -->|Saisie| Docs
+    Manager -->|Lecture| Dashboard
+    
+    RQ -->|Gère| Actions
+    RQ -->|Accès| Elearning
+    
+    ConsultExt -->|Multi-clients| Dashboard
+    ConsultExt -.->|Lecture seule| Docs
+    
+    style Dirigeant fill:#d4edda
+    style ConsultExt fill:#f8d7da
+        </div>
+    </div>
+
+    <!-- Diagramme 5 -->
+    <div class="diagram-container">
+        <div class="diagram-title">Diagramme 5 : Modèle économique (Entonnoir de conversion)</div>
+        <div class="mermaid">
+flowchart TD
+    subgraph Freemium
+        F1[12 questions gratuites<br/>Focus RSE de base]
+        F2[Score de conformité]
+        F3[Alertes risques immédiats<br/>Frustration contrôlée]
+    end
+    
+    subgraph Diagnostic
+        D1[Paiement unique<br/>~200€/mois max]
+        D2[Auto-diagnostic complet]
+        D3[Plan d'action détaillé<br/>Priorisation risques]
+    end
+    
+    subgraph Accompagnement
+        A1[Abonnement mensuel/annuel]
+        A2[Suivi + E-learning]
+        A3[Création documents<br/>Rappels réglementaires]
+        A4[Validation jalons]
+    end
+    
+    Freemium --> Diagnostic
+    Diagnostic --> Accompagnement
+    
+    style Freemium fill:#e1f5e1
+    style Diagnostic fill:#fff3cd
+    style Accompagnement fill:#cfe2ff
+        </div>
+    </div>
+
+    <!-- Diagramme 6 -->
+    <div class="diagram-container">
+        <div class="diagram-title">Diagramme 6 : Obligations réglementaires 2026 (Timeline)</div>
+        <div class="mermaid">
+gantt
+    title Échéances réglementaires transport 2026
+    dateFormat YYYY-MM-DD
+    section Tachygraphe
+    Tachygraphe Gen2 obligatoire VUL >2,5t international :milestone, 2026-07-01, 0d
+    section Facturation
+    Réception facture électronique obligatoire (tous) :milestone, 2026-09-01, 0d
+    Émission facture électronique (grandes entreprises & ETI) :milestone, 2026-09-01, 0d
+    section Environnement
+    Euro 6 obligatoire pour 44 tonnes :milestone, 2025-10-01, 0d
+    section Continue
+    Information GES CO2 (obligatoire si module activé) :2025-01-01, 2026-12-31
+    Temps conduite & repos CE 561/2006 :2025-01-01, 2026-12-31
+        </div>
+    </div>
+
+    <div class="legend">
+        <h3>📌 Légende des couleurs</h3>
+        <ul>
+            <li>🔴 <strong>Rouge (#dc3545)</strong> : Priorité critique / Risque élevé</li>
+            <li>🟡 <strong>Jaune (#ffc107)</strong> : Priorité haute / Attention requise</li>
+            <li>🟢 <strong>Vert (#28a745)</strong> : Amélioration continue / Objectif atteint</li>
+            <li>🔵 <strong>Bleu (#cfe2ff)</strong> : Cœur de métier / Obligatoire</li>
+            <li>🟠 <strong>Orange (#fff3cd)</strong> : Optionnel / Premium</li>
+            <li>⚪ <strong>Gris (#e2e3e5)</strong> : En pointillé = Option non prioritaire</li>
+        </ul>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            },
+            gantt: {
+                useMaxWidth: true
+            }
+        });
+    </script>
+</body>
+</html>

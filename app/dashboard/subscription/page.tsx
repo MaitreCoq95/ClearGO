@@ -51,7 +51,7 @@ function SubscriptionContent() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4 py-8">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <motion.div
@@ -60,16 +60,16 @@ function SubscriptionContent() {
           className="mb-8"
         >
           <h1 className="text-3xl font-bold text-white mb-2">Mon Abonnement</h1>
-          <p className="text-gray-400">Gérez votre abonnement Vyxo Codex</p>
+          <p className="text-gray-400">Gérez votre abonnement ClearGo</p>
         </motion.div>
 
         <div className="space-y-6">
           {/* Current Plan */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <Card className="bg-gradient-to-br from-vyxo-gold/20 to-vyxo-gold/5 border-vyxo-gold/30">
+            <Card className="bg-gradient-to-br from-ClearGo-gold/20 to-ClearGo-gold/5 border-ClearGo-gold/30">
               <CardHeader className="flex flex-row items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <Crown className="w-6 h-6 text-vyxo-gold" />
+                  <Crown className="w-6 h-6 text-ClearGo-gold" />
                   <div>
                     <CardTitle className="text-white">{subscription.plan}</CardTitle>
                     <p className="text-gray-400 text-sm">Plan Premium actif</p>
@@ -106,7 +106,7 @@ function SubscriptionContent() {
             <Card className="bg-white/5 border-white/10">
               <CardHeader>
                 <CardTitle className="text-white flex items-center gap-2 text-lg">
-                  <CreditCard className="w-5 h-5 text-vyxo-gold" />
+                  <CreditCard className="w-5 h-5 text-ClearGo-gold" />
                   Moyen de paiement
                 </CardTitle>
               </CardHeader>
@@ -162,8 +162,8 @@ function SubscriptionContent() {
                   <p className="text-blue-400 font-medium text-sm">Besoin d'aide ?</p>
                   <p className="text-gray-400 text-xs mt-1">
                     Contactez notre support à{" "}
-                    <a href="mailto:support@vyxo.io" className="text-blue-400 hover:underline">
-                      support@vyxo.io
+                    <a href="mailto:support@ClearGo.io" className="text-blue-400 hover:underline">
+                      support@ClearGo.io
                     </a>
                   </p>
                 </div>
@@ -178,8 +178,9 @@ function SubscriptionContent() {
 
 export default function SubscriptionPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-vyxo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" /></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-ClearGo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" /></div>}>
       <SubscriptionContent />
     </Suspense>
   )
 }
+

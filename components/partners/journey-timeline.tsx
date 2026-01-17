@@ -26,7 +26,7 @@ const steps = [
     icon: Rocket,
     title: "Première mission",
     timing: "Mois 1-2",
-    description: "Tu intègres Vyxo sur ta prochaine mission. Support rapproché Vyxo (coaching).",
+    description: "Tu intègres ClearGo sur ta prochaine mission. Support rapproché ClearGo (coaching).",
     action: "Premier client équipé ✅",
     color: "purple-400"
   },
@@ -45,7 +45,7 @@ const steps = [
     title: "Autonomie",
     timing: "Mois 6+",
     description: "Tu es 100% autonome. Ton offre Consulting + SaaS est rodée. MRR établi.",
-    action: "Tu deviens success story Vyxo",
+    action: "Tu deviens success story ClearGo",
     color: "partner-highlight"
   }
 ]

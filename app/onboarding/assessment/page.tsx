@@ -40,8 +40,8 @@ function QuestionRenderer({
               onClick={() => onChange(v)}
               className={`w-12 h-12 rounded-full border-2 font-semibold transition-all ${
                 value === v
-                  ? "bg-vyxo-gold text-vyxo-navy border-vyxo-gold"
-                  : "border-white/20 text-white hover:border-vyxo-gold/50"
+                  ? "bg-ClearGo-gold text-ClearGo-navy border-ClearGo-gold"
+                  : "border-white/20 text-white hover:border-ClearGo-gold/50"
               }`}
             >
               {v}
@@ -62,11 +62,11 @@ function QuestionRenderer({
             onClick={() => onChange(option.value as string)}
             className={`w-full p-4 rounded-lg border text-left transition-all ${
               value === option.value
-                ? "border-vyxo-gold bg-vyxo-gold/10"
+                ? "border-ClearGo-gold bg-ClearGo-gold/10"
                 : "border-white/20 bg-white/5 hover:border-white/40"
             }`}
           >
-            <span className={value === option.value ? "text-vyxo-gold" : "text-white"}>
+            <span className={value === option.value ? "text-ClearGo-gold" : "text-white"}>
               {option.label}
             </span>
           </button>
@@ -117,9 +117,9 @@ function AssessmentContent() {
 
   if (!template) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
         <div className="text-center">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin mx-auto mb-4" />
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin mx-auto mb-4" />
           <p className="text-gray-400">Chargement du questionnaire...</p>
         </div>
       </div>
@@ -181,7 +181,7 @@ function AssessmentContent() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="mb-6">
@@ -211,7 +211,7 @@ function AssessmentContent() {
 
         {/* Section indicator */}
         <div className="mb-4">
-          <div className="flex items-center gap-2 text-vyxo-gold">
+          <div className="flex items-center gap-2 text-ClearGo-gold">
             <span className="text-2xl">{currentSection.icon}</span>
             <span className="font-semibold">{currentSection.title}</span>
           </div>
@@ -263,7 +263,7 @@ function AssessmentContent() {
           <Button
             onClick={goNext}
             disabled={currentQuestion?.required && !hasAnswer}
-            className="flex-1 bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+            className="flex-1 bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
           >
             {isLastQuestion ? (
               <>
@@ -288,7 +288,7 @@ function AssessmentContent() {
                 idx < currentSectionIndex
                   ? "bg-green-500"
                   : idx === currentSectionIndex
-                  ? "bg-vyxo-gold"
+                  ? "bg-ClearGo-gold"
                   : "bg-white/20"
               }`}
               title={section.title}
@@ -305,8 +305,8 @@ export default function AssessmentPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
         </div>
       }
     >
@@ -314,3 +314,4 @@ export default function AssessmentPage() {
     </Suspense>
   )
 }
+

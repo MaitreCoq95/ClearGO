@@ -23,9 +23,9 @@ const roleData = {
       "Certification facilitée grâce au suivi continu"
     ],
     cta: "ÉVALUER MON ORGANISATION",
-    ctaStyle: "bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold",
-    cardStyle: "border-vyxo-gold/30 hover:border-vyxo-gold/60",
-    glowColor: "from-vyxo-gold/20"
+    ctaStyle: "bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold",
+    cardStyle: "border-ClearGo-gold/30 hover:border-ClearGo-gold/60",
+    glowColor: "from-ClearGo-gold/20"
   },
   manager: {
     icon: ClipboardList,
@@ -50,7 +50,7 @@ export function RoleCard({ type, onSelect, isSelected }: RoleCardProps) {
 
   return (
     <Card 
-      className={`relative overflow-hidden cursor-pointer transition-all duration-300 bg-white/5 ${data.cardStyle} ${isSelected ? 'ring-2 ring-vyxo-gold' : ''} hover:-translate-y-1 group`}
+      className={`relative overflow-hidden cursor-pointer transition-all duration-300 bg-white/5 ${data.cardStyle} ${isSelected ? 'ring-2 ring-ClearGo-gold' : ''} hover:-translate-y-1 group`}
       onClick={onSelect}
     >
       {/* Glow effect */}
@@ -79,7 +79,7 @@ export function RoleCard({ type, onSelect, isSelected }: RoleCardProps) {
         <ul className="space-y-3 mb-8">
           {data.benefits.map((benefit, i) => (
             <li key={i} className="flex items-start gap-3 text-gray-300">
-              <CheckCircle2 className="w-5 h-5 text-vyxo-gold flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-5 h-5 text-ClearGo-gold flex-shrink-0 mt-0.5" />
               <span className="text-sm">{benefit}</span>
             </li>
           ))}
@@ -99,8 +99,8 @@ export function RoleCard({ type, onSelect, isSelected }: RoleCardProps) {
         {/* Selected indicator */}
         {isSelected && (
           <div className="absolute top-4 right-4">
-            <div className="w-8 h-8 rounded-full bg-vyxo-gold flex items-center justify-center">
-              <CheckCircle2 className="w-5 h-5 text-vyxo-navy" />
+            <div className="w-8 h-8 rounded-full bg-ClearGo-gold flex items-center justify-center">
+              <CheckCircle2 className="w-5 h-5 text-ClearGo-navy" />
             </div>
           </div>
         )}

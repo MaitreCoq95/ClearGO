@@ -2,7 +2,7 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { UserXP, UserLearningProgress, XP_REWARDS } from "@/types/codex";
 
 /**
- * Système XP pour le Vyxo Codex
+ * Système XP pour le ClearGo
  * Gestion de la gamification : XP, niveaux, badges, progression
  */
 

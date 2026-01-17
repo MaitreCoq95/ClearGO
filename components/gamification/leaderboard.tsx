@@ -69,7 +69,7 @@ export function Leaderboard({
 
   const getRankIcon = (rank: number) => {
     switch (rank) {
-      case 1: return <Crown className="w-6 h-6 text-vyxo-gold" />
+      case 1: return <Crown className="w-6 h-6 text-ClearGo-gold" />
       case 2: return <Medal className="w-6 h-6 text-slate-300" />
       case 3: return <Medal className="w-6 h-6 text-orange-400" />
       default: return <span className="text-lg font-bold text-muted-foreground">{rank}</span>
@@ -78,7 +78,7 @@ export function Leaderboard({
 
   const getRankStyle = (rank: number) => {
     switch (rank) {
-      case 1: return "bg-gradient-to-r from-vyxo-gold/20 to-transparent border-vyxo-gold/30"
+      case 1: return "bg-gradient-to-r from-ClearGo-gold/20 to-transparent border-ClearGo-gold/30"
       case 2: return "bg-gradient-to-r from-slate-500/10 to-transparent border-slate-500/30"
       case 3: return "bg-gradient-to-r from-orange-500/10 to-transparent border-orange-500/30"
       default: return "border-slate-700"
@@ -98,7 +98,7 @@ export function Leaderboard({
     <Card className="bento-card">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle className="flex items-center gap-2">
-          <Trophy className="w-5 h-5 text-vyxo-gold" />
+          <Trophy className="w-5 h-5 text-ClearGo-gold" />
           Classement
         </CardTitle>
         <Tabs value={activeTab} onValueChange={handlePeriodChange}>
@@ -124,23 +124,23 @@ export function Leaderboard({
               >
                 <div className="relative mb-2">
                   <Avatar className={`${isFirst ? "w-16 h-16" : "w-12 h-12"} ring-2 ${
-                    isFirst ? "ring-vyxo-gold" : podiumIndex === 1 ? "ring-slate-400" : "ring-orange-400"
+                    isFirst ? "ring-ClearGo-gold" : podiumIndex === 1 ? "ring-slate-400" : "ring-orange-400"
                   }`}>
                     <AvatarImage src={entry.avatar} />
-                    <AvatarFallback className="bg-vyxo-navy text-white">
+                    <AvatarFallback className="bg-ClearGo-navy text-white">
                       {entry.name.split(" ").map(n => n[0]).join("")}
                     </AvatarFallback>
                   </Avatar>
                   <div className={`absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center ${
-                    isFirst ? "bg-vyxo-gold" : podiumIndex === 1 ? "bg-slate-400" : "bg-orange-400"
+                    isFirst ? "bg-ClearGo-gold" : podiumIndex === 1 ? "bg-slate-400" : "bg-orange-400"
                   }`}>
-                    <span className="text-xs font-bold text-vyxo-navy">
+                    <span className="text-xs font-bold text-ClearGo-navy">
                       {entry.rank}
                     </span>
                   </div>
                 </div>
                 <p className="font-medium text-sm text-center">{entry.name.split(" ")[0]}</p>
-                <p className="text-xs text-vyxo-gold font-bold">{entry.xp.toLocaleString()} XP</p>
+                <p className="text-xs text-ClearGo-gold font-bold">{entry.xp.toLocaleString()} XP</p>
               </div>
             )
           })}
@@ -158,7 +158,7 @@ export function Leaderboard({
                 className={`
                   flex items-center gap-4 p-3 rounded-xl border transition-all
                   ${getRankStyle(entry.rank)}
-                  ${isCurrentUser ? "ring-2 ring-vyxo-gold/50" : ""}
+                  ${isCurrentUser ? "ring-2 ring-ClearGo-gold/50" : ""}
                 `}
               >
                 {/* Rank */}
@@ -181,7 +181,7 @@ export function Leaderboard({
                 {/* User */}
                 <Avatar className="w-10 h-10">
                   <AvatarImage src={entry.avatar} />
-                  <AvatarFallback className="bg-vyxo-navy text-white text-sm">
+                  <AvatarFallback className="bg-ClearGo-navy text-white text-sm">
                     {entry.name.split(" ").map(n => n[0]).join("")}
                   </AvatarFallback>
                 </Avatar>
@@ -190,7 +190,7 @@ export function Leaderboard({
                   <p className="font-medium truncate">
                     {entry.name}
                     {isCurrentUser && (
-                      <Badge className="ml-2 text-xs bg-vyxo-gold/10 text-vyxo-gold">Vous</Badge>
+                      <Badge className="ml-2 text-xs bg-ClearGo-gold/10 text-ClearGo-gold">Vous</Badge>
                     )}
                   </p>
                   {showDepartment && entry.department && (
@@ -213,7 +213,7 @@ export function Leaderboard({
                     </div>
                   </div>
                   <div className="text-right min-w-[80px]">
-                    <p className="font-bold text-vyxo-gold flex items-center gap-1">
+                    <p className="font-bold text-ClearGo-gold flex items-center gap-1">
                       <Zap className="w-4 h-4" />
                       {entry.xp.toLocaleString()}
                     </p>
@@ -232,15 +232,15 @@ export function Leaderboard({
               Votre position
             </p>
             <div className={`
-              flex items-center gap-4 p-3 rounded-xl border border-vyxo-gold/30
-              bg-vyxo-gold/5 ring-2 ring-vyxo-gold/30
+              flex items-center gap-4 p-3 rounded-xl border border-ClearGo-gold/30
+              bg-ClearGo-gold/5 ring-2 ring-ClearGo-gold/30
             `}>
               <div className="w-8 flex justify-center">
                 <span className="text-lg font-bold">#{entries.findIndex(e => e.id === currentUserId) + 1}</span>
               </div>
               <Avatar className="w-10 h-10">
                 <AvatarImage src={currentUserEntry.avatar} />
-                <AvatarFallback className="bg-vyxo-navy text-white text-sm">
+                <AvatarFallback className="bg-ClearGo-navy text-white text-sm">
                   {currentUserEntry.name.split(" ").map(n => n[0]).join("")}
                 </AvatarFallback>
               </Avatar>
@@ -248,7 +248,7 @@ export function Leaderboard({
                 <p className="font-medium">{currentUserEntry.name}</p>
               </div>
               <div className="text-right">
-                <p className="font-bold text-vyxo-gold">{currentUserEntry.xp.toLocaleString()} XP</p>
+                <p className="font-bold text-ClearGo-gold">{currentUserEntry.xp.toLocaleString()} XP</p>
               </div>
             </div>
           </div>

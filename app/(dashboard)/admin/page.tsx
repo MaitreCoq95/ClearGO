@@ -139,8 +139,8 @@ export default function AdminDashboardPage() {
         <Card className="bento-card">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-vyxo-gold/10 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-vyxo-gold" />
+              <div className="w-12 h-12 rounded-xl bg-ClearGo-gold/10 flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-ClearGo-gold" />
               </div>
               <div>
                 <div className="flex items-baseline gap-2">
@@ -189,10 +189,10 @@ export default function AdminDashboardPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {quickActions.map((action, index) => (
           <Link key={index} href={action.href}>
-            <Card className="bento-card hover:border-vyxo-gold/50 transition-colors cursor-pointer h-full">
+            <Card className="bento-card hover:border-ClearGo-gold/50 transition-colors cursor-pointer h-full">
               <CardContent className="p-4 flex flex-col items-center justify-center text-center gap-2">
-                <div className="w-10 h-10 rounded-xl bg-vyxo-navy/10 dark:bg-vyxo-gold/10 flex items-center justify-center">
-                  <action.icon className="w-5 h-5 text-vyxo-navy dark:text-vyxo-gold" />
+                <div className="w-10 h-10 rounded-xl bg-ClearGo-navy/10 dark:bg-ClearGo-gold/10 flex items-center justify-center">
+                  <action.icon className="w-5 h-5 text-ClearGo-navy dark:text-ClearGo-gold" />
                 </div>
                 <span className="text-sm font-medium">{action.label}</span>
               </CardContent>
@@ -295,7 +295,7 @@ export default function AdminDashboardPage() {
       {/* Navigation Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Link href="/admin/users">
-          <Card className="bento-card hover:border-vyxo-gold/50 transition-colors cursor-pointer">
+          <Card className="bento-card hover:border-ClearGo-gold/50 transition-colors cursor-pointer">
             <CardContent className="p-6">
               <Users className="w-8 h-8 text-blue-500 mb-3" />
               <h3 className="font-semibold mb-1">Utilisateurs</h3>
@@ -305,7 +305,7 @@ export default function AdminDashboardPage() {
         </Link>
         
         <Link href="/admin/departments">
-          <Card className="bento-card hover:border-vyxo-gold/50 transition-colors cursor-pointer">
+          <Card className="bento-card hover:border-ClearGo-gold/50 transition-colors cursor-pointer">
             <CardContent className="p-6">
               <Building2 className="w-8 h-8 text-purple-500 mb-3" />
               <h3 className="font-semibold mb-1">Départements</h3>
@@ -315,7 +315,7 @@ export default function AdminDashboardPage() {
         </Link>
         
         <Link href="/admin/content">
-          <Card className="bento-card hover:border-vyxo-gold/50 transition-colors cursor-pointer">
+          <Card className="bento-card hover:border-ClearGo-gold/50 transition-colors cursor-pointer">
             <CardContent className="p-6">
               <BookOpen className="w-8 h-8 text-emerald-500 mb-3" />
               <h3 className="font-semibold mb-1">Contenu</h3>
@@ -325,9 +325,9 @@ export default function AdminDashboardPage() {
         </Link>
         
         <Link href="/admin/analytics">
-          <Card className="bento-card hover:border-vyxo-gold/50 transition-colors cursor-pointer">
+          <Card className="bento-card hover:border-ClearGo-gold/50 transition-colors cursor-pointer">
             <CardContent className="p-6">
-              <BarChart3 className="w-8 h-8 text-vyxo-gold mb-3" />
+              <BarChart3 className="w-8 h-8 text-ClearGo-gold mb-3" />
               <h3 className="font-semibold mb-1">Analytics</h3>
               <p className="text-sm text-muted-foreground">Rapports et statistiques</p>
             </CardContent>
@@ -337,3 +337,4 @@ export default function AdminDashboardPage() {
     </div>
   )
 }
+

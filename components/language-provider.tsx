@@ -15,19 +15,19 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("fr")
 
   useEffect(() => {
-    const savedLang = localStorage.getItem("vyxo-language") as Language
+    const savedLang = localStorage.getItem("ClearGo-language") as Language
     if (savedLang) {
       setLanguage(savedLang)
     } else {
       // Set French as default if no saved preference
       setLanguage("fr")
-      localStorage.setItem("vyxo-language", "fr")
+      localStorage.setItem("ClearGo-language", "fr")
     }
   }, [])
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)
-    localStorage.setItem("vyxo-language", lang)
+    localStorage.setItem("ClearGo-language", lang)
   }
 
   const t = (key: TranslationKeys) => {

@@ -66,10 +66,10 @@ export function TheSwitch({ sector, onComplete }: TheSwitchProps) {
         }}
         className="mb-8 relative"
       >
-        <div className="w-24 h-24 bg-vyxo-navy rounded-full flex items-center justify-center shadow-lg shadow-vyxo-navy/30">
-          <Brain className="w-12 h-12 text-vyxo-gold" />
+        <div className="w-24 h-24 bg-ClearGo-navy rounded-full flex items-center justify-center shadow-lg shadow-ClearGo-navy/30">
+          <Brain className="w-12 h-12 text-ClearGo-gold" />
         </div>
-        <div className="absolute inset-0 border-4 border-vyxo-gold/20 rounded-full animate-ping" />
+        <div className="absolute inset-0 border-4 border-ClearGo-gold/20 rounded-full animate-ping" />
       </motion.div>
 
       {/* Status Text */}
@@ -77,7 +77,7 @@ export function TheSwitch({ sector, onComplete }: TheSwitchProps) {
         key={status} // Animate on change
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-xl font-medium text-vyxo-navy mb-6 text-center h-8"
+        className="text-xl font-medium text-ClearGo-navy mb-6 text-center h-8"
       >
         {status}
       </motion.h2>
@@ -94,7 +94,7 @@ export function TheSwitch({ sector, onComplete }: TheSwitchProps) {
       {/* Security Reassurance */}
       <div className="mt-12 flex items-center justify-center gap-2 text-xs text-gray-400 bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
         <Lock className="w-3 h-3" />
-        <span>Données anonymisées et sécurisées par Vyxo Codex</span>
+        <span>Données anonymisées et sécurisées par ClearGo</span>
       </div>
 
     </div>

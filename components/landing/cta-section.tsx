@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export function CTASection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-black border-t border-white/10 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-black border-t border-white/10 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid.svg')] opacity-10" />
       
       <div className="container px-4 mx-auto relative z-10 text-center">
@@ -20,12 +20,12 @@ export function CTASection() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/signup?standard=ISO_9001">
-              <Button size="lg" className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold h-14 px-10 text-lg shadow-lg shadow-vyxo-gold/20">
+              <Button size="lg" className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold h-14 px-10 text-lg shadow-lg shadow-ClearGo-gold/20">
                 Commencer l&apos;Assessment
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
-          <Link href="mailto:contact@vyxo.fr">
+          <Link href="mailto:contact@cleargo.fr">
             <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 h-14 px-10 text-lg">
               Contacter les ventes
             </Button>

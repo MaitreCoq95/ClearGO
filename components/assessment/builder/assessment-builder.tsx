@@ -158,7 +158,7 @@ export function AssessmentBuilder({
               )}
               <div>
                 <div className="flex items-center gap-2">
-                  <FileText className="w-5 h-5 text-vyxo-gold" />
+                  <FileText className="w-5 h-5 text-ClearGo-gold" />
                   <Input
                     value={template.name || ""}
                     onChange={e => updateTemplate({ name: e.target.value })}
@@ -198,7 +198,7 @@ export function AssessmentBuilder({
                 </Button>
               )}
               <Button 
-                className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
                 onClick={handleSave}
                 disabled={isSaving}
               >
@@ -242,7 +242,7 @@ export function AssessmentBuilder({
 
             <Button 
               variant="outline" 
-              className="w-full border-dashed border-slate-600 text-slate-400 hover:text-white hover:border-vyxo-gold py-8"
+              className="w-full border-dashed border-slate-600 text-slate-400 hover:text-white hover:border-ClearGo-gold py-8"
               onClick={addSection}
             >
               <Plus className="w-5 h-5 mr-2" />

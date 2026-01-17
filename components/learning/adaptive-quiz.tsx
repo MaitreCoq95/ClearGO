@@ -173,7 +173,7 @@ export function AdaptiveQuiz({
         <CardContent className="p-8 text-center">
           <div className="mb-6">
             {percentage >= 80 ? (
-              <Trophy className="w-16 h-16 mx-auto text-vyxo-gold" />
+              <Trophy className="w-16 h-16 mx-auto text-ClearGo-gold" />
             ) : percentage >= 60 ? (
               <Target className="w-16 h-16 mx-auto text-blue-500" />
             ) : (
@@ -190,7 +190,7 @@ export function AdaptiveQuiz({
 
           <div className="grid grid-cols-3 gap-4 mb-8">
             <div className="p-4 rounded-xl bg-slate-800/50">
-              <p className="text-3xl font-bold text-vyxo-gold">{score}</p>
+              <p className="text-3xl font-bold text-ClearGo-gold">{score}</p>
               <p className="text-xs text-muted-foreground">Points</p>
             </div>
             <div className="p-4 rounded-xl bg-slate-800/50">
@@ -216,7 +216,7 @@ export function AdaptiveQuiz({
             </Button>
             <Button 
               onClick={() => window.location.reload()}
-              className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+              className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
             >
               Refaire le quiz
             </Button>
@@ -243,7 +243,7 @@ export function AdaptiveQuiz({
               🔥 x{streak}
             </Badge>
           )}
-          <Badge variant="outline" className="text-vyxo-gold border-vyxo-gold">
+          <Badge variant="outline" className="text-ClearGo-gold border-ClearGo-gold">
             {score} pts
           </Badge>
         </div>
@@ -276,7 +276,7 @@ export function AdaptiveQuiz({
               }
             } else {
               optionClass += isSelected 
-                ? "border-vyxo-gold bg-vyxo-gold/10"
+                ? "border-ClearGo-gold bg-ClearGo-gold/10"
                 : "border-slate-700 hover:border-slate-500"
             }
 
@@ -320,14 +320,14 @@ export function AdaptiveQuiz({
           <Button
             onClick={handleValidate}
             disabled={!selectedAnswer}
-            className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+            className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
           >
             Valider
           </Button>
         ) : (
           <Button
             onClick={handleNext}
-            className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+            className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
           >
             {currentIndex + 1 >= totalQuestions ? "Voir résultats" : "Question suivante"}
             <ArrowRight className="w-4 h-4 ml-2" />

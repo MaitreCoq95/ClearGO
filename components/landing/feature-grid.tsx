@@ -37,7 +37,7 @@ const features = [
     icon: BrainCircuit,
     title: "4. Optimiser (IA)",
     description: "Notre IA analyse vos performances et suggère des actions correctives pour viser l'excellence continue.",
-    color: "text-vyxo-gold",
+    color: "text-ClearGo-gold",
     bg: "bg-yellow-500/10",
     border: "border-yellow-500/20"
   }
@@ -48,7 +48,7 @@ export function FeatureGrid() {
     <section className="py-20 bg-white/5 border-y border-white/10">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
-          <span className="text-vyxo-gold font-semibold tracking-wider text-sm uppercase">Méthodologie</span>
+          <span className="text-ClearGo-gold font-semibold tracking-wider text-sm uppercase">Méthodologie</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-6">Le cercle vertueux de la performance</h2>
         </div>
 

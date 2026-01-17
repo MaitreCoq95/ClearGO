@@ -93,7 +93,7 @@ export function SignUpForm() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4">
       {/* Progress Indicator */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
@@ -104,14 +104,14 @@ export function SignUpForm() {
       </motion.div>
         <Card className="w-full max-w-md bg-white/5 backdrop-blur-xl border-white/10">
           <CardHeader className="text-center pb-2">
-            <div className="mx-auto w-12 h-12 rounded-full bg-vyxo-gold/20 flex items-center justify-center mb-4">
-              <User className="w-6 h-6 text-vyxo-gold" />
+            <div className="mx-auto w-12 h-12 rounded-full bg-ClearGo-gold/20 flex items-center justify-center mb-4">
+              <User className="w-6 h-6 text-ClearGo-gold" />
             </div>
             <CardTitle className="text-2xl font-bold text-white">
               Créer votre compte
             </CardTitle>
             <CardDescription className="text-gray-400">
-              Accédez à votre espace Vyxo Codex
+              Accédez à votre espace ClearGo
             </CardDescription>
           </CardHeader>
 
@@ -179,7 +179,7 @@ export function SignUpForm() {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90 font-semibold"
+                className="w-full bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90 font-semibold"
               >
                 {isLoading ? (
                   <>
@@ -198,7 +198,7 @@ export function SignUpForm() {
             {/* Login Link */}
             <p className="text-center text-gray-400 text-sm mt-6">
               Déjà un compte ?{" "}
-              <a href="/login" className="text-vyxo-gold hover:underline">
+              <a href="/login" className="text-ClearGo-gold hover:underline">
                 Se connecter
               </a>
             </p>

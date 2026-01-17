@@ -85,8 +85,8 @@ export function AdminStatsGrid({ stats }: AdminStatsGridProps) {
       <Card className="bento-card">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-10 h-10 rounded-xl bg-vyxo-gold/10 flex items-center justify-center">
-              <TrendingUp className="w-5 h-5 text-vyxo-gold" />
+            <div className="w-10 h-10 rounded-xl bg-ClearGo-gold/10 flex items-center justify-center">
+              <TrendingUp className="w-5 h-5 text-ClearGo-gold" />
             </div>
             <Badge className={stats.maturity.change >= 0 ? "bg-emerald-500/10 text-emerald-500" : "bg-red-500/10 text-red-500"}>
               {stats.maturity.change >= 0 ? (
@@ -99,7 +99,7 @@ export function AdminStatsGrid({ stats }: AdminStatsGridProps) {
           </div>
           <p className="text-3xl font-bold">{stats.maturity.score}%</p>
           <p className="text-sm text-muted-foreground">Score de maturité</p>
-          <p className="text-xs text-vyxo-gold mt-2">{stats.maturity.level}</p>
+          <p className="text-xs text-ClearGo-gold mt-2">{stats.maturity.level}</p>
         </CardContent>
       </Card>
 
@@ -190,7 +190,7 @@ export function DepartmentLeaderboard({ departments, onViewAll }: DepartmentLead
                 <div className="flex items-center gap-3">
                   <span className={`
                     w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold
-                    ${index === 0 ? "bg-vyxo-gold/20 text-vyxo-gold" : 
+                    ${index === 0 ? "bg-ClearGo-gold/20 text-ClearGo-gold" : 
                       index === 1 ? "bg-slate-500/20 text-slate-400" :
                       index === 2 ? "bg-orange-500/20 text-orange-400" :
                       "bg-slate-700 text-slate-500"}

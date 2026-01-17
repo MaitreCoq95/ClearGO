@@ -78,11 +78,11 @@ export function VerticalTabs() {
   const [selectedVertical, setSelectedVertical] = useState("quality")
 
   return (
-    <section className="py-20 bg-gradient-to-b from-vyxo-navy to-background text-white">
+    <section className="py-20 bg-gradient-to-b from-ClearGo-navy to-background text-white">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-white/20 text-white/80">Couverture Multi-Normes</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Expertise sectorielle <span className="text-vyxo-gold">ciblée</span></h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Expertise sectorielle <span className="text-ClearGo-gold">ciblée</span></h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             7 normes supportées. Des parcours sur mesure pour chaque industrie critique.
           </p>
@@ -100,7 +100,7 @@ export function VerticalTabs() {
                 <TabsTrigger
                   key={key}
                   value={key}
-                  className="px-6 py-3 rounded-md data-[state=active]:bg-vyxo-gold data-[state=active]:text-vyxo-navy transition-all flex items-center gap-2 group min-w-[120px]"
+                  className="px-6 py-3 rounded-md data-[state=active]:bg-ClearGo-gold data-[state=active]:text-ClearGo-navy transition-all flex items-center gap-2 group min-w-[120px]"
                 >
                   <vertical.icon className="w-5 h-5 group-data-[state=active]:scale-110 transition-transform" />
                   <span className="font-semibold">{vertical.label}</span>
@@ -131,10 +131,10 @@ export function VerticalTabs() {
                           <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
                             {cert.name}
                           </Badge>
-                          <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-vyxo-gold transition-colors" />
+                          <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-ClearGo-gold transition-colors" />
                         </div>
                         
-                        <h4 className="text-lg font-bold mb-1 group-hover:text-vyxo-gold transition-colors">{cert.fullName}</h4>
+                        <h4 className="text-lg font-bold mb-1 group-hover:text-ClearGo-gold transition-colors">{cert.fullName}</h4>
                         
                         <div className="flex items-center gap-4 mt-6 text-sm text-gray-400">
                           <div className="flex items-center gap-1.5">
@@ -154,13 +154,13 @@ export function VerticalTabs() {
                 ))}
                 
                 {/* CTA Card for Vertical */}
-                <Card className="bg-gradient-to-br from-white/5 to-white/0 border-dashed border-white/20 hover:border-vyxo-gold/50 transition-all group flex flex-col justify-center items-center text-center p-6 grayscale hover:grayscale-0">
-                  <div className="w-12 h-12 rounded-full bg-vyxo-gold/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <CheckCircle2 className="w-6 h-6 text-vyxo-gold" />
+                <Card className="bg-gradient-to-br from-white/5 to-white/0 border-dashed border-white/20 hover:border-ClearGo-gold/50 transition-all group flex flex-col justify-center items-center text-center p-6 grayscale hover:grayscale-0">
+                  <div className="w-12 h-12 rounded-full bg-ClearGo-gold/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <CheckCircle2 className="w-6 h-6 text-ClearGo-gold" />
                   </div>
                   <h4 className="font-bold mb-2">Prêt à évaluer ?</h4>
                   <Link href={`/signup?standard=${vertical.certifications[0].id}`}>
-                    <Button variant="link" className="text-vyxo-gold p-0 h-auto font-semibold group-hover:underline">
+                    <Button variant="link" className="text-ClearGo-gold p-0 h-auto font-semibold group-hover:underline">
                       Lancer l&apos;assessment {vertical.label}
                     </Button>
                   </Link>

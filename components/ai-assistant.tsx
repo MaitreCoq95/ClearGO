@@ -26,7 +26,7 @@ export default function AIAssistant() {
   const [messages, setMessages] = useState<Message[]>([
     { 
       role: "assistant", 
-      content: "Bonjour ! Je suis VYXO Assistant. Comment puis-je vous aider avec votre formation ou vos questions sur les GDP ?" 
+      content: "Bonjour ! Je suis ClearGo Assistant. Comment puis-je vous aider avec votre formation ou vos questions sur les GDP ?" 
     }
   ])
   const [input, setInput] = useState("")
@@ -95,9 +95,9 @@ export default function AIAssistant() {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-br from-vyxo-gold to-amber-500 rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform z-50"
+        className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-br from-ClearGo-gold to-amber-500 rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform z-50"
       >
-        <MessageSquare className="w-6 h-6 text-vyxo-navy" />
+        <MessageSquare className="w-6 h-6 text-ClearGo-navy" />
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full flex items-center justify-center">
           <Sparkles className="w-2.5 h-2.5 text-white" />
         </span>
@@ -112,13 +112,13 @@ export default function AIAssistant() {
       }`}
     >
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b bg-gradient-to-r from-vyxo-navy to-vyxo-navy/90">
+      <div className="flex items-center justify-between p-4 border-b bg-gradient-to-r from-ClearGo-navy to-ClearGo-navy/90">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-vyxo-gold/20 flex items-center justify-center">
-            <Bot className="w-5 h-5 text-vyxo-gold" />
+          <div className="w-10 h-10 rounded-full bg-ClearGo-gold/20 flex items-center justify-center">
+            <Bot className="w-5 h-5 text-ClearGo-gold" />
           </div>
           <div>
-            <h3 className="font-semibold text-white">VYXO Assistant</h3>
+            <h3 className="font-semibold text-white">ClearGo Assistant</h3>
             <div className="flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-xs text-white/70">En ligne</span>
@@ -156,18 +156,18 @@ export default function AIAssistant() {
               >
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
                   message.role === "user" 
-                    ? "bg-vyxo-gold/10" 
-                    : "bg-vyxo-navy/10"
+                    ? "bg-ClearGo-gold/10" 
+                    : "bg-ClearGo-navy/10"
                 }`}>
                   {message.role === "user" ? (
-                    <User className="w-4 h-4 text-vyxo-gold" />
+                    <User className="w-4 h-4 text-ClearGo-gold" />
                   ) : (
-                    <Bot className="w-4 h-4 text-vyxo-navy" />
+                    <Bot className="w-4 h-4 text-ClearGo-navy" />
                   )}
                 </div>
                 <div className={`max-w-[75%] rounded-2xl px-4 py-2 ${
                   message.role === "user"
-                    ? "bg-vyxo-gold text-vyxo-navy"
+                    ? "bg-ClearGo-gold text-ClearGo-navy"
                     : "bg-secondary"
                 }`}>
                   <p className="text-sm whitespace-pre-wrap">{message.content}</p>
@@ -177,8 +177,8 @@ export default function AIAssistant() {
             
             {isLoading && (
               <div className="flex gap-3">
-                <div className="w-8 h-8 rounded-full bg-vyxo-navy/10 flex items-center justify-center">
-                  <Bot className="w-4 h-4 text-vyxo-navy" />
+                <div className="w-8 h-8 rounded-full bg-ClearGo-navy/10 flex items-center justify-center">
+                  <Bot className="w-4 h-4 text-ClearGo-navy" />
                 </div>
                 <div className="bg-secondary rounded-2xl px-4 py-2">
                   <Loader2 className="w-4 h-4 animate-spin" />
@@ -224,7 +224,7 @@ export default function AIAssistant() {
               <Button 
                 onClick={sendMessage}
                 disabled={!input.trim() || isLoading}
-                className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
               >
                 <Send className="w-4 h-4" />
               </Button>

@@ -11,8 +11,8 @@ export const translations = {
     "nav.emailgen": "Email Generator",
     "nav.audits": "Audits",
     "nav.documents": "Documents",
-    "nav.codex": "Vyxo Codex",
-    "nav.ai": "Vyxo Society",
+    "nav.codex": "ClearGo",
+    "nav.ai": "ClearGo Society",
     "nav.settings": "Settings",
     "nav.search": "Search...",
     "nav.logout": "Logout",
@@ -64,7 +64,7 @@ export const translations = {
     "audit.score": "Score",
 
     // AI
-    "ai.title": "Vyxo Society",
+    "ai.title": "ClearGo Society",
     "ai.subtitle": "Your AI-powered board of directors.",
     "ai.selectAgent": "Select Agent",
     "ai.walter": "Walter-Cash (Finance)",
@@ -202,7 +202,7 @@ export const translations = {
     "header.settings": "Settings",
     "header.billing": "Billing",
     "header.logout": "Log out",
-    "header.vyxoConsultant": "Vyxo Consultant",
+    "header.ClearGoConsultant": "ClearGo Consultant",
   },
   fr: {
     // Navigation
@@ -212,8 +212,8 @@ export const translations = {
     "nav.emailgen": "Générateur d'Emails",
     "nav.audits": "Audits",
     "nav.documents": "Documents",
-    "nav.codex": "Vyxo Codex",
-    "nav.ai": "Vyxo Society",
+    "nav.codex": "ClearGo",
+    "nav.ai": "ClearGo Society",
     "nav.settings": "Paramètres",
     "nav.search": "Rechercher...",
     "nav.logout": "Déconnexion",
@@ -265,7 +265,7 @@ export const translations = {
     "audit.score": "Score",
 
     // AI
-    "ai.title": "Vyxo Society",
+    "ai.title": "ClearGo Society",
     "ai.subtitle": "Votre conseil d'administration alimenté par l'IA.",
     "ai.selectAgent": "Choisir l'Agent",
     "ai.walter": "Walter-Cash (Finance)",
@@ -403,6 +403,6 @@ export const translations = {
     "header.settings": "Paramètres",
     "header.billing": "Facturation",
     "header.logout": "Déconnexion",
-    "header.vyxoConsultant": "Consultant Vyxo",
+    "header.ClearGoConsultant": "Consultant ClearGo",
   }
 }

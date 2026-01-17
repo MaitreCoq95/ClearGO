@@ -29,7 +29,7 @@ import {
 
 // Mock data
 const organization = {
-  name: "Vyxo Pharma Distribution",
+  name: "ClearGo Pharma Distribution",
   industry: "pharmaceutical",
   employeeCount: 142,
   timezone: "Europe/Paris",
@@ -157,7 +157,7 @@ export default function AdminSettingsPage() {
                   </Select>
                 </div>
               </div>
-              <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+              <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                 <Save className="w-4 h-4 mr-2" />
                 Enregistrer
               </Button>
@@ -211,7 +211,7 @@ export default function AdminSettingsPage() {
                   </div>
                 </div>
               </div>
-              <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+              <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                 <Save className="w-4 h-4 mr-2" />
                 Enregistrer
               </Button>
@@ -259,7 +259,7 @@ export default function AdminSettingsPage() {
                 <CardTitle>Abonnement actuel</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center justify-between p-4 rounded-xl bg-vyxo-gold/10 border border-vyxo-gold/30 mb-6">
+                <div className="flex items-center justify-between p-4 rounded-xl bg-ClearGo-gold/10 border border-ClearGo-gold/30 mb-6">
                   <div>
                     <div className="flex items-center gap-2">
                       <h3 className="text-xl font-bold">Plan {billing.plan}</h3>
@@ -374,3 +374,4 @@ export default function AdminSettingsPage() {
     </div>
   )
 }
+

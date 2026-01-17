@@ -98,7 +98,7 @@ export default function LearningPathsPage() {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <GraduationCap className="h-8 w-8 text-cyan-500" />
-            <h1 className="text-3xl font-bold tracking-tight text-vyxo-navy dark:text-white">
+            <h1 className="text-3xl font-bold tracking-tight text-ClearGo-navy dark:text-white">
               Parcours d'Apprentissage
             </h1>
           </div>
@@ -115,7 +115,7 @@ export default function LearningPathsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Parcours disponibles</p>
-                <p className="text-2xl font-bold text-vyxo-navy dark:text-white">
+                <p className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                   {allPaths.length}
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function LearningPathsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">En cours</p>
-                <p className="text-2xl font-bold text-vyxo-navy dark:text-white">
+                <p className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                   {userProgress.filter((p) => !p.completedAt).length}
                 </p>
               </div>
@@ -143,7 +143,7 @@ export default function LearningPathsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Terminés</p>
-                <p className="text-2xl font-bold text-vyxo-navy dark:text-white">
+                <p className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                   {userProgress.filter((p) => p.completedAt).length}
                 </p>
               </div>
@@ -343,3 +343,4 @@ export default function LearningPathsPage() {
     </div>
   );
 }
+

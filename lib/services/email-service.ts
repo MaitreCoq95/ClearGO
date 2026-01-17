@@ -21,8 +21,8 @@ export function getEmailConfig(): EmailConfig {
   return {
     provider: (process.env.EMAIL_PROVIDER as EmailConfig["provider"]) || "resend",
     apiKey: process.env.EMAIL_API_KEY || process.env.RESEND_API_KEY,
-    from: process.env.EMAIL_FROM || "Vyxo Codex <noreply@vyxo-codex.fr>",
-    replyTo: process.env.EMAIL_REPLY_TO || "contact@vyxo-codex.fr"
+    from: process.env.EMAIL_FROM || "ClearGo <noreply@ClearGo-codex.fr>",
+    replyTo: process.env.EMAIL_REPLY_TO || "contact@ClearGo-codex.fr"
   }
 }
 
@@ -33,14 +33,14 @@ export function getConfirmationDirigeantTemplate(lead: QualifiedLead): { subject
   const { formData, leadScore } = lead
   
   return {
-    subject: `🎯 ${formData.company_name} - Votre évaluation Vyxo Codex est confirmée`,
+    subject: `🎯 ${formData.company_name} - Votre évaluation ClearGo est confirmée`,
     html: `
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confirmation Vyxo Codex</title>
+  <title>Confirmation ClearGo</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #0f172a; font-family: Arial, sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #0f172a; padding: 40px 20px;">
@@ -135,7 +135,7 @@ export function getConfirmationDirigeantTemplate(lead: QualifiedLead): { subject
           <!-- CTA -->
           <tr>
             <td style="padding: 20px 40px 40px;">
-              <a href="https://vyxo-codex.fr/codex" style="display: block; background-color: #f59e0b; color: #0f172a; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; text-align: center;">
+              <a href="https://ClearGo-codex.fr/codex" style="display: block; background-color: #f59e0b; color: #0f172a; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; text-align: center;">
                 Accéder à mes modules d'évaluation →
               </a>
             </td>
@@ -145,8 +145,8 @@ export function getConfirmationDirigeantTemplate(lead: QualifiedLead): { subject
           <tr>
             <td style="background-color: #0f172a; padding: 24px 40px; text-align: center;">
               <p style="color: #64748b; font-size: 12px; margin: 0;">
-                © 2025 Vyxo Codex - Tous droits réservés<br>
-                <a href="mailto:support@vyxo-codex.fr" style="color: #f59e0b;">support@vyxo-codex.fr</a>
+                © 2025 ClearGo - Tous droits réservés<br>
+                <a href="mailto:support@ClearGo-codex.fr" style="color: #f59e0b;">support@ClearGo-codex.fr</a>
               </p>
             </td>
           </tr>
@@ -167,7 +167,7 @@ export function getConfirmationManagerTemplate(lead: QualifiedLead, shareLink: s
   const { formData, leadScore } = lead
   
   return {
-    subject: `📋 ${formData.company_name} - Évaluation Vyxo Codex initiée`,
+    subject: `📋 ${formData.company_name} - Évaluation ClearGo initiée`,
     html: `
 <!DOCTYPE html>
 <html>
@@ -230,7 +230,7 @@ export function getConfirmationManagerTemplate(lead: QualifiedLead, shareLink: s
           <tr>
             <td style="background-color: #0f172a; padding: 24px 40px; text-align: center;">
               <p style="color: #64748b; font-size: 12px; margin: 0;">
-                © 2025 Vyxo Codex - Tous droits réservés
+                © 2025 ClearGo - Tous droits réservés
               </p>
             </td>
           </tr>
@@ -253,7 +253,7 @@ export function getDirectorInviteTemplate(
   shareLink: string
 ): { subject: string; html: string } {
   return {
-    subject: `🎯 ${companyName} - Invitation à valider l'évaluation Vyxo Codex`,
+    subject: `🎯 ${companyName} - Invitation à valider l'évaluation ClearGo`,
     html: `
 <!DOCTYPE html>
 <html>
@@ -272,7 +272,7 @@ export function getDirectorInviteTemplate(
               </h1>
               <p style="color: #94a3b8; font-size: 16px; line-height: 1.6;">
                 <strong style="color: #f59e0b;">${managerEmail}</strong> a démarré un diagnostic 
-                pour <strong style="color: #ffffff;">${companyName}</strong> sur Vyxo Codex.
+                pour <strong style="color: #ffffff;">${companyName}</strong> sur ClearGo.
               </p>
               <p style="color: #94a3b8; font-size: 16px; line-height: 1.6;">
                 En tant que dirigeant, vous pouvez valider cette inscription pour débloquer 
@@ -286,7 +286,7 @@ export function getDirectorInviteTemplate(
           <tr>
             <td style="background-color: #0f172a; padding: 24px 40px; text-align: center;">
               <p style="color: #64748b; font-size: 12px; margin: 0;">
-                © 2025 Vyxo Codex
+                © 2025 ClearGo
               </p>
             </td>
           </tr>
@@ -410,7 +410,7 @@ export async function sendConfirmationEmail(
     const template = getConfirmationDirigeantTemplate(lead)
     return sendEmail(email, template.subject, template.html)
   } else {
-    const link = shareLink || `https://vyxo-codex.fr/share/${Date.now().toString(36)}`
+    const link = shareLink || `https://ClearGo-codex.fr/share/${Date.now().toString(36)}`
     const template = getConfirmationManagerTemplate(lead, link)
     return sendEmail(email, template.subject, template.html)
   }

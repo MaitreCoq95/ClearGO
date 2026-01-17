@@ -58,14 +58,14 @@ export function MatrixQuestion({
                           w-6 h-6 rounded-full border-2 
                           transition-all flex items-center justify-center
                           ${value[rowKey] === col.label 
-                            ? "border-vyxo-gold bg-vyxo-gold" 
+                            ? "border-ClearGo-gold bg-ClearGo-gold" 
                             : "border-slate-600 hover:border-slate-400"
                           }
                           ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
                         `}
                       >
                         {value[rowKey] === col.label && (
-                          <div className="w-2 h-2 rounded-full bg-vyxo-navy" />
+                          <div className="w-2 h-2 rounded-full bg-ClearGo-navy" />
                         )}
                       </button>
                     </div>

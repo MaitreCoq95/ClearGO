@@ -49,7 +49,7 @@ export function ScaleQuestion({
           max={max}
           step={1}
           disabled={disabled}
-          className="[&_[role=slider]]:bg-vyxo-gold [&_[role=slider]]:border-vyxo-gold [&_[role=slider]]:h-5 [&_[role=slider]]:w-5"
+          className="[&_[role=slider]]:bg-ClearGo-gold [&_[role=slider]]:border-ClearGo-gold [&_[role=slider]]:h-5 [&_[role=slider]]:w-5"
         />
       </div>
 
@@ -64,7 +64,7 @@ export function ScaleQuestion({
               w-10 h-10 rounded-full flex items-center justify-center
               font-medium text-sm transition-all
               ${localValue === point 
-                ? "bg-vyxo-gold text-vyxo-navy scale-110" 
+                ? "bg-ClearGo-gold text-ClearGo-navy scale-110" 
                 : "bg-slate-800 text-slate-400 hover:bg-slate-700"
               }
               ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
@@ -77,7 +77,7 @@ export function ScaleQuestion({
 
       {/* Current value display */}
       <div className="text-center">
-        <span className="text-3xl font-bold text-vyxo-gold">{localValue}</span>
+        <span className="text-3xl font-bold text-ClearGo-gold">{localValue}</span>
         <span className="text-slate-500 text-sm ml-2">/ {max}</span>
       </div>
     </div>

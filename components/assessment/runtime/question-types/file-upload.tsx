@@ -92,7 +92,7 @@ export function FileUpload({
             border-2 border-dashed rounded-lg p-8 text-center
             transition-all cursor-pointer
             ${isDragging 
-              ? "border-vyxo-gold bg-vyxo-gold/10" 
+              ? "border-ClearGo-gold bg-ClearGo-gold/10" 
               : "border-slate-700 hover:border-slate-500 bg-slate-800/50"
             }
             ${disabled ? "opacity-50 cursor-not-allowed" : ""}
@@ -110,7 +110,7 @@ export function FileUpload({
 
           {uploadStatus === "uploading" ? (
             <div className="space-y-2">
-              <div className="animate-spin w-8 h-8 border-2 border-vyxo-gold border-t-transparent rounded-full mx-auto" />
+              <div className="animate-spin w-8 h-8 border-2 border-ClearGo-gold border-t-transparent rounded-full mx-auto" />
               <p className="text-slate-400">Téléchargement en cours...</p>
             </div>
           ) : (
@@ -133,8 +133,8 @@ export function FileUpload({
       {/* Uploaded file */}
       {value && (
         <div className="flex items-center gap-3 bg-slate-800 rounded-lg p-4 border border-slate-700">
-          <div className="p-2 bg-vyxo-gold/20 rounded">
-            <File className="w-5 h-5 text-vyxo-gold" />
+          <div className="p-2 bg-ClearGo-gold/20 rounded">
+            <File className="w-5 h-5 text-ClearGo-gold" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="font-medium truncate">{value}</p>

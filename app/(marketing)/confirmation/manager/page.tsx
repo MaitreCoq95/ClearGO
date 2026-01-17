@@ -17,7 +17,7 @@ function ConfirmationManagerContent() {
   const [directorEmail, setDirectorEmail] = useState("")
 
   // Générer un lien de partage unique basé sur les params (stable)
-  const shareableLink = `https://vyxo-codex.fr/share/eval/${btoa(companyName + score).substring(0, 12)}`
+  const shareableLink = `https://ClearGo-codex.fr/share/eval/${btoa(companyName + score).substring(0, 12)}`
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(shareableLink)
@@ -31,7 +31,7 @@ function ConfirmationManagerContent() {
   }
 
   return (
-    <main className="min-h-screen bg-vyxo-navy">
+    <main className="min-h-screen bg-ClearGo-navy">
       {/* Header */}
       <div className="bg-gradient-to-b from-blue-500/10 to-transparent py-20">
         <div className="container mx-auto px-4 text-center">
@@ -87,7 +87,7 @@ function ConfirmationManagerContent() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
-              <Share2 className="w-10 h-10 text-vyxo-gold mx-auto mb-4" />
+              <Share2 className="w-10 h-10 text-ClearGo-gold mx-auto mb-4" />
               <h2 className="text-2xl font-bold text-white mb-2">
                 Partagez avec votre direction
               </h2>
@@ -108,7 +108,7 @@ function ConfirmationManagerContent() {
                 />
                 <Button
                   onClick={copyToClipboard}
-                  className={copied ? "bg-green-500" : "bg-vyxo-gold hover:bg-vyxo-gold/90"}
+                  className={copied ? "bg-green-500" : "bg-ClearGo-gold hover:bg-ClearGo-gold/90"}
                 >
                   {copied ? (
                     <>
@@ -215,8 +215,8 @@ function ConfirmationManagerContent() {
                 </div>
               </div>
               
-              <div className="flex gap-4 items-start bg-vyxo-gold/10 border border-vyxo-gold/30 rounded-xl p-5">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-vyxo-gold flex items-center justify-center text-vyxo-navy font-bold">
+              <div className="flex gap-4 items-start bg-ClearGo-gold/10 border border-ClearGo-gold/30 rounded-xl p-5">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-ClearGo-gold flex items-center justify-center text-ClearGo-navy font-bold">
                   3
                 </div>
                 <div>
@@ -238,8 +238,8 @@ function ConfirmationManagerContent() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-500 text-sm">
             Besoin d&apos;aide ? Contactez-nous à{" "}
-            <a href="mailto:support@vyxo-codex.fr" className="text-vyxo-gold hover:underline">
-              support@vyxo-codex.fr
+            <a href="mailto:support@ClearGo-codex.fr" className="text-ClearGo-gold hover:underline">
+              support@ClearGo-codex.fr
             </a>
           </p>
         </div>
@@ -250,8 +250,9 @@ function ConfirmationManagerContent() {
 
 export default function ConfirmationManagerPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-vyxo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" /></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-ClearGo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" /></div>}>
       <ConfirmationManagerContent />
     </Suspense>
   )
 }
+

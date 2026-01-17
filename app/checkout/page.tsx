@@ -62,7 +62,7 @@ function CheckoutContent() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 py-12 px-4">
       <div className="max-w-xl mx-auto">
         {/* Back Link */}
         <Link href={`/pricing?standard=${standard}`} className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8">
@@ -73,7 +73,7 @@ function CheckoutContent() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <Card className="bg-white/5 border-white/10">
             <CardHeader className="text-center border-b border-white/10 pb-6">
-              <Badge className="mx-auto mb-4 bg-vyxo-gold/20 text-vyxo-gold">
+              <Badge className="mx-auto mb-4 bg-ClearGo-gold/20 text-ClearGo-gold">
                 <Lock className="w-3 h-3 mr-1" />
                 Paiement sécurisé
               </Badge>
@@ -89,7 +89,7 @@ function CheckoutContent() {
                 </div>
                 <div className="border-t border-white/10 pt-3 flex justify-between items-center">
                   <span className="text-white font-medium">Total</span>
-                  <span className="text-2xl font-bold text-vyxo-gold">
+                  <span className="text-2xl font-bold text-ClearGo-gold">
                     Sur demande
                   </span>
                 </div>
@@ -116,7 +116,7 @@ function CheckoutContent() {
               <Button
                 onClick={handleCheckout}
                 disabled={loading}
-                className="w-full bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90 h-12 text-lg"
+                className="w-full bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90 h-12 text-lg"
               >
                 {loading ? (
                   <>
@@ -146,8 +146,9 @@ function CheckoutContent() {
 
 export default function CheckoutPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-vyxo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" /></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-ClearGo-navy flex items-center justify-center"><Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" /></div>}>
       <CheckoutContent />
     </Suspense>
   )
 }
+

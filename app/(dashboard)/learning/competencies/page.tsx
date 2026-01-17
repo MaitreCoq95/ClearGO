@@ -75,7 +75,7 @@ export default function CompetenciesPage() {
             Retour
           </Link>
           <h1 className="text-3xl font-bold flex items-center gap-2">
-            <Target className="w-8 h-8 text-vyxo-gold" />
+            <Target className="w-8 h-8 text-ClearGo-gold" />
             Matrice de Compétences
           </h1>
           <p className="text-muted-foreground">
@@ -83,7 +83,7 @@ export default function CompetenciesPage() {
           </p>
         </div>
         <Link href="/learning/path">
-          <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+          <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
             <TrendingUp className="w-4 h-4 mr-2" />
             Mon parcours
           </Button>
@@ -105,7 +105,7 @@ export default function CompetenciesPage() {
         <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <Target className="w-5 h-5 text-vyxo-gold" />
+              <Target className="w-5 h-5 text-ClearGo-gold" />
               {selectedCompetency?.name}
             </DialogTitle>
             <DialogDescription>
@@ -170,7 +170,7 @@ export default function CompetenciesPage() {
                   </Button>
                 </Link>
                 <Link href={`/learning/competencies/${selectedCompetency.id}`} className="flex-1">
-                  <Button className="w-full bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+                  <Button className="w-full bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                     <BookOpen className="w-4 h-4 mr-2" />
                     Voir modules
                   </Button>
@@ -183,3 +183,4 @@ export default function CompetenciesPage() {
     </div>
   )
 }
+

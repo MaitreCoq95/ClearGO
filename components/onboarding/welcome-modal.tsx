@@ -17,14 +17,14 @@ export function WelcomeModal({ userName = "là", standard = "ISO_9001", onClose 
 
   useEffect(() => {
     // Check if user has seen welcome modal
-    const hasSeenWelcome = localStorage.getItem("vyxo_welcome_seen")
+    const hasSeenWelcome = localStorage.getItem("ClearGo_welcome_seen")
     if (!hasSeenWelcome) {
       setTimeout(() => setIsOpen(true), 500)
     }
   }, [])
 
   const handleClose = () => {
-    localStorage.setItem("vyxo_welcome_seen", "true")
+    localStorage.setItem("ClearGo_welcome_seen", "true")
     setIsOpen(false)
     onClose()
   }
@@ -66,7 +66,7 @@ export function WelcomeModal({ userName = "là", standard = "ISO_9001", onClose 
             transition={{ type: "spring", damping: 25 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
           >
-            <div className="bg-gradient-to-br from-vyxo-navy to-slate-900 border border-white/10 rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden">
+            <div className="bg-gradient-to-br from-ClearGo-navy to-slate-900 border border-white/10 rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden">
               {/* Header */}
               <div className="relative p-6 pb-0">
                 <button
@@ -81,15 +81,15 @@ export function WelcomeModal({ userName = "là", standard = "ISO_9001", onClose 
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.2, type: "spring" }}
-                    className="w-16 h-16 mx-auto mb-4 rounded-full bg-vyxo-gold/20 flex items-center justify-center"
+                    className="w-16 h-16 mx-auto mb-4 rounded-full bg-ClearGo-gold/20 flex items-center justify-center"
                   >
-                    <PartyPopper className="w-8 h-8 text-vyxo-gold" />
+                    <PartyPopper className="w-8 h-8 text-ClearGo-gold" />
                   </motion.div>
 
                   <h2 className="text-2xl font-bold text-white mb-2">
                     Bienvenue {userName} ! 🎉
                   </h2>
-                  <Badge className="bg-vyxo-gold/20 text-vyxo-gold">
+                  <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold">
                     {standardNames[standard] || standard}
                   </Badge>
                 </div>
@@ -111,7 +111,7 @@ export function WelcomeModal({ userName = "là", standard = "ISO_9001", onClose 
                       transition={{ delay: 0.3 + i * 0.1 }}
                       className="flex items-center gap-4 p-3 rounded-lg bg-white/5"
                     >
-                      <div className="text-vyxo-gold">{feature.icon}</div>
+                      <div className="text-ClearGo-gold">{feature.icon}</div>
                       <div>
                         <p className="text-white font-medium text-sm">{feature.title}</p>
                         <p className="text-gray-500 text-xs">{feature.desc}</p>
@@ -125,7 +125,7 @@ export function WelcomeModal({ userName = "là", standard = "ISO_9001", onClose 
               <div className="p-6 pt-0">
                 <Button
                   onClick={handleClose}
-                  className="w-full bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90 h-12"
+                  className="w-full bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90 h-12"
                 >
                   C'est parti !
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -144,14 +144,14 @@ export function useWelcomeModal() {
   const [showWelcome, setShowWelcome] = useState(false)
 
   useEffect(() => {
-    const hasSeenWelcome = localStorage.getItem("vyxo_welcome_seen")
+    const hasSeenWelcome = localStorage.getItem("ClearGo_welcome_seen")
     if (!hasSeenWelcome) {
       setShowWelcome(true)
     }
   }, [])
 
   const markAsSeen = () => {
-    localStorage.setItem("vyxo_welcome_seen", "true")
+    localStorage.setItem("ClearGo_welcome_seen", "true")
     setShowWelcome(false)
   }
 

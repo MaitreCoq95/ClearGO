@@ -27,7 +27,7 @@ const partners = [
 
 export function ReassuranceSection() {
   return (
-    <section id="reassurance-section" className="py-16 bg-vyxo-navy border-t border-white/5">
+    <section id="reassurance-section" className="py-16 bg-ClearGo-navy border-t border-white/5">
       <div className="container mx-auto px-4">
         
         {/* Stats Banner */}
@@ -37,8 +37,8 @@ export function ReassuranceSection() {
             return (
               <div key={i} className="text-center">
                 <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 rounded-full bg-vyxo-gold/10 flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-vyxo-gold" />
+                  <div className="w-12 h-12 rounded-full bg-ClearGo-gold/10 flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-ClearGo-gold" />
                   </div>
                 </div>
                 <p className="text-3xl font-bold text-white mb-1">{stat.value}</p>
@@ -54,7 +54,7 @@ export function ReassuranceSection() {
           {/* Certifications des consultants */}
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="flex items-center gap-3 mb-6">
-              <Shield className="w-6 h-6 text-vyxo-gold" />
+              <Shield className="w-6 h-6 text-ClearGo-gold" />
               <h3 className="text-lg font-bold text-white">Certifications de nos consultants</h3>
             </div>
             <ul className="space-y-3">
@@ -70,7 +70,7 @@ export function ReassuranceSection() {
           {/* Partenaires */}
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
             <div className="flex items-center gap-3 mb-6">
-              <Award className="w-6 h-6 text-vyxo-gold" />
+              <Award className="w-6 h-6 text-ClearGo-gold" />
               <h3 className="text-lg font-bold text-white">Organismes partenaires</h3>
             </div>
             <p className="text-gray-400 text-sm mb-4">
@@ -88,7 +88,7 @@ export function ReassuranceSection() {
 
         {/* Garantie */}
         <div className="text-center mt-12 max-w-2xl mx-auto">
-          <div className="bg-gradient-to-r from-green-500/10 via-vyxo-gold/10 to-green-500/10 border border-green-500/20 rounded-2xl p-6">
+          <div className="bg-gradient-to-r from-green-500/10 via-ClearGo-gold/10 to-green-500/10 border border-green-500/20 rounded-2xl p-6">
             <p className="text-green-400 text-sm font-semibold mb-2">🛡️ GARANTIE RÉSULTAT</p>
             <p className="text-white text-lg font-medium mb-2">
               Avec la formule Full Accompagnement, nous vous garantissons l&apos;obtention de votre conformité.

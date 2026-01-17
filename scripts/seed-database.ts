@@ -1,5 +1,5 @@
 /**
- * Script de seed de la base de données Vyxo Codex
+ * Script de seed de la base de données ClearGo
  *
  * Seed:
  * - actions (référentiel d'actions par norme)
@@ -423,7 +423,7 @@ async function seedStandardConfigs() {
 // MAIN
 // ===================================
 async function main() {
-  console.log('\n🚀 Début du seed de la base de données Vyxo Codex\n')
+  console.log('\n🚀 Début du seed de la base de données ClearGo\n')
   console.log('================================================\n')
 
   try {
@@ -445,3 +445,4 @@ async function main() {
 }
 
 main()
+

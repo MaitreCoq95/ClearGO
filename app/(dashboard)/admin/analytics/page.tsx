@@ -96,7 +96,7 @@ export default function AdminAnalyticsPage() {
             <FileText className="w-4 h-4 mr-2" />
             Exporter PDF
           </Button>
-          <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+          <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
             <Download className="w-4 h-4 mr-2" />
             Excel
           </Button>
@@ -175,7 +175,7 @@ export default function AdminAnalyticsPage() {
                 <div className="flex-1">
                   <div className="h-8 bg-secondary rounded-lg overflow-hidden relative">
                     <div 
-                      className="h-full bg-vyxo-gold/30 flex items-center justify-end pr-2"
+                      className="h-full bg-ClearGo-gold/30 flex items-center justify-end pr-2"
                       style={{ width: `${stage.percentage}%` }}
                     >
                       <span className="text-sm font-medium">{stage.count}</span>
@@ -275,3 +275,4 @@ export default function AdminAnalyticsPage() {
     </div>
   )
 }
+

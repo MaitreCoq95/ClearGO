@@ -189,7 +189,7 @@ ${generatedQuestions.map(q => `  ${JSON.stringify(q, null, 2)},`).join('\n')}
         <div>
           <div className="flex items-center gap-3 mb-2">
             <Sparkles className="h-8 w-8 text-purple-500" />
-            <h1 className="text-3xl font-bold tracking-tight text-vyxo-navy dark:text-white">
+            <h1 className="text-3xl font-bold tracking-tight text-ClearGo-navy dark:text-white">
               Générateur IA - Quiz Codex
             </h1>
           </div>
@@ -426,3 +426,4 @@ ${generatedQuestions.map(q => `  ${JSON.stringify(q, null, 2)},`).join('\n')}
     </div>
   );
 }
+

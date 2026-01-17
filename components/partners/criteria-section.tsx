@@ -24,7 +24,7 @@ const idealProfile = [
     items: [
       "Ouvert aux outils tech (pas allergique au digital)",
       "Envie de faire évoluer son modèle",
-      "Prêt à former ses clients sur Vyxo",
+      "Prêt à former ses clients sur ClearGo",
       "Vision long terme (pas one-shot)"
     ]
   }
@@ -32,7 +32,7 @@ const idealProfile = [
 
 const notCompatible = [
   "Consultant en poste (pas indépendant)",
-  "Salarié d'un cabinet qui veut utiliser Vyxo en cachette",
+  "Salarié d'un cabinet qui veut utiliser ClearGo en cachette",
   "Débutant sans références client",
   "Cherche juste à revendre du SaaS sans expertise consulting",
   "Pas de portfolio client existant"
@@ -51,7 +51,7 @@ export function CriteriaSection() {
             On ne recrute <span className="text-partner-highlight">pas tout le monde</span>
           </h2>
           <p className="text-lg text-gray-400">
-            Vyxo n&apos;est pas une marketplace. On construit un réseau de consultants d&apos;élite.
+            ClearGo n&apos;est pas une marketplace. On construit un réseau de consultants d&apos;élite.
             Voici nos critères.
           </p>
         </div>

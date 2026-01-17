@@ -7,7 +7,7 @@ export const runtime = 'edge';
 export async function POST(req: Request) {
   const { question, moduleId, moduleName, context } = await req.json();
 
-  const systemPrompt = `Tu es l'assistant expert Vyxo Codex, spécialisé dans les systèmes de management (ISO 9001, 14001, 45001, 27001),
+  const systemPrompt = `Tu es l'assistant expert ClearGo, spécialisé dans les systèmes de management (ISO 9001, 14001, 45001, 27001),
 les bonnes pratiques pharmaceutiques (GDP, GMP, GAMP 5), le transport spécialisé (CEIV Pharma, chaîne du froid),
 et l'excellence opérationnelle (Lean, Six Sigma).
 
@@ -45,3 +45,4 @@ Fournis des réponses structurées, avec des listes à puces quand c'est appropr
 
   return result.toTextStreamResponse();
 }
+

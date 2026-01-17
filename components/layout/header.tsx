@@ -21,7 +21,7 @@ import { useLanguage } from "@/components/language-provider"
 export function Header() {
   const { t } = useLanguage()
   return (
-    <div className="fixed top-0 w-full z-50 flex items-center h-16 px-4 border-b border-white/10 bg-vyxo-navy/80 backdrop-blur-md transition-all duration-300">
+    <div className="fixed top-0 w-full z-50 flex items-center h-16 px-4 border-b border-white/10 bg-ClearGo-navy/80 backdrop-blur-md transition-all duration-300">
       <MobileSidebar />
       
       <div className="hidden md:flex items-center ml-4 md:ml-64 transition-all duration-300">
@@ -30,7 +30,7 @@ export function Header() {
             <Input 
                 type="search" 
                 placeholder={t("header.searchPlaceholder")} 
-                className="pl-9 bg-white/5 border-white/10 text-white placeholder:text-zinc-400 w-[200px] lg:w-[300px] focus-visible:ring-vyxo-gold focus-visible:ring-offset-0"
+                className="pl-9 bg-white/5 border-white/10 text-white placeholder:text-zinc-400 w-[200px] lg:w-[300px] focus-visible:ring-ClearGo-gold focus-visible:ring-offset-0"
             />
         </div>
       </div>
@@ -41,24 +41,24 @@ export function Header() {
         
         <Button variant="ghost" size="icon" className="relative text-zinc-400 hover:text-white hover:bg-white/10">
           <Bell className="h-5 w-5" />
-          <span className="absolute top-2 right-2 h-2 w-2 bg-vyxo-gold rounded-full animate-pulse"></span>
+          <span className="absolute top-2 right-2 h-2 w-2 bg-ClearGo-gold rounded-full animate-pulse"></span>
         </Button>
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="relative h-8 w-8 rounded-full ring-2 ring-vyxo-gold/50 hover:ring-vyxo-gold transition-all">
+            <Button variant="ghost" className="relative h-8 w-8 rounded-full ring-2 ring-ClearGo-gold/50 hover:ring-ClearGo-gold transition-all">
               <Avatar className="h-8 w-8">
-                <AvatarImage src="/avatars/01.png" alt="@vyxo" />
-                <AvatarFallback className="bg-vyxo-navy text-vyxo-gold font-bold">VC</AvatarFallback>
+                <AvatarImage src="/avatars/01.png" alt="@ClearGo" />
+                <AvatarFallback className="bg-ClearGo-navy text-ClearGo-gold font-bold">VC</AvatarFallback>
               </Avatar>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56" align="end" forceMount>
             <DropdownMenuLabel className="font-normal">
               <div className="flex flex-col space-y-1">
-                <p className="text-sm font-medium leading-none">{t("header.vyxoConsultant")}</p>
+                <p className="text-sm font-medium leading-none">{t("header.ClearGoConsultant")}</p>
                 <p className="text-xs leading-none text-muted-foreground">
-                  admin@vyxo.com
+                  admin@ClearGo.com
                 </p>
               </div>
             </DropdownMenuLabel>

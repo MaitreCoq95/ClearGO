@@ -189,7 +189,7 @@ export function AssessmentSessionComponent({
               <span className="text-slate-400">
                 Question {globalQuestionNumber} sur {totalQuestions}
               </span>
-              <span className="text-vyxo-gold font-medium">
+              <span className="text-ClearGo-gold font-medium">
                 {Math.round(progressPercent)}% complété
               </span>
             </div>
@@ -219,7 +219,7 @@ export function AssessmentSessionComponent({
                   flex items-center gap-2 px-4 py-2 rounded-lg whitespace-nowrap
                   transition-all text-sm
                   ${isCurrent 
-                    ? "bg-vyxo-gold text-vyxo-navy font-medium" 
+                    ? "bg-ClearGo-gold text-ClearGo-navy font-medium" 
                     : isComplete
                       ? "bg-emerald-500/20 text-emerald-400"
                       : "bg-slate-800 text-slate-400 hover:bg-slate-700"
@@ -282,7 +282,7 @@ export function AssessmentSessionComponent({
                     className={`
                       w-3 h-3 rounded-full transition-all
                       ${isCurrent 
-                        ? "bg-vyxo-gold scale-125" 
+                        ? "bg-ClearGo-gold scale-125" 
                         : hasAnswer 
                           ? "bg-emerald-500" 
                           : "bg-slate-700 hover:bg-slate-600"
@@ -298,7 +298,7 @@ export function AssessmentSessionComponent({
               disabled={currentQuestion?.required && !canGoNext()}
               className={isLastQuestion 
                 ? "bg-emerald-500 hover:bg-emerald-600" 
-                : "bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                : "bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
               }
             >
               {isLastQuestion ? (

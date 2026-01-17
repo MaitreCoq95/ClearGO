@@ -9,7 +9,7 @@ export function SocialProof() {
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Ils nous font confiance</h2>
-          <p className="text-muted-foreground">Rejoignez les leaders de l'industrie qui utilisent VYXO Codex.</p>
+          <p className="text-muted-foreground">Rejoignez les leaders de l'industrie qui utilisent ClearGo.</p>
         </div>
 
         {/* LOGOS STRIP */}
@@ -41,9 +41,9 @@ export function SocialProof() {
               rating: 5
             }
           ].map((t, i) => (
-            <Card key={i} className="bg-white/5 border-white/10 hover:border-vyxo-gold/30 transition-colors">
+            <Card key={i} className="bg-white/5 border-white/10 hover:border-ClearGo-gold/30 transition-colors">
               <CardContent className="p-8">
-                <div className="flex text-vyxo-gold mb-4">
+                <div className="flex text-ClearGo-gold mb-4">
                   {[...Array(t.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}

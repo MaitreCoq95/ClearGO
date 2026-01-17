@@ -6,7 +6,7 @@ const steps = [
   {
     number: "01",
     icon: Monitor,
-    title: "Utilise Vyxo dans tes missions",
+    title: "Utilise ClearGo dans tes missions",
     description: "Tu gardes ta méthodo, tu ajoutes juste l'outil. Dashboard temps réel, modules d'évaluation, génération de rapports automatique.",
     highlights: ["Dashboard conformité", "Modules par norme", "Rapports auto-générés", "Brandé à ton nom"]
   },
@@ -21,7 +21,7 @@ const steps = [
     number: "03",
     icon: Repeat,
     title: "Tu génères du MRR à vie",
-    description: "Après ta mission, le client continue à utiliser Vyxo. Tu touches une commission récurrente. 10 clients = 1500€/mois passif.",
+    description: "Après ta mission, le client continue à utiliser ClearGo. Tu touches une commission récurrente. 10 clients = 1500€/mois passif.",
     highlights: ["Commission à vie", "Revenus récurrents", "Valorisation x10", "Liberté financière"]
   }
 ]
@@ -44,9 +44,9 @@ export function SolutionSection() {
               {/* Message */}
               <div>
                 <p className="text-white text-lg leading-relaxed mb-4">
-                  <span className="text-partner-accent font-bold">&quot;Je suis Vivien, fondateur de Vyxo.</span>{" "}
+                  <span className="text-partner-accent font-bold">&quot;Je suis Vivien, fondateur de ClearGo.</span>{" "}
                   J&apos;ai fait 15 ans de consulting QHSE (GDP, ISO 9001, aéro, pharma). J&apos;ai vécu exactement ces problèmes. 
-                  J&apos;ai construit Vyxo pour les résoudre.&quot;
+                  J&apos;ai construit ClearGo pour les résoudre.&quot;
                 </p>
                 <p className="text-gray-400">
                   Pas pour remplacer les consultants. Pour les <strong className="text-white">amplifier</strong>.
@@ -64,7 +64,7 @@ export function SolutionSection() {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Vyxo résout ces <span className="text-partner-accent">4 problèmes</span> en une solution
+            ClearGo résout ces <span className="text-partner-accent">4 problèmes</span> en une solution
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Comment ça marche concrètement :

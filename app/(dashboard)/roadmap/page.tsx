@@ -207,7 +207,7 @@ export default function RoadmapPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-vyxo-navy"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-ClearGo-navy"></div>
       </div>
     );
   }
@@ -242,8 +242,8 @@ export default function RoadmapPage() {
         className="min-h-screen flex flex-col items-center justify-center p-8"
       >
         <motion.div variants={item} className="text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-vyxo-navy to-slate-900 mb-6">
-            <Map className="h-10 w-10 text-vyxo-gold" />
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-ClearGo-navy to-slate-900 mb-6">
+            <Map className="h-10 w-10 text-ClearGo-gold" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
             Pas encore de roadmap
@@ -255,7 +255,7 @@ export default function RoadmapPage() {
           <Button 
             size="lg"
             onClick={() => window.location.href = '/assessments'}
-            className="bg-vyxo-navy hover:bg-vyxo-navy/90"
+            className="bg-ClearGo-navy hover:bg-ClearGo-navy/90"
           >
             <Target className="mr-2 h-5 w-5" />
             Commencer un diagnostic
@@ -307,7 +307,7 @@ export default function RoadmapPage() {
 
       {/* Progress Overview */}
       <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <Card className="col-span-2 bg-gradient-to-br from-vyxo-navy to-slate-900 text-white border-0">
+        <Card className="col-span-2 bg-gradient-to-br from-ClearGo-navy to-slate-900 text-white border-0">
           <CardHeader className="pb-2">
             <CardTitle className="text-lg font-medium text-white/80">Progression globale</CardTitle>
           </CardHeader>
@@ -373,7 +373,7 @@ export default function RoadmapPage() {
               <Collapsible key={sprint.number} open={isExpanded}>
                 <Card className={`border-l-4 transition-all ${
                   isCurrent 
-                    ? 'border-l-vyxo-gold shadow-lg' 
+                    ? 'border-l-ClearGo-gold shadow-lg' 
                     : sprintProgress === 100 
                     ? 'border-l-green-500' 
                     : 'border-l-gray-300 dark:border-l-gray-700'
@@ -396,7 +396,7 @@ export default function RoadmapPage() {
                                 {sprint.name}
                               </CardTitle>
                               {isCurrent && (
-                                <Badge className="bg-vyxo-gold text-vyxo-navy">
+                                <Badge className="bg-ClearGo-gold text-ClearGo-navy">
                                   En cours
                                 </Badge>
                               )}
@@ -505,3 +505,4 @@ export default function RoadmapPage() {
     </motion.div>
   );
 }
+

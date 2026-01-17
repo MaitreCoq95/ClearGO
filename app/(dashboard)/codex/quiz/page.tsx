@@ -128,7 +128,7 @@ function QuizPageContent() {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <Dices className="h-8 w-8 text-cyan-500" />
-            <h1 className="text-3xl font-bold tracking-tight text-vyxo-navy dark:text-white">
+            <h1 className="text-3xl font-bold tracking-tight text-ClearGo-navy dark:text-white">
               Quiz
             </h1>
           </div>
@@ -210,7 +210,7 @@ function QuizPageContent() {
           <Button
             onClick={handleStartQuiz}
             disabled={isLoading || availableCount === 0}
-            className="w-full bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90 font-medium"
+            className="w-full bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90 font-medium"
             size="lg"
           >
             {isLoading ? (
@@ -247,3 +247,4 @@ export default function QuizPage() {
     </Suspense>
   );
 }
+

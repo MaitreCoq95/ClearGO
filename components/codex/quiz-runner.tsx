@@ -115,7 +115,7 @@ export function QuizRunner({ questions, onComplete, onExit }: QuizRunnerProps) {
       <Card className="max-w-2xl mx-auto">
         <CardHeader className="text-center pb-4">
           <div className="flex justify-center mb-4">
-            <div className="p-4 bg-gradient-to-br from-vyxo-gold to-amber-400 rounded-full">
+            <div className="p-4 bg-gradient-to-br from-ClearGo-gold to-amber-400 rounded-full">
               <Trophy className="h-12 w-12 text-white" />
             </div>
           </div>
@@ -127,7 +127,7 @@ export function QuizRunner({ questions, onComplete, onExit }: QuizRunnerProps) {
         <CardContent className="space-y-6">
           {/* Score */}
           <div className="text-center">
-            <div className="text-6xl font-bold text-vyxo-navy dark:text-white mb-2">
+            <div className="text-6xl font-bold text-ClearGo-navy dark:text-white mb-2">
               {finalScore}%
             </div>
             <p className="text-muted-foreground">
@@ -166,7 +166,7 @@ export function QuizRunner({ questions, onComplete, onExit }: QuizRunnerProps) {
               Recommencer
             </Button>
             {onExit && (
-              <Button onClick={onExit} className="flex-1 bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90">
+              <Button onClick={onExit} className="flex-1 bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90">
                 Terminer
               </Button>
             )}
@@ -285,14 +285,14 @@ export function QuizRunner({ questions, onComplete, onExit }: QuizRunnerProps) {
               <Button
                 onClick={handleValidate}
                 disabled={selectedAnswer === null}
-                className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+                className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
               >
                 Valider
               </Button>
             ) : (
               <Button
                 onClick={handleNext}
-                className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+                className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
               >
                 {currentIndex < questions.length - 1 ? (
                   <>

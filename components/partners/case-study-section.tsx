@@ -56,7 +56,7 @@ export function CaseStudySection() {
               <div className="p-6 border-r border-slate-700/50">
                 <h4 className="text-red-400 font-bold mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-red-400" />
-                  AVANT VYXO
+                  AVANT ClearGo
                 </h4>
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between">
@@ -81,7 +81,7 @@ export function CaseStudySection() {
               <div className="p-6 bg-partner-accent/5">
                 <h4 className="text-partner-accent font-bold mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-partner-accent" />
-                  AVEC VYXO
+                  AVEC ClearGo
                 </h4>
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between">

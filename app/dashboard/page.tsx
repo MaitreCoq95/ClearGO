@@ -109,7 +109,7 @@ function MiniRadarChart({ sections }: { sections: { name: string; value: number 
 function ActionItem({ title, status, dueWeek }: { title: string; status: "done" | "current" | "upcoming"; dueWeek: number }) {
   const statusStyles = {
     done: { icon: <CheckCircle2 className="w-4 h-4 text-green-500" />, text: "text-gray-500 line-through" },
-    current: { icon: <Activity className="w-4 h-4 text-vyxo-gold" />, text: "text-white" },
+    current: { icon: <Activity className="w-4 h-4 text-ClearGo-gold" />, text: "text-white" },
     upcoming: { icon: <Clock className="w-4 h-4 text-gray-500" />, text: "text-gray-400" },
   }
 
@@ -243,8 +243,8 @@ function DashboardContent() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-        <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+        <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
       </div>
     )
   }
@@ -254,7 +254,7 @@ function DashboardContent() {
     : 0
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4 py-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -274,7 +274,7 @@ function DashboardContent() {
                 Refaire le diagnostic
               </Link>
             </Button>
-            <Button className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90" asChild>
+            <Button className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90" asChild>
               <Link href={`/dashboard/roadmap?standard=${standardCode}`}>
                 <Target className="w-4 h-4 mr-2" />
                 Voir la Roadmap
@@ -295,7 +295,7 @@ function DashboardContent() {
             <Card className="bg-white/5 backdrop-blur-xl border-white/10">
               <CardHeader className="pb-2">
                 <CardTitle className="text-white flex items-center gap-2">
-                  <Trophy className="w-5 h-5 text-vyxo-gold" />
+                  <Trophy className="w-5 h-5 text-ClearGo-gold" />
                   Score de Maturité
                 </CardTitle>
               </CardHeader>
@@ -338,7 +338,7 @@ function DashboardContent() {
             <Card className="bg-white/5 backdrop-blur-xl border-white/10">
               <CardHeader className="pb-2">
                 <CardTitle className="text-white flex items-center gap-2">
-                  <TrendingUp className="w-5 h-5 text-vyxo-gold" />
+                  <TrendingUp className="w-5 h-5 text-ClearGo-gold" />
                   Progression Roadmap
                 </CardTitle>
               </CardHeader>
@@ -351,7 +351,7 @@ function DashboardContent() {
                         {completedActions.length}/{roadmapData?.totalActions || 0}
                       </span>
                     </div>
-                    <Progress value={completedPercent} className="h-3 [&>div]:bg-vyxo-gold" />
+                    <Progress value={completedPercent} className="h-3 [&>div]:bg-ClearGo-gold" />
                   </div>
 
                   <div className="grid grid-cols-2 gap-3 pt-2">
@@ -376,7 +376,7 @@ function DashboardContent() {
             <Card className="bg-white/5 backdrop-blur-xl border-white/10">
               <CardHeader className="pb-2 flex flex-row items-center justify-between">
                 <CardTitle className="text-white text-sm">Actions en Cours</CardTitle>
-                <Link href={`/dashboard/roadmap?standard=${standardCode}`} className="text-vyxo-gold text-xs hover:underline flex items-center gap-1">
+                <Link href={`/dashboard/roadmap?standard=${standardCode}`} className="text-ClearGo-gold text-xs hover:underline flex items-center gap-1">
                   Voir tout <ArrowRight className="w-3 h-3" />
                 </Link>
               </CardHeader>
@@ -403,7 +403,7 @@ function DashboardContent() {
             <Card className="bg-white/5 backdrop-blur-xl border-white/10">
               <CardHeader className="pb-2">
                 <CardTitle className="text-white flex items-center gap-2">
-                  <FileText className="w-5 h-5 text-vyxo-gold" />
+                  <FileText className="w-5 h-5 text-ClearGo-gold" />
                   Bibliothèque
                 </CardTitle>
               </CardHeader>
@@ -435,9 +435,9 @@ function DashboardContent() {
             </Card>
 
             {/* Quick Links */}
-            <Card className="bg-vyxo-gold/10 border-vyxo-gold/20">
+            <Card className="bg-ClearGo-gold/10 border-ClearGo-gold/20">
               <CardHeader className="pb-2">
-                <CardTitle className="text-vyxo-gold flex items-center gap-2">
+                <CardTitle className="text-ClearGo-gold flex items-center gap-2">
                   <Sparkles className="w-5 h-5" />
                   Générateur IA
                 </CardTitle>
@@ -446,7 +446,7 @@ function DashboardContent() {
                 <p className="text-gray-400 text-sm mb-4">
                   Créez vos documents personnalisés avec l'aide de l'IA.
                 </p>
-                <Button className="w-full bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90" asChild>
+                <Button className="w-full bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90" asChild>
                   <Link href={`/dashboard/generator?standard=${standardCode}`}>
                     <Sparkles className="w-4 h-4 mr-2" />
                     Générer un document
@@ -481,8 +481,8 @@ export default function DashboardPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
         </div>
       }
     >
@@ -490,3 +490,4 @@ export default function DashboardPage() {
     </Suspense>
   )
 }
+

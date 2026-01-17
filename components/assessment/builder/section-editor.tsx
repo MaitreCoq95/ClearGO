@@ -109,7 +109,7 @@ export function SectionEditor({
             <GripVertical className="w-5 h-5" />
           </button>
 
-          <Badge className="bg-vyxo-gold/20 text-vyxo-gold">
+          <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold">
             Section {index + 1}
           </Badge>
 
@@ -214,7 +214,7 @@ export function SectionEditor({
           {section.questions.length === 0 ? (
             <div className="text-center py-8 text-slate-500">
               <p className="mb-4">Aucune question dans cette section</p>
-              <Button onClick={addQuestion} className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+              <Button onClick={addQuestion} className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                 <Plus className="w-4 h-4 mr-2" />
                 Ajouter une question
               </Button>
@@ -236,7 +236,7 @@ export function SectionEditor({
 
               <Button 
                 variant="outline" 
-                className="w-full border-dashed border-slate-600 text-slate-400 hover:text-white hover:border-vyxo-gold"
+                className="w-full border-dashed border-slate-600 text-slate-400 hover:text-white hover:border-ClearGo-gold"
                 onClick={addQuestion}
               >
                 <Plus className="w-4 h-4 mr-2" />

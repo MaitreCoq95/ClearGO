@@ -102,7 +102,7 @@ export default function LandingPage() {
   }
 
   return (
-    <main className="min-h-screen bg-vyxo-navy">
+    <main className="min-h-screen bg-ClearGo-navy">
       {/* LP-V2-01: Hero Section Hybride */}
       <HeroSection 
         variant={CURRENT_VARIANT} 
@@ -147,7 +147,7 @@ export default function LandingPage() {
                 Étape 1/2 • 2 minutes pour commencer
               </p>
               {selectedRole && (
-                <p className="text-vyxo-gold text-sm mt-2">
+                <p className="text-ClearGo-gold text-sm mt-2">
                   Profil: {selectedRole === "dirigeant" ? "👔 Dirigeant" : "📋 Manager Opérationnel"}
                 </p>
               )}
@@ -188,7 +188,7 @@ export default function LandingPage() {
       {/* LP-06: Score Result */}
       {currentStep === "result" && qualifiedLead && (
         <>
-          <section id="score-result" className="py-20 bg-gradient-to-b from-slate-900 to-vyxo-navy">
+          <section id="score-result" className="py-20 bg-gradient-to-b from-slate-900 to-ClearGo-navy">
             <div className="container mx-auto px-4">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
@@ -214,7 +214,7 @@ export default function LandingPage() {
           </section>
 
           {/* LP-08: Modules Preview */}
-          <section id="modules-preview" className="py-20 bg-vyxo-navy">
+          <section id="modules-preview" className="py-20 bg-ClearGo-navy">
             <div className="container mx-auto px-4">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
@@ -231,7 +231,7 @@ export default function LandingPage() {
           </section>
 
           {/* LP-10: Section CTA Final */}
-          <section id="cta-final" className="py-20 bg-vyxo-navy">
+          <section id="cta-final" className="py-20 bg-ClearGo-navy">
             <div className="container mx-auto px-4">
               <div className="max-w-xl mx-auto text-center">
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
@@ -240,15 +240,15 @@ export default function LandingPage() {
                     Accès complet réservé aux comptes validés
                   </h3>
                   <p className="text-gray-400 mb-2">
-                    Score: <span className="text-vyxo-gold font-bold">{qualifiedLead.leadScore.total}/100</span> • 
-                    Priorité: <span className="text-vyxo-gold">{qualifiedLead.leadScore.priority}</span>
+                    Score: <span className="text-ClearGo-gold font-bold">{qualifiedLead.leadScore.total}/100</span> • 
+                    Priorité: <span className="text-ClearGo-gold">{qualifiedLead.leadScore.priority}</span>
                   </p>
                   <p className="text-gray-500 text-sm mb-6">
                     Votre rapport préliminaire sera disponible sous 48h
                   </p>
                   <a 
                     href={`/confirmation/${selectedRole === "manager" ? "manager" : "dirigeant"}?company=${encodeURIComponent(qualifiedLead.formData.company_name)}&score=${qualifiedLead.leadScore.total}&priority=${qualifiedLead.leadScore.priority}`}
-                    className="block w-full bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold py-4 px-8 rounded-lg transition-all text-center"
+                    className="block w-full bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold py-4 px-8 rounded-lg transition-all text-center"
                   >
                     FINALISER MON ÉVALUATION →
                   </a>
@@ -261,3 +261,4 @@ export default function LandingPage() {
     </main>
   )
 }
+

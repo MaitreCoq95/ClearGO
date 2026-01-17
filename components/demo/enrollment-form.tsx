@@ -45,7 +45,7 @@ export function EnrollmentForm({ certificationId, certificationName }: Enrollmen
     console.log("Lead Captured:", { ...formData, certificationId })
 
     // Store in localStorage for the session (simple persistence for the demo flow)
-    localStorage.setItem("vyxo_demo_user", JSON.stringify(formData))
+    localStorage.setItem("ClearGo_demo_user", JSON.stringify(formData))
 
     // Simulate delay for UX
     setTimeout(() => {
@@ -58,7 +58,7 @@ export function EnrollmentForm({ certificationId, certificationName }: Enrollmen
   const isFormValid = Object.values(formData).every(val => val.trim().length > 0)
 
   return (
-    <Card className="bento-card border-vyxo-gold/20 shadow-2xl shadow-vyxo-gold/5 animate-fade-in-up delay-200">
+    <Card className="bento-card border-ClearGo-gold/20 shadow-2xl shadow-ClearGo-gold/5 animate-fade-in-up delay-200">
       <CardHeader>
         <CardTitle className="text-xl">Commencez votre évaluation</CardTitle>
         <CardDescription>
@@ -148,7 +148,7 @@ export function EnrollmentForm({ certificationId, certificationName }: Enrollmen
 
           <Button 
             type="submit" 
-            className="w-full bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy font-bold h-12 text-lg mt-4"
+            className="w-full bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy font-bold h-12 text-lg mt-4"
             disabled={!isFormValid || isLoading}
           >
             {isLoading ? "Chargement..." : "Démarrer l'Assessment"}

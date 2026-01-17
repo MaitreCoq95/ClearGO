@@ -125,7 +125,7 @@ export function ScoreDashboard() {
             </div>
 
             <div className="text-right">
-              <p className="text-2xl font-bold text-vyxo-navy dark:text-white">
+              <p className="text-2xl font-bold text-ClearGo-navy dark:text-white">
                 {globalScore.correctAnswers}/{globalScore.totalQuestionsAnswered}
               </p>
               <p className="text-xs text-muted-foreground">réponses correctes</p>

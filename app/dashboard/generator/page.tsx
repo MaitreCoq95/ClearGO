@@ -164,7 +164,7 @@ function AIAssistedField({
           variant="outline"
           onClick={handleGenerate}
           disabled={isGenerating}
-          className="border-vyxo-gold/50 text-vyxo-gold hover:bg-vyxo-gold/10"
+          className="border-ClearGo-gold/50 text-ClearGo-gold hover:bg-ClearGo-gold/10"
         >
           {isGenerating ? (
             <>
@@ -328,7 +328,7 @@ function GeneratorWizard({ generator }: { generator: DocumentGenerator }) {
           Votre {generator.name.toLowerCase()} est prêt au téléchargement.
         </p>
         <div className="flex gap-4 justify-center">
-          <Button onClick={handleDownload} className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90">
+          <Button onClick={handleDownload} className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90">
             <Download className="w-4 h-4 mr-2" />
             Télécharger ({generator.outputFormat.toUpperCase()})
           </Button>
@@ -354,7 +354,7 @@ function GeneratorWizard({ generator }: { generator: DocumentGenerator }) {
           </span>
           <span>{Math.round(progress)}%</span>
         </div>
-        <Progress value={progress} className="h-2 [&>div]:bg-vyxo-gold" />
+        <Progress value={progress} className="h-2 [&>div]:bg-ClearGo-gold" />
 
         {/* Step indicators */}
         <div className="flex justify-between mt-4">
@@ -362,15 +362,15 @@ function GeneratorWizard({ generator }: { generator: DocumentGenerator }) {
             <div
               key={s.id}
               className={`flex items-center gap-2 ${
-                i <= currentStep ? "text-vyxo-gold" : "text-gray-600"
+                i <= currentStep ? "text-ClearGo-gold" : "text-gray-600"
               }`}
             >
               <div
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm ${
                   i < currentStep
-                    ? "bg-vyxo-gold text-vyxo-navy"
+                    ? "bg-ClearGo-gold text-ClearGo-navy"
                     : i === currentStep
-                    ? "border-2 border-vyxo-gold"
+                    ? "border-2 border-ClearGo-gold"
                     : "border border-gray-600"
                 }`}
               >
@@ -428,7 +428,7 @@ function GeneratorWizard({ generator }: { generator: DocumentGenerator }) {
         <Button
           onClick={handleNext}
           disabled={isGenerating}
-          className="bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90"
+          className="bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90"
         >
           {isGenerating ? (
             <>
@@ -477,12 +477,12 @@ function GeneratorSelection({ standardCode }: { standardCode: string }) {
           whileHover={{ scale: 1.02 }}
         >
           <Card
-            className="bg-white/5 backdrop-blur-xl border-white/10 hover:border-vyxo-gold/50 cursor-pointer transition-all h-full"
+            className="bg-white/5 backdrop-blur-xl border-white/10 hover:border-ClearGo-gold/50 cursor-pointer transition-all h-full"
             onClick={() => router.push(`?standard=${standardCode}&generator=${gen.id}`)}
           >
             <CardHeader>
               <div className="flex items-start justify-between">
-                <Badge className="bg-vyxo-gold/20 text-vyxo-gold border-vyxo-gold/30">
+                <Badge className="bg-ClearGo-gold/20 text-ClearGo-gold border-ClearGo-gold/30">
                   <Crown className="w-3 h-3 mr-1" />
                   Premium
                 </Badge>
@@ -496,7 +496,7 @@ function GeneratorSelection({ standardCode }: { standardCode: string }) {
             <CardContent>
               <p className="text-gray-400 text-sm mb-4">{gen.description}</p>
               <div className="flex items-center gap-2 text-sm">
-                <Wand2 className="w-4 h-4 text-vyxo-gold" />
+                <Wand2 className="w-4 h-4 text-ClearGo-gold" />
                 <span className="text-gray-300">
                   {gen.steps.length} étapes • Assistance IA incluse
                 </span>
@@ -518,7 +518,7 @@ function GeneratorContent() {
   const generator = generatorId ? getGeneratorById(standardCode, generatorId) : null
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4 py-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
@@ -527,7 +527,7 @@ function GeneratorContent() {
           className="mb-8"
         >
           <div className="flex items-center gap-3 mb-2">
-            <Sparkles className="w-8 h-8 text-vyxo-gold" />
+            <Sparkles className="w-8 h-8 text-ClearGo-gold" />
             <h1 className="text-3xl font-bold text-white">
               {generator ? generator.name : "Générateur de Documents IA"}
             </h1>
@@ -555,8 +555,8 @@ export default function GeneratorPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900">
-          <Loader2 className="w-8 h-8 text-vyxo-gold animate-spin" />
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900">
+          <Loader2 className="w-8 h-8 text-ClearGo-gold animate-spin" />
         </div>
       }
     >
@@ -564,3 +564,4 @@ export default function GeneratorPage() {
     </Suspense>
   )
 }
+

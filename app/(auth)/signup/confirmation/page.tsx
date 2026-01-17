@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export default function SignUpConfirmationPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vyxo-navy via-vyxo-navy to-slate-900 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-ClearGo-navy via-ClearGo-navy to-slate-900 p-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -35,8 +35,8 @@ export default function SignUpConfirmationPage() {
           <CardContent className="space-y-6">
             <div className="p-4 rounded-lg bg-white/5 border border-white/10">
               <div className="flex items-center gap-3 text-left">
-                <div className="w-10 h-10 bg-vyxo-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-vyxo-gold" />
+                <div className="w-10 h-10 bg-ClearGo-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-ClearGo-gold" />
                 </div>
                 <div>
                   <p className="text-white font-medium">
@@ -81,3 +81,4 @@ export default function SignUpConfirmationPage() {
     </div>
   )
 }
+

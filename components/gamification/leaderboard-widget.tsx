@@ -24,7 +24,7 @@ export function LeaderboardWidget() {
                 key={entry.id}
                 className={`
                   flex items-center gap-4 p-4 transition-colors
-                  ${entry.isCurrentUser ? "bg-vyxo-gold/10 border-l-4 border-l-vyxo-gold" : "hover:bg-secondary/20"}
+                  ${entry.isCurrentUser ? "bg-ClearGo-gold/10 border-l-4 border-l-ClearGo-gold" : "hover:bg-secondary/20"}
                 `}
               >
                 <div className={`
@@ -40,7 +40,7 @@ export function LeaderboardWidget() {
                   <div className="font-semibold flex items-center gap-2">
                      {entry.name}
                      {entry.isCurrentUser && (
-                       <span className="text-[10px] bg-vyxo-gold text-vyxo-navy px-1.5 py-0.5 rounded-full">Moi</span>
+                       <span className="text-[10px] bg-ClearGo-gold text-ClearGo-navy px-1.5 py-0.5 rounded-full">Moi</span>
                      )}
                   </div>
                   <div className="text-xs text-muted-foreground truncate">{entry.company}</div>

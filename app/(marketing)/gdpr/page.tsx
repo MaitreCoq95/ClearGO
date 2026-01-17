@@ -14,8 +14,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Conformité RGPD - VYXO Codex",
-  description: "Découvrez comment VYXO Codex respecte le RGPD et vos droits sur vos données personnelles",
+  title: "Conformité RGPD - ClearGo",
+  description: "Découvrez comment ClearGo respecte le RGPD et vos droits sur vos données personnelles",
 }
 
 const rights = [
@@ -60,14 +60,14 @@ const rights = [
 export default function GDPRPage() {
   return (
     <div className="py-16 md:py-24">
-      <div className="container-vyxo max-w-4xl">
+      <div className="container-ClearGo max-w-4xl">
         <div className="mb-12">
           <Badge variant="outline" className="mb-4">Protection des données</Badge>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Conformité RGPD
           </h1>
           <p className="text-muted-foreground">
-            VYXO Codex respecte le Règlement Général sur la Protection des Données (RGPD).
+            ClearGo respecte le Règlement Général sur la Protection des Données (RGPD).
             Voici vos droits et comment les exercer.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function GDPRPage() {
         <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
           <h2>Notre engagement</h2>
           <p>
-            VYXO Consulting s'engage à respecter la réglementation européenne en matière de 
+            ClearGo Consulting s'engage à respecter la réglementation européenne en matière de 
             protection des données personnelles. Nous avons mis en place les mesures techniques 
             et organisationnelles nécessaires pour garantir la sécurité et la confidentialité 
             de vos données.
@@ -98,8 +98,8 @@ export default function GDPRPage() {
             <Card key={index} className="bento-card">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center gap-3 text-lg">
-                  <div className="w-10 h-10 rounded-xl bg-vyxo-gold/10 flex items-center justify-center">
-                    <right.icon className="w-5 h-5 text-vyxo-gold" />
+                  <div className="w-10 h-10 rounded-xl bg-ClearGo-gold/10 flex items-center justify-center">
+                    <right.icon className="w-5 h-5 text-ClearGo-gold" />
                   </div>
                   {right.title}
                 </CardTitle>
@@ -126,11 +126,11 @@ export default function GDPRPage() {
               modifier vos préférences ou télécharger vos données.
             </li>
             <li>
-              <strong>Par email :</strong> Envoyez votre demande à <a href="mailto:privacy@vyxo.fr">privacy@vyxo.fr</a> 
+              <strong>Par email :</strong> Envoyez votre demande à <a href="mailto:privacy@cleargo.fr">privacy@cleargo.fr</a> 
               avec une copie de votre pièce d'identité.
             </li>
             <li>
-              <strong>Par courrier :</strong> VYXO Consulting - DPO, Paris, France
+              <strong>Par courrier :</strong> ClearGo Consulting - DPO, Paris, France
             </li>
           </ol>
           <p>
@@ -144,8 +144,8 @@ export default function GDPRPage() {
             notre Délégué à la Protection des Données :
           </p>
           <ul>
-            <li><strong>Email :</strong> dpo@vyxo.fr</li>
-            <li><strong>Courrier :</strong> VYXO Consulting - DPO, Paris, France</li>
+            <li><strong>Email :</strong> dpo@cleargo.fr</li>
+            <li><strong>Courrier :</strong> ClearGo Consulting - DPO, Paris, France</li>
           </ul>
 
           <h2>Réclamation auprès de la CNIL</h2>
@@ -160,19 +160,19 @@ export default function GDPRPage() {
         </div>
 
         {/* Contact CTA */}
-        <Card className="bento-card border-vyxo-gold/30 bg-vyxo-gold/5">
+        <Card className="bento-card border-ClearGo-gold/30 bg-ClearGo-gold/5">
           <CardContent className="flex flex-col md:flex-row items-center justify-between gap-6 py-6">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-vyxo-gold/20 flex items-center justify-center">
-                <Mail className="w-6 h-6 text-vyxo-gold" />
+              <div className="w-12 h-12 rounded-full bg-ClearGo-gold/20 flex items-center justify-center">
+                <Mail className="w-6 h-6 text-ClearGo-gold" />
               </div>
               <div>
                 <h3 className="font-semibold">Une question sur vos données ?</h3>
                 <p className="text-sm text-muted-foreground">Notre équipe est là pour vous aider</p>
               </div>
             </div>
-            <Link href="mailto:privacy@vyxo.fr">
-              <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+            <Link href="mailto:privacy@cleargo.fr">
+              <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                 Contacter le DPO
               </Button>
             </Link>
@@ -182,3 +182,4 @@ export default function GDPRPage() {
     </div>
   )
 }
+

@@ -51,11 +51,18 @@ const config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
-        "vyxo-navy": "hsl(var(--vyxo-navy))",
-        "vyxo-gold": "hsl(var(--vyxo-gold))",
+        // ClearGo Brand Colors
+        "cleargo-blue-dark": "hsl(var(--cleargo-blue-dark))",
+        "cleargo-blue": "hsl(var(--cleargo-blue))",
+        "cleargo-blue-light": "hsl(var(--cleargo-blue-light))",
+        "cleargo-green": "hsl(var(--cleargo-green))",
+        "cleargo-green-light": "hsl(var(--cleargo-green-light))",
+        // Legacy aliases (backward compatibility)
+        "vyxo-navy": "hsl(var(--cleargo-blue-dark))",
+        "vyxo-gold": "hsl(var(--cleargo-green))",
         // Partner landing page colors
-        "partner-accent": "#10B981", // Emerald 500 - Growth/Success
-        "partner-highlight": "#F59E0B", // Amber 500 - Premium/Highlight
+        "partner-accent": "#27AE60", // ClearGo Green
+        "partner-highlight": "#2E86C1", // ClearGo Blue
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -134,7 +134,7 @@ export function GapsList({ gaps, onViewModule }: GapsListProps) {
                               key={i} 
                               className="flex items-start gap-2 text-sm text-slate-300"
                             >
-                              <ChevronRight className="w-4 h-4 text-vyxo-gold shrink-0 mt-0.5" />
+                              <ChevronRight className="w-4 h-4 text-ClearGo-gold shrink-0 mt-0.5" />
                               {action}
                             </li>
                           ))}
@@ -151,7 +151,7 @@ export function GapsList({ gaps, onViewModule }: GapsListProps) {
                             key={i}
                             variant="ghost"
                             size="sm"
-                            className="h-7 text-xs text-vyxo-gold hover:text-vyxo-gold/80"
+                            className="h-7 text-xs text-ClearGo-gold hover:text-ClearGo-gold/80"
                             onClick={() => onViewModule?.(module)}
                           >
                             <BookOpen className="w-3 h-3 mr-1" />

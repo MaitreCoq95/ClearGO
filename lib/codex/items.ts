@@ -769,21 +769,21 @@ export const knowledgeItems: KnowledgeItem[] = [
     tags: ["11.2.5", "compétences", "niveau-renforcé", "opérationnel"]
   },
 
-  // Avantage stratégique pour Vyxo Consult
+  // Avantage stratégique pour ClearGo Consult
   {
-    id: "surete-avantage-vyxo",
+    id: "surete-avantage-ClearGo",
     moduleId: "surete-112x",
     type: "concept",
-    topic: "Avantage stratégique pour Vyxo Consult",
-    body: "Détenir les compétences sur les formations sûreté 11.2.x offre à Vyxo Consult un avantage stratégique majeur : ✅ DIFFÉRENCIATION : proposer des missions QSE + Sûreté intégrées (approche unique sur le marché), ✅ NOUVELLES MISSIONS : audits sûreté aérienne, accompagnement certification RA/CA, formation des équipes sûreté clients, ✅ SECTEURS CIBLÉS : fret aérien, logistique internationale, aéroports, plateformes cargo, ✅ CONFORMITÉ : accompagner les clients dans la conformité au Règlement (UE) 2015/1998, ✅ OFFRES PREMIUM : packages 'Sûreté + GDP + ISO 9001' pour clients logistique pharma/fret aérien, ✅ LÉGITIMITÉ : expertise reconnue pour intervenir en zones sensibles ZSAR/ZES.",
-    tags: ["vyxo-consult", "stratégie", "différenciation", "missions"]
+    topic: "Avantage stratégique pour ClearGo Consult",
+    body: "Détenir les compétences sur les formations sûreté 11.2.x offre à ClearGo Consult un avantage stratégique majeur : ✅ DIFFÉRENCIATION : proposer des missions QSE + Sûreté intégrées (approche unique sur le marché), ✅ NOUVELLES MISSIONS : audits sûreté aérienne, accompagnement certification RA/CA, formation des équipes sûreté clients, ✅ SECTEURS CIBLÉS : fret aérien, logistique internationale, aéroports, plateformes cargo, ✅ CONFORMITÉ : accompagner les clients dans la conformité au Règlement (UE) 2015/1998, ✅ OFFRES PREMIUM : packages 'Sûreté + GDP + ISO 9001' pour clients logistique pharma/fret aérien, ✅ LÉGITIMITÉ : expertise reconnue pour intervenir en zones sensibles ZSAR/ZES.",
+    tags: ["ClearGo-consult", "stratégie", "différenciation", "missions"]
   },
   {
     id: "surete-missions-vendables",
     moduleId: "surete-112x",
     type: "tool",
-    topic: "Missions sûreté vendables par Vyxo Consult",
-    body: "Exemples de missions sûreté que Vyxo Consult peut vendre grâce aux compétences 11.2.x : 🎯 Audit de conformité sûreté aérienne (conformité Règlement UE 2015/1998), 🎯 Accompagnement certification RA (Regulated Agent / Agent Habilité), 🎯 Élaboration de plans de sûreté d'entreprise, 🎯 Formation des équipes contrôle d'accès, filtrage fret, surveillance, 🎯 Évaluation des risques sûreté (analyse de menace, vulnérabilités), 🎯 Audits internes sûreté et préparation aux inspections DGAC, 🎯 Conseil en organisation sûreté (procédures, flux, zones sécurisées), 🎯 Offres intégrées QSE + Sûreté + GDP pour clients transport/logistique pharma, 🎯 Support conformité réglementaire sûreté pour plateformes cargo et aéroports.",
+    topic: "Missions sûreté vendables par ClearGo Consult",
+    body: "Exemples de missions sûreté que ClearGo Consult peut vendre grâce aux compétences 11.2.x : 🎯 Audit de conformité sûreté aérienne (conformité Règlement UE 2015/1998), 🎯 Accompagnement certification RA (Regulated Agent / Agent Habilité), 🎯 Élaboration de plans de sûreté d'entreprise, 🎯 Formation des équipes contrôle d'accès, filtrage fret, surveillance, 🎯 Évaluation des risques sûreté (analyse de menace, vulnérabilités), 🎯 Audits internes sûreté et préparation aux inspections DGAC, 🎯 Conseil en organisation sûreté (procédures, flux, zones sécurisées), 🎯 Offres intégrées QSE + Sûreté + GDP pour clients transport/logistique pharma, 🎯 Support conformité réglementaire sûreté pour plateformes cargo et aéroports.",
     tags: ["missions", "audit", "formation", "conseil", "ra-ca"]
   }
 ];

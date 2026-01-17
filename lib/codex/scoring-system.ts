@@ -1,7 +1,7 @@
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 
 /**
- * Système de scoring pour le Vyxo Codex
+ * Système de scoring pour le ClearGo
  * Calcule les performances par module et globalement
  */
 

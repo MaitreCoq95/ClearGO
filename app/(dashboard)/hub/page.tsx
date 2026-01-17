@@ -45,11 +45,11 @@ export default function DashboardPage() {
       className="min-h-screen flex flex-col items-center justify-center p-8"
     >
       <motion.div variants={item} className="text-center mb-12">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-vyxo-navy to-slate-900 mb-6">
-          <BookOpen className="h-10 w-10 text-vyxo-gold" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-ClearGo-navy to-slate-900 mb-6">
+          <BookOpen className="h-10 w-10 text-ClearGo-gold" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-vyxo-navy dark:text-white mb-4">
-          Vyxo CODEX
+        <h1 className="text-4xl md:text-5xl font-bold text-ClearGo-navy dark:text-white mb-4">
+          ClearGo
         </h1>
         <p className="text-xl text-muted-foreground max-w-lg mx-auto">
           Votre plateforme de formation et certification qualité
@@ -101,7 +101,7 @@ export default function DashboardPage() {
         <Button
           size="lg"
           onClick={() => router.push("/codex")}
-          className="bg-vyxo-navy hover:bg-vyxo-navy/90 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
+          className="bg-ClearGo-navy hover:bg-ClearGo-navy/90 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
         >
           Accéder au CODEX
           <ArrowRight className="ml-2 h-5 w-5" />
@@ -110,3 +110,4 @@ export default function DashboardPage() {
     </motion.div>
   );
 }
+

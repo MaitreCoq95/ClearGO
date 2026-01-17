@@ -1616,10 +1616,10 @@ export const quizQuestions: QuizQuestion[] = [
     tags: ["11.2.5", "gestion-crise", "urgence", "procédure", "cas-pratique"]
   },
   {
-    id: "q-surete-vyxo-avantage",
+    id: "q-surete-ClearGo-avantage",
     moduleId: "surete-112x",
     difficulty: "medium",
-    question: "Quel avantage stratégique offre la maîtrise des formations sûreté 11.2.x pour Vyxo Consult ?",
+    question: "Quel avantage stratégique offre la maîtrise des formations sûreté 11.2.x pour ClearGo Consult ?",
     choices: [
       "Aucun avantage particulier",
       "Uniquement vendre des formations",
@@ -1627,14 +1627,14 @@ export const quizQuestions: QuizQuestion[] = [
       "Uniquement travailler dans les aéroports"
     ],
     correctIndex: 2,
-    explanation: "La maîtrise des formations sûreté 11.2.x offre à Vyxo Consult un avantage stratégique majeur : différenciation par des missions QSE + Sûreté intégrées (approche unique), nouvelles missions (audits sûreté aérienne, accompagnement certification RA/CA), secteurs ciblés (fret aérien, logistique internationale), et offres premium 'Sûreté + GDP + ISO 9001' pour clients transport/logistique pharma.",
-    tags: ["vyxo-consult", "stratégie", "avantage", "missions"]
+    explanation: "La maîtrise des formations sûreté 11.2.x offre à ClearGo Consult un avantage stratégique majeur : différenciation par des missions QSE + Sûreté intégrées (approche unique), nouvelles missions (audits sûreté aérienne, accompagnement certification RA/CA), secteurs ciblés (fret aérien, logistique internationale), et offres premium 'Sûreté + GDP + ISO 9001' pour clients transport/logistique pharma.",
+    tags: ["ClearGo-consult", "stratégie", "avantage", "missions"]
   },
   {
-    id: "q-surete-missions-vyxo",
+    id: "q-surete-missions-ClearGo",
     moduleId: "surete-112x",
     difficulty: "easy",
-    question: "Quels types de missions sûreté Vyxo Consult peut-il proposer grâce aux compétences 11.2.x ?",
+    question: "Quels types de missions sûreté ClearGo Consult peut-il proposer grâce aux compétences 11.2.x ?",
     choices: [
       "Uniquement des formations",
       "Audit de conformité sûreté, accompagnement certification RA, élaboration de plans de sûreté, évaluation des risques, audits internes DGAC",
@@ -1642,8 +1642,8 @@ export const quizQuestions: QuizQuestion[] = [
       "Uniquement de la surveillance"
     ],
     correctIndex: 1,
-    explanation: "Grâce aux compétences 11.2.x, Vyxo Consult peut proposer : audit de conformité sûreté aérienne (Règlement UE 2015/1998), accompagnement certification RA (Regulated Agent), élaboration de plans de sûreté d'entreprise, formation des équipes, évaluation des risques sûreté, audits internes et préparation aux inspections DGAC, conseil en organisation sûreté, et offres intégrées QSE + Sûreté + GDP.",
-    tags: ["vyxo-consult", "missions", "services", "conseil"]
+    explanation: "Grâce aux compétences 11.2.x, ClearGo Consult peut proposer : audit de conformité sûreté aérienne (Règlement UE 2015/1998), accompagnement certification RA (Regulated Agent), élaboration de plans de sûreté d'entreprise, formation des équipes, évaluation des risques sûreté, audits internes et préparation aux inspections DGAC, conseil en organisation sûreté, et offres intégrées QSE + Sûreté + GDP.",
+    tags: ["ClearGo-consult", "missions", "services", "conseil"]
   },
 
   // Excellence Opérationnelle

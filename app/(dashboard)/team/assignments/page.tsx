@@ -195,7 +195,7 @@ export default function TeamAssignmentsPage() {
         </div>
         <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
           <DialogTrigger asChild>
-            <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+            <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
               <Plus className="w-4 h-4 mr-2" />
               Nouvel assignment
             </Button>
@@ -237,8 +237,8 @@ export default function TeamAssignmentsPage() {
                       key={member.id}
                       className={`flex items-center gap-2 p-3 rounded-lg border cursor-pointer transition-colors ${
                         selectedMembers.includes(member.id)
-                          ? "border-vyxo-gold bg-vyxo-gold/5"
-                          : "border-border hover:border-vyxo-gold/50"
+                          ? "border-ClearGo-gold bg-ClearGo-gold/5"
+                          : "border-border hover:border-ClearGo-gold/50"
                       }`}
                     >
                       <input
@@ -254,7 +254,7 @@ export default function TeamAssignmentsPage() {
                         }}
                       />
                       <Avatar className="w-6 h-6">
-                        <AvatarFallback className="bg-vyxo-navy text-white text-xs">
+                        <AvatarFallback className="bg-ClearGo-navy text-white text-xs">
                           {member.name.split(" ").map(n => n[0]).join("")}
                         </AvatarFallback>
                       </Avatar>
@@ -312,7 +312,7 @@ export default function TeamAssignmentsPage() {
                 Annuler
               </Button>
               <Button 
-                className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy"
+                className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy"
                 disabled={!selectedModule || selectedMembers.length === 0}
               >
                 Créer l'assignment
@@ -363,8 +363,8 @@ export default function TeamAssignmentsPage() {
                   {/* Module Info */}
                   <div className="flex-1">
                     <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-vyxo-navy/10 flex items-center justify-center">
-                        <BookOpen className="w-5 h-5 text-vyxo-navy dark:text-vyxo-gold" />
+                      <div className="w-10 h-10 rounded-xl bg-ClearGo-navy/10 flex items-center justify-center">
+                        <BookOpen className="w-5 h-5 text-ClearGo-navy dark:text-ClearGo-gold" />
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 flex-wrap">
@@ -418,7 +418,7 @@ export default function TeamAssignmentsPage() {
                         >
                           {getStatusIcon(member.status)}
                           <Avatar className="w-6 h-6">
-                            <AvatarFallback className="bg-vyxo-navy text-white text-xs">
+                            <AvatarFallback className="bg-ClearGo-navy text-white text-xs">
                               {member.name.split(" ").map(n => n[0]).join("")}
                             </AvatarFallback>
                           </Avatar>
@@ -437,3 +437,4 @@ export default function TeamAssignmentsPage() {
     </div>
   )
 }
+

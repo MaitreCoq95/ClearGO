@@ -102,7 +102,7 @@ export default function AdminDepartmentsPage() {
         </div>
         <Dialog open={isCreateModalOpen} onOpenChange={setIsCreateModalOpen}>
           <DialogTrigger asChild>
-            <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+            <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
               <Plus className="w-4 h-4 mr-2" />
               Nouveau département
             </Button>
@@ -142,7 +142,7 @@ export default function AdminDepartmentsPage() {
               <Button variant="outline" onClick={() => setIsCreateModalOpen(false)}>
                 Annuler
               </Button>
-              <Button className="bg-vyxo-gold hover:bg-vyxo-gold/90 text-vyxo-navy">
+              <Button className="bg-ClearGo-gold hover:bg-ClearGo-gold/90 text-ClearGo-navy">
                 Créer
               </Button>
             </DialogFooter>
@@ -168,7 +168,7 @@ export default function AdminDepartmentsPage() {
         </Card>
         <Card className="bento-card">
           <CardContent className="p-4 text-center">
-            <TrendingUp className="w-6 h-6 mx-auto text-vyxo-gold mb-2" />
+            <TrendingUp className="w-6 h-6 mx-auto text-ClearGo-gold mb-2" />
             <p className="text-2xl font-bold">{stats.avgScore}%</p>
             <p className="text-sm text-muted-foreground">Score moyen</p>
           </CardContent>
@@ -221,7 +221,7 @@ export default function AdminDepartmentsPage() {
                 {dept.managerName ? (
                   <div className="flex items-center gap-2">
                     <Avatar className="w-6 h-6">
-                      <AvatarFallback className="bg-vyxo-navy text-white text-xs">
+                      <AvatarFallback className="bg-ClearGo-navy text-white text-xs">
                         {dept.managerName.split(" ").map(n => n[0]).join("")}
                       </AvatarFallback>
                     </Avatar>
@@ -268,3 +268,4 @@ export default function AdminDepartmentsPage() {
     </div>
   )
 }
+

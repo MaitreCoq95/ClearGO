@@ -69,8 +69,8 @@ export function TeamAnalyticsCards({ stats, period = "month" }: TeamAnalyticsCar
                 </div>
               </div>
             </div>
-            <div className="w-12 h-12 rounded-xl bg-vyxo-gold/10 flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-vyxo-gold" />
+            <div className="w-12 h-12 rounded-xl bg-ClearGo-gold/10 flex items-center justify-center">
+              <TrendingUp className="w-6 h-6 text-ClearGo-gold" />
             </div>
           </div>
           <p className="text-xs text-muted-foreground mt-3">
@@ -150,7 +150,7 @@ export function TeamActivityChart({ data }: TeamActivityChartProps) {
           {data.map((day, i) => (
             <div key={i} className="flex-1 flex flex-col items-center">
               <div 
-                className="w-full bg-vyxo-gold/80 rounded-t transition-all hover:bg-vyxo-gold"
+                className="w-full bg-ClearGo-gold/80 rounded-t transition-all hover:bg-ClearGo-gold"
                 style={{ height: `${(day.completions / maxCompletions) * 100}%`, minHeight: 4 }}
               />
               <p className="text-xs text-muted-foreground mt-2">
@@ -161,7 +161,7 @@ export function TeamActivityChart({ data }: TeamActivityChartProps) {
         </div>
         <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-800">
           <div className="text-center">
-            <p className="text-2xl font-bold text-vyxo-gold">
+            <p className="text-2xl font-bold text-ClearGo-gold">
               {data.reduce((sum, d) => sum + d.completions, 0)}
             </p>
             <p className="text-xs text-muted-foreground">modules complétés</p>

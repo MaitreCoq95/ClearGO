@@ -13,14 +13,14 @@ function ModuleCard({ module }: { module: Module }) {
     <div 
       className={`relative rounded-xl border p-4 transition-all ${
         module.isFree 
-          ? "bg-white/5 border-white/10 hover:border-vyxo-gold/50 cursor-pointer group" 
+          ? "bg-white/5 border-white/10 hover:border-ClearGo-gold/50 cursor-pointer group" 
           : "bg-white/[0.02] border-white/5"
       }`}
     >
       {/* Overlay blur pour modules verrouillés */}
       {!module.isFree && (
         <div className="absolute inset-0 backdrop-blur-sm bg-white/5 rounded-xl z-10 flex items-center justify-center">
-          <div className="bg-vyxo-navy/80 rounded-full p-3">
+          <div className="bg-ClearGo-navy/80 rounded-full p-3">
             <Lock className="w-5 h-5 text-gray-400" />
           </div>
         </div>
@@ -55,7 +55,7 @@ function ModuleCard({ module }: { module: Module }) {
           {module.duration}
         </div>
         {module.isFree && (
-          <div className="flex items-center gap-1 text-vyxo-gold opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="flex items-center gap-1 text-ClearGo-gold opacity-0 group-hover:opacity-100 transition-opacity">
             <span>Commencer</span>
             <ChevronRight className="w-3 h-3" />
           </div>
@@ -124,7 +124,7 @@ export function ModulesPreview({ selectedNorms }: ModulesPreviewProps) {
                 </p>
               </div>
             </div>
-            <div className="text-vyxo-gold text-sm flex items-center gap-1">
+            <div className="text-ClearGo-gold text-sm flex items-center gap-1">
               <CheckCircle2 className="w-4 h-4" />
               Sélectionné
             </div>
@@ -147,8 +147,8 @@ export function ModulesPreview({ selectedNorms }: ModulesPreviewProps) {
       ))}
 
       {/* Message de frustration */}
-      <div className="bg-gradient-to-r from-vyxo-gold/10 to-transparent border border-vyxo-gold/20 rounded-xl p-6 text-center">
-        <Lock className="w-8 h-8 text-vyxo-gold mx-auto mb-3" />
+      <div className="bg-gradient-to-r from-ClearGo-gold/10 to-transparent border border-ClearGo-gold/20 rounded-xl p-6 text-center">
+        <Lock className="w-8 h-8 text-ClearGo-gold mx-auto mb-3" />
         <h4 className="text-white font-semibold mb-2">
           🔒 {totals.locked} modules supplémentaires après validation
         </h4>

@@ -1,5 +1,5 @@
 /**
- * Types pour le module Vyxo Codex
+ * Types pour le module ClearGo
  * Système de gestion de connaissances et d'entraînement quotidien
  */
 
@@ -207,3 +207,4 @@ export type AuditSession = {
   completedAt?: Date;
   result?: AuditResult;
 };
+

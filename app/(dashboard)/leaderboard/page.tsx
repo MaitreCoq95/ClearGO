@@ -86,7 +86,7 @@ export default function LeaderboardPage() {
             variant={scope === "team" ? "default" : "ghost"}
             size="sm"
             onClick={() => setScope("team")}
-            className={scope === "team" ? "bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90" : ""}
+            className={scope === "team" ? "bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90" : ""}
           >
             <Users className="w-4 h-4 mr-2" />
             Mon Équipe
@@ -95,7 +95,7 @@ export default function LeaderboardPage() {
             variant={scope === "organization" ? "default" : "ghost"}
             size="sm"
             onClick={() => setScope("organization")}
-            className={scope === "organization" ? "bg-vyxo-gold text-vyxo-navy hover:bg-vyxo-gold/90" : ""}
+            className={scope === "organization" ? "bg-ClearGo-gold text-ClearGo-navy hover:bg-ClearGo-gold/90" : ""}
           >
             <Building2 className="w-4 h-4 mr-2" />
             Organisation
@@ -119,7 +119,7 @@ export default function LeaderboardPage() {
 
       {/* Podium */}
       <Card className="bento-card overflow-hidden">
-        <div className="bg-gradient-to-r from-vyxo-navy to-vyxo-navy/80 text-white p-6">
+        <div className="bg-gradient-to-r from-ClearGo-navy to-ClearGo-navy/80 text-white p-6">
           <div className="flex items-end justify-center gap-4">
             {/* 2nd place */}
             <div className="flex flex-col items-center">
@@ -176,7 +176,7 @@ export default function LeaderboardPage() {
                 key={entry.userId}
                 className={`flex items-center gap-4 p-4 rounded-xl transition-colors ${
                   entry.isCurrentUser 
-                    ? "bg-vyxo-gold/10 border border-vyxo-gold" 
+                    ? "bg-ClearGo-gold/10 border border-ClearGo-gold" 
                     : "hover:bg-secondary"
                 }`}
               >
@@ -191,11 +191,11 @@ export default function LeaderboardPage() {
                 
                 {/* Avatar & Name */}
                 <div className="flex items-center gap-3 flex-1 min-w-0">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-vyxo-gold to-amber-400 flex items-center justify-center shrink-0">
-                    <span className="font-bold text-vyxo-navy">{entry.userName.charAt(0)}</span>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-ClearGo-gold to-amber-400 flex items-center justify-center shrink-0">
+                    <span className="font-bold text-ClearGo-navy">{entry.userName.charAt(0)}</span>
                   </div>
                   <div className="min-w-0">
-                    <p className={`font-medium truncate ${entry.isCurrentUser ? "text-vyxo-gold" : ""}`}>
+                    <p className={`font-medium truncate ${entry.isCurrentUser ? "text-ClearGo-gold" : ""}`}>
                       {entry.userName}
                     </p>
                     <p className="text-sm text-muted-foreground">
@@ -220,3 +220,4 @@ export default function LeaderboardPage() {
     </div>
   )
 }
+

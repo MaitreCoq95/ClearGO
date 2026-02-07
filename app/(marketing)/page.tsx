@@ -1,6 +1,6 @@
-import { redirect } from 'next/navigation'
+import LandingV4 from "./landing-v4/page"
 
 export default function HomePage() {
-  redirect('/landing')
+  return <LandingV4 />
 }
 

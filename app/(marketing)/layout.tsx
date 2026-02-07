@@ -27,47 +27,14 @@ export default function MarketingLayout({
             </Link>
 
             {/* Navigation */}
+            {/* Navigation - Masquée pour focus Landing V4 */}
             <nav className="hidden md:flex items-center gap-8">
-              <Link 
-                href="/#features" 
-                className="text-sm font-medium text-muted-foreground hover:text-cleargo-blue transition-colors"
-              >
-                Fonctionnalités
-              </Link>
-              <Link 
-                href="/pricing" 
-                className="text-sm font-medium text-muted-foreground hover:text-cleargo-blue transition-colors"
-              >
-                Tarifs
-              </Link>
-              <Link 
-                href="/demo" 
-                className="text-sm font-medium text-muted-foreground hover:text-cleargo-blue transition-colors"
-              >
-                Démo
-              </Link>
-              <Link 
-                href="/landing-v2" 
-                className="text-sm font-medium text-cleargo-green hover:text-cleargo-green/80 transition-colors"
-              >
-                ✨ Landing V2
-              </Link>
-              <Link 
-                href="/dev/mockups" 
-                className="text-sm font-medium text-muted-foreground hover:text-cleargo-blue transition-colors"
-              >
-                🛠️ Dev Docs
-              </Link>
+              {/* Liens masqués pour nettoyer l'interface selon demande client */}
             </nav>
 
             {/* Actions */}
             <div className="flex items-center gap-3">
-              {/* Bouton Consultant */}
-              <Link href="/partners" className="hidden md:block">
-                <Button variant="outline" size="sm" className="border-cleargo-green/50 text-cleargo-green hover:bg-cleargo-green/10">
-                  👨‍💼 Je suis consultant
-                </Button>
-              </Link>
+              {/* Bouton Consultant retiré */}
               
               <ThemeToggle />
               <Link href="/login">
@@ -75,7 +42,7 @@ export default function MarketingLayout({
                   Connexion
                 </Button>
               </Link>
-              <Link href="/signup" className="hidden sm:block">
+              <Link href="/evaluation" className="hidden sm:block">
                 <Button size="sm" className="bg-cleargo-green hover:bg-cleargo-green/90 text-white font-semibold">
                   Essai Gratuit
                 </Button>

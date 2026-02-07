@@ -24,7 +24,9 @@ export function Header() {
     <div className="fixed top-0 w-full z-50 flex items-center h-16 px-4 border-b border-white/10 bg-ClearGo-navy/80 backdrop-blur-md transition-all duration-300">
       <MobileSidebar />
       
-      <div className="hidden md:flex items-center ml-4 md:ml-64 transition-all duration-300">
+
+      <div className="hidden md:flex items-center ml-4 md:ml-64 transition-all duration-300 gap-4">
+        {/* Dev links removed for production view */}
         <div className="relative">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-zinc-400" />
             <Input 
@@ -34,6 +36,7 @@ export function Header() {
             />
         </div>
       </div>
+
 
       <div className="ml-auto flex items-center space-x-4">
         <LanguageSwitcher />

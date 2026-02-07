@@ -175,7 +175,7 @@ export default function LandingV3() {
           <div className="max-w-4xl mx-auto">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
               <video
-                src="/videos/Cration_vido_ClearGo_avant_aprs.mp4"
+                src="/videos/Vidéo présentation.mp4"
                 autoPlay
                 muted
                 loop

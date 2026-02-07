@@ -38,7 +38,7 @@ export default function LandingV3() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-6 shadow-lg shadow-blue-600/20" asChild>
-                  <Link href="/diagnostic">
+                  <Link href="/evaluation">
                     Calculer mon Trust Score
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
@@ -912,7 +912,7 @@ export default function LandingV3() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-10 py-6" asChild>
-              <Link href="/diagnostic">
+              <Link href="/evaluation">
                 Calculer mon Trust Score
                 <Zap className="ml-2 h-5 w-5" />
               </Link>

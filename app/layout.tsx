@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/components/language-provider"
 import SupabaseProvider from "@/components/supabase-provider"
 import { Toaster } from "@/components/ui/toaster"
-import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
 

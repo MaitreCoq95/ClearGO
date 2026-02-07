@@ -1,6 +1,6 @@
-import LandingV4 from "./landing-v4/page"
+import LandingV3 from "./landing-v3/page"
 
 export default function HomePage() {
-  return <LandingV4 />
+  return <LandingV3 />
 }
 
